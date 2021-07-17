@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="06_Struct"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/lizeping/Documents/CPP Learning/06 Struct/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test02">
+				<Option output="/Users/lizeping/Documents/CPP Learning/06 Struct/cmake-build-debug/test02" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/Documents/CPP Learning/06 Struct/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/Documents/CPP Learning/06 Struct/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 test02"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test02/fast">
+				<Option output="/Users/lizeping/Documents/CPP Learning/06 Struct/cmake-build-debug/test02" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/Documents/CPP Learning/06 Struct/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/Documents/CPP Learning/06 Struct/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 test02/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/lizeping/Documents/CPP Learning/06 Struct/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/lizeping/Documents/CPP Learning/06 Struct/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test01">
+				<Option output="/Users/lizeping/Documents/CPP Learning/06 Struct/cmake-build-debug/test01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/Documents/CPP Learning/06 Struct/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/Documents/CPP Learning/06 Struct/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 test01"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test01/fast">
+				<Option output="/Users/lizeping/Documents/CPP Learning/06 Struct/cmake-build-debug/test01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/Documents/CPP Learning/06 Struct/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/Documents/CPP Learning/06 Struct/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 test01/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main">
+				<Option output="/Users/lizeping/Documents/CPP Learning/06 Struct/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/Documents/CPP Learning/06 Struct/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/Documents/CPP Learning/06 Struct/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main/fast">
+				<Option output="/Users/lizeping/Documents/CPP Learning/06 Struct/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/Documents/CPP Learning/06 Struct/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/Documents/CPP Learning/06 Struct/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/Documents/CPP\ Learning/06\ Struct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/lizeping/Documents/CPP Learning/06 Struct/main.cpp">
+			<Option target="main"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/Documents/CPP Learning/06 Struct/test01.cpp">
+			<Option target="test01"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/Documents/CPP Learning/06 Struct/test02.cpp">
+			<Option target="test02"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/Documents/CPP Learning/06 Struct/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
