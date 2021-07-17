@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/lizeping/Library/Mobile Documents/com~apple~CloudDocs/CPP Learning/04  Function/FunctionPlus.cpp
+iostream
+-
+

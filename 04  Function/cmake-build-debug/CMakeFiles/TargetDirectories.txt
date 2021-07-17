@@ -1,0 +1,5 @@
+/Users/lizeping/Library/Mobile Documents/com~apple~CloudDocs/CPP Learning/04  Function/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/lizeping/Library/Mobile Documents/com~apple~CloudDocs/CPP Learning/04  Function/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/lizeping/Library/Mobile Documents/com~apple~CloudDocs/CPP Learning/04  Function/cmake-build-debug/CMakeFiles/FunctionPlus.dir
+/Users/lizeping/Library/Mobile Documents/com~apple~CloudDocs/CPP Learning/04  Function/cmake-build-debug/CMakeFiles/Function.dir
+/Users/lizeping/Library/Mobile Documents/com~apple~CloudDocs/CPP Learning/04  Function/cmake-build-debug/CMakeFiles/main.dir
