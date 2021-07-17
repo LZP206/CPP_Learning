@@ -1,6 +1,4 @@
-
-
-#git操作
+#1 git操作
 ```
 git remote add origin git@github.com:yeszao/dofiler.git         # 配置远程git版本库
 
@@ -29,4 +27,19 @@ git config core.ignorecase false                                # 设置大小�
 git config --global user.name "YOUR NAME"                       # 设置用户名
 
 git config --global user.email "YOUR EMAIL ADDRESS"             # 设置邮箱
+```
+
+#2 cmakelistatus
+```
+cmake_minimum_required(VERSION 3.17)
+
+project(PROJECT)
+
+set(CMAKE_CXX_STANDARD 17)
+
+include_directories(include)
+
+aux_source_directory(src dir_src)
+
+add_executable(main main.cpp ${dir_src})
 ```
