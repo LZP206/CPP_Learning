@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/include/sort_print_Array.h
+iostream
+-
+
+/Users/lizeping/Documents/CPP Learning/05 Pointer/src/func/printArray.cpp
+sort_print_Array.h
+/Users/lizeping/Documents/CPP Learning/05 Pointer/src/func/sort_print_Array.h
+
