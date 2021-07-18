@@ -3,6 +3,10 @@ using namespace std;
 
 
 
+// 作用：实现两个自定义数据类型相加的运算
+
+
+
 class Person {
 public:
 	Person() {};

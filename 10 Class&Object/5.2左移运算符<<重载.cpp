@@ -2,6 +2,9 @@
 using namespace std;
 
 
+//作用：可以输出自定义数据类型
+
+
 
 class Person {
 	friend ostream& operator<<(ostream& out, Person& p);
