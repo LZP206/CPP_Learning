@@ -13,6 +13,7 @@ public:
 	MyInteger() {
 		m_Num = 0;
 	}
+	
 	//前置++
 	MyInteger& operator++() {
 		//先++
@@ -49,7 +50,6 @@ void test01() {
 
 //后置++ 先返回 再++
 void test02() {
-
 	MyInteger myInt;
 	cout << myInt++ << endl;
 	cout << myInt << endl;
@@ -57,8 +57,8 @@ void test02() {
 
 int main() {
 
-	test01();
-	//test02();
+	test01();   //结果：1，1
+	test02();   //结果：0，1 ? 
 
 	return 0;
 }
