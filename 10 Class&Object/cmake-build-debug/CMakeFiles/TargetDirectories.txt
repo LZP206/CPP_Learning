@@ -1,5 +1,5 @@
-/Users/lizeping/OneDrive/CPP Learning/10 Class&Object/cmake-build-debug/CMakeFiles/03thisPoint.dir
-/Users/lizeping/OneDrive/CPP Learning/10 Class&Object/cmake-build-debug/CMakeFiles/02INITIALandCLEANUP.dir
-/Users/lizeping/OneDrive/CPP Learning/10 Class&Object/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/lizeping/OneDrive/CPP Learning/10 Class&Object/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/lizeping/OneDrive/CPP Learning/10 Class&Object/cmake-build-debug/CMakeFiles/01Encapsulation.dir
+/Users/lizeping/CPP_Learning/10 Class&Object/cmake-build-debug/CMakeFiles/03thisPoint.dir
+/Users/lizeping/CPP_Learning/10 Class&Object/cmake-build-debug/CMakeFiles/02INITIALandCLEANUP.dir
+/Users/lizeping/CPP_Learning/10 Class&Object/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/lizeping/CPP_Learning/10 Class&Object/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/lizeping/CPP_Learning/10 Class&Object/cmake-build-debug/CMakeFiles/01Encapsulation.dir

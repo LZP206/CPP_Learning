@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/lizeping/OneDrive/CPP Learning/10 Class&Object/02INITIALandCLEANUP.cpp" "/Users/lizeping/OneDrive/CPP Learning/10 Class&Object/cmake-build-debug/CMakeFiles/02INITIALandCLEANUP.dir/02INITIALandCLEANUP.cpp.o"
-  "/Users/lizeping/OneDrive/CPP Learning/10 Class&Object/src/CircleType.cpp" "/Users/lizeping/OneDrive/CPP Learning/10 Class&Object/cmake-build-debug/CMakeFiles/02INITIALandCLEANUP.dir/src/CircleType.cpp.o"
-  "/Users/lizeping/OneDrive/CPP Learning/10 Class&Object/src/PointType.cpp" "/Users/lizeping/OneDrive/CPP Learning/10 Class&Object/cmake-build-debug/CMakeFiles/02INITIALandCLEANUP.dir/src/PointType.cpp.o"
-  "/Users/lizeping/OneDrive/CPP Learning/10 Class&Object/src/ifInCircle.cpp" "/Users/lizeping/OneDrive/CPP Learning/10 Class&Object/cmake-build-debug/CMakeFiles/02INITIALandCLEANUP.dir/src/ifInCircle.cpp.o"
+  "/Users/lizeping/CPP_Learning/10 Class&Object/02INITIALandCLEANUP.cpp" "/Users/lizeping/CPP_Learning/10 Class&Object/cmake-build-debug/CMakeFiles/02INITIALandCLEANUP.dir/02INITIALandCLEANUP.cpp.o"
+  "/Users/lizeping/CPP_Learning/10 Class&Object/src/CircleType.cpp" "/Users/lizeping/CPP_Learning/10 Class&Object/cmake-build-debug/CMakeFiles/02INITIALandCLEANUP.dir/src/CircleType.cpp.o"
+  "/Users/lizeping/CPP_Learning/10 Class&Object/src/PointType.cpp" "/Users/lizeping/CPP_Learning/10 Class&Object/cmake-build-debug/CMakeFiles/02INITIALandCLEANUP.dir/src/PointType.cpp.o"
+  "/Users/lizeping/CPP_Learning/10 Class&Object/src/ifInCircle.cpp" "/Users/lizeping/CPP_Learning/10 Class&Object/cmake-build-debug/CMakeFiles/02INITIALandCLEANUP.dir/src/ifInCircle.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

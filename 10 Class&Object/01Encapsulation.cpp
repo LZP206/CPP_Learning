@@ -9,6 +9,8 @@ using namespace std;
 
 
 
+
+
 const double PI = 3.14;
 // 1、封装的意义
 // 1)将属性和行为作为一个整体，用来表现生活中的事物  语法：class 类名{   访问权限： 属性  / 行为  };
@@ -291,18 +293,18 @@ bool ifSame(Cube & c1,Cube & c2){
 int main() {
     // 案例2
     // 创建圆
-    CircleType c{};
+    CircleType c;
     c.setR(10);
-    PointType center{};
+    PointType center;
     center.setX(10);
     center.setY(0);
     c.setCenter(center);
     // 创建点
-    PointType p1{};
+    PointType p1;
     p1.setX(10);
     p1.setY(10);
     ifInCircle(c,p1);
-    PointType p2{};
+    PointType p2;
     p2.setX(10);
     p2.setY(20);
     ifInCircle(c,p2);
@@ -313,14 +315,14 @@ int main() {
 
 
     // 案例1
-    Cube cu1{};
+    Cube cu1;
     cu1.setL(10);
     cu1.setW(10);
     cu1.setH(10);
     cout << "S = " << cu1.calculateS() << endl;
     cout << "V = " << cu1.calculateV() << endl;
     // 创建第二个立方体
-    Cube cu2{};
+    Cube cu2;
     cu2.setL(10);
     cu2.setW(10);
     cu2.setH(10);
@@ -369,7 +371,7 @@ int main() {
     // 2.struct和class区别
     //C1 c21{};
     //c21.m_A = 10; //错误，访问权限是私有 'm_A' is a private member of 'C1'
-    C2 c22{};
+    C2 c22;
     c22.m_A = 10; //正确，访问权限是公共
 
 
@@ -378,7 +380,7 @@ int main() {
 
 
     //1.通过圆类，创建具体的圆对象（实例化）
-    Circle c1{};
+    Circle c1;
     c1.m_r = 10;
     cout << "圆c1的周长为：" << c1.calculateZC() << endl;
 

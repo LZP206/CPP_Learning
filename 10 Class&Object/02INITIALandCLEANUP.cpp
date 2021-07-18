@@ -4,7 +4,7 @@ using namespace std;
 // 1、构造函数 进行初始化
 class Person{
 public:
-    int age{};
+    int age;
 
 public:
 /*
