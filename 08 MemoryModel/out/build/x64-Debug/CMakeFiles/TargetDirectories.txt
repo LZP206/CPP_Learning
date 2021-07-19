@@ -1,0 +1,5 @@
+D:/CPP_Learning/08 MemoryModel/out/build/x64-Debug/CMakeFiles/global.dir
+D:/CPP_Learning/08 MemoryModel/out/build/x64-Debug/CMakeFiles/heap.dir
+D:/CPP_Learning/08 MemoryModel/out/build/x64-Debug/CMakeFiles/stack.dir
+D:/CPP_Learning/08 MemoryModel/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+D:/CPP_Learning/08 MemoryModel/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
