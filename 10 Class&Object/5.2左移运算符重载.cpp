@@ -26,8 +26,8 @@ private:
 	int m_B;
 };
 
-//全局函数实现左移重载
-//ostream对象只能有一个
+//只能用全局函数实现左移重载
+//ostream对象只能有一个，输出ostream类型实现链式编程
 ostream& operator<<(ostream& out, Person& p) {
 	out << "a:" << p.m_A << " b:" << p.m_B;
 	return out;
