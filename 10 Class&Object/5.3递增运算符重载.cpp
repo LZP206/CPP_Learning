@@ -14,15 +14,15 @@ public:
 		m_Num = 0;
 	}
 	
-	//前置++
+	//前置++ : 前置递增返回引用
 	MyInteger& operator++() {
 		//先++
-		m_Num++;
+		this->m_Num++;
 		//再返回
 		return *this;
 	}
 
-	//后置++
+	//后置++ : 后置递增返回值
 	MyInteger operator++(int) {
 		//先返回
 		MyInteger temp = *this; //记录当前本身的值，然后让本身的值加1，但是返回的是以前的值，达到先返回后++；
@@ -41,14 +41,14 @@ ostream& operator<<(ostream& out, MyInteger myint) {
 }
 
 
-//前置++ 先++ 再返回
+//前置++ 先++ 再返回 
 void test01() {
 	MyInteger myInt;
 	cout << ++myInt << endl;
 	cout << myInt << endl;
 }
 
-//后置++ 先返回 再++
+//后置++ 先返回 再++ 
 void test02() {
 	MyInteger myInt;
 	cout << myInt++ << endl;
