@@ -35,7 +35,7 @@ private:
 	int m_Num;
 };
 
-//这里为什么不传入引用
+//关于这里为什么不传入引用: 问题的关键在于后置递增的情况下，重载成员函数返回temp（局部变量）值
 ostream& operator<<(ostream& out, MyInteger myint) {
 	out << myint.m_Num;
 	return out;
@@ -49,12 +49,14 @@ void test01() {
 	cout << myInt << endl;
 }
 
+
 //后置++ 先返回 再++ 
 void test02() {
 	MyInteger myInt;
 	cout << myInt++ << endl;
 	cout << myInt << endl;
 }
+
 
 int main() {
 
