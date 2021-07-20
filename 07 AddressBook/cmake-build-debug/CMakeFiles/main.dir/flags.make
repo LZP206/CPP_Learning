@@ -4,7 +4,11 @@
 # compile CXX with C:/Application/mingw64/bin/g++.exe
 CXX_DEFINES = 
 
+<<<<<<< Updated upstream
 CXX_INCLUDES = @CMakeFiles/main.dir/includes_CXX.rsp
+=======
+CXX_INCLUDES = -I"/Users/lizeping/CPP_Learning/07 AddressBook/src/include"
+>>>>>>> Stashed changes
 
 CXX_FLAGS = -g -std=gnu++17
 

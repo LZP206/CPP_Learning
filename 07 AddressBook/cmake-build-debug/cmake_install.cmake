@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 # Install script for directory: D:/CPP_Learning/07 AddressBook
+=======
+# Install script for directory: /Users/lizeping/CPP_Learning/07 AddressBook
+>>>>>>> Stashed changes
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +49,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< Updated upstream
 file(WRITE "D:/CPP_Learning/07 AddressBook/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+=======
+file(WRITE "/Users/lizeping/CPP_Learning/07 AddressBook/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> Stashed changes
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

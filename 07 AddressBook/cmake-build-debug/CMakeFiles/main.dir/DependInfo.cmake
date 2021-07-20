@@ -4,7 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+<<<<<<< Updated upstream
   "D:/CPP_Learning/07 AddressBook/main.cpp" "D:/CPP_Learning/07 AddressBook/cmake-build-debug/CMakeFiles/main.dir/main.cpp.obj"
+=======
+  "/Users/lizeping/CPP_Learning/07 AddressBook/main.cpp" "/Users/lizeping/CPP_Learning/07 AddressBook/cmake-build-debug/CMakeFiles/main.dir/main.cpp.o"
+>>>>>>> Stashed changes
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -66,10 +66,17 @@ RM = "C:\Application\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< Updated upstream
 CMAKE_SOURCE_DIR = "D:\CPP_Learning\07 AddressBook"
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = "D:\CPP_Learning\07 AddressBook\cmake-build-debug"
+=======
+CMAKE_SOURCE_DIR = "/Users/lizeping/CPP_Learning/07 AddressBook"
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = "/Users/lizeping/CPP_Learning/07 AddressBook/cmake-build-debug"
+>>>>>>> Stashed changes
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -98,9 +105,15 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< Updated upstream
 	$(CMAKE_COMMAND) -E cmake_progress_start "D:\CPP_Learning\07 AddressBook\cmake-build-debug\CMakeFiles" "D:\CPP_Learning\07 AddressBook\cmake-build-debug\\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start "D:\CPP_Learning\07 AddressBook\cmake-build-debug\CMakeFiles" 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/lizeping/CPP_Learning/07 AddressBook/cmake-build-debug/CMakeFiles" "/Users/lizeping/CPP_Learning/07 AddressBook/cmake-build-debug//CMakeFiles/progress.marks"
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/lizeping/CPP_Learning/07 AddressBook/cmake-build-debug/CMakeFiles" 0
+>>>>>>> Stashed changes
 .PHONY : all
 
 # The main clean target

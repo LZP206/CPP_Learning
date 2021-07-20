@@ -12,7 +12,7 @@ public:
   void ShowPersonAge(){
 
     if (this == NULL) {return;}
-    //如果用到this指针，需要加以判断保证代码的健壮性
+    //如果用到this指针，需要加以判断保证代码的健壮性
 
     cout << "PersonAge = " << this->mAge << endl;
   }

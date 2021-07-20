@@ -10,7 +10,7 @@ public:
   {
     //用途1:当形参和成员变量同名时，可用this指针来区分
     this->age = age;
-    //this指针指向被调用的成员函数所属的对象（这里p1在调用构造函数，this就指向p1）
+    //this指针指向被调用的成员函数所属的对象（这里p1在调用构造函数，this就指向p1）
   }
 
   Person& PersonAddPerson(Person p)
@@ -29,8 +29,8 @@ void test01()
   cout << "p1.age = " << p1.age << endl;
 
   Person p2(20);
-  //链式编程思想 20+10+10+10
-  p2.PersonAddPerson(p1).PersonAddPerson(p1).PersonAddPerson(p1);
+  //链式编程思想 20+10+10+10
+  p2.PersonAddPerson(p1).PersonAddPerson(p1).PersonAddPerson(p1);
   cout << "p2.age = " << p2.age << endl;
 }
 

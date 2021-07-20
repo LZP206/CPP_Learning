@@ -8,6 +8,7 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
+<<<<<<< Updated upstream
 				<Option working_dir="D:/CPP_Learning/07 AddressBook/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
@@ -30,10 +31,45 @@
 			<Target title="main">
 				<Option output="D:/CPP_Learning/07 AddressBook/cmake-build-debug/main.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/CPP_Learning/07 AddressBook/cmake-build-debug"/>
+=======
+				<Option working_dir="/Users/lizeping/CPP_Learning/07 AddressBook/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/07\ AddressBook/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/07\ AddressBook/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/07\ AddressBook/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/07\ AddressBook/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/lizeping/CPP_Learning/07 AddressBook/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/07\ AddressBook/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/07\ AddressBook/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/07\ AddressBook/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/07\ AddressBook/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/lizeping/CPP_Learning/07 AddressBook/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/07\ AddressBook/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/07\ AddressBook/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/07\ AddressBook/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/07\ AddressBook/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main">
+				<Option output="/Users/lizeping/CPP_Learning/07 AddressBook/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/07 AddressBook/cmake-build-debug"/>
+>>>>>>> Stashed changes
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< Updated upstream
 					<Add directory="D:/CPP_Learning/07 AddressBook/src/include"/>
 					<Add directory="C:/Application/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
 					<Add directory="C:/Application/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
@@ -52,10 +88,31 @@
 			<Target title="main/fast">
 				<Option output="D:/CPP_Learning/07 AddressBook/cmake-build-debug/main.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/CPP_Learning/07 AddressBook/cmake-build-debug"/>
+=======
+					<Add directory="/Users/lizeping/CPP_Learning/07 AddressBook/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/07\ AddressBook/cmake-build-debug/Makefile&quot;  VERBOSE=1 main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/07\ AddressBook/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/07\ AddressBook/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/07\ AddressBook/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main/fast">
+				<Option output="/Users/lizeping/CPP_Learning/07 AddressBook/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/07 AddressBook/cmake-build-debug"/>
+>>>>>>> Stashed changes
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< Updated upstream
 					<Add directory="D:/CPP_Learning/07 AddressBook/src/include"/>
 					<Add directory="C:/Application/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
 					<Add directory="C:/Application/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
@@ -86,6 +143,28 @@
 			<Option target="main"/>
 		</Unit>
 		<Unit filename="D:/CPP_Learning/07 AddressBook/CMakeLists.txt">
+=======
+					<Add directory="/Users/lizeping/CPP_Learning/07 AddressBook/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/07\ AddressBook/cmake-build-debug/Makefile&quot;  VERBOSE=1 main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/07\ AddressBook/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/07\ AddressBook/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/07\ AddressBook/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/lizeping/CPP_Learning/07 AddressBook/main.cpp">
+			<Option target="main"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/07 AddressBook/CMakeLists.txt">
+>>>>>>> Stashed changes
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
