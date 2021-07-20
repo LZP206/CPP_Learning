@@ -54,24 +54,22 @@ void test01()
   p3 = p2 = p1; //赋值操作
 
   cout << "p1的年龄为：" << *p1.m_Age << endl;
-
   cout << "p2的年龄为：" << *p2.m_Age << endl;
-
   cout << "p3的年龄为：" << *p3.m_Age << endl;
 }
 
 int main() {
 
-  test01();
+    test01();
 
-  //int a = 10;
-  //int b = 20;
-  //int c = 30;
+  int a = 10;
+  int b = 20;
+  int c = 30;
 
-  //c = b = a;
-  //cout << "a = " << a << endl;
-  //cout << "b = " << b << endl;
-  //cout << "c = " << c << endl;
+  c = b = a;
+  cout << "a = " << a << endl;
+  cout << "b = " << b << endl;
+  cout << "c = " << c << endl;
 
   system("pause");
 
