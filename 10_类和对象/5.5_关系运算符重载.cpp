@@ -9,7 +9,8 @@ public:
     this->m_Name = name;
     this->m_Age = age;
   };
-
+  
+  // 重载运算符==
   bool operator==(Person & p)
   {
     if (this->m_Name == p.m_Name && this->m_Age == p.m_Age)
@@ -22,15 +23,16 @@ public:
     }
   }
 
+  // 重载运算符!=
   bool operator!=(Person & p)
   {
-    if (this->m_Name == p.m_Name && this->m_Age == p.m_Age)
+    if (this->m_Name != p.m_Name || this->m_Age != p.m_Age)
     {
-      return false;
+      return true;
     }
     else
     {
-      return true;
+      return false;
     }
   }
 
