@@ -1,9 +1,0 @@
-<<<<<<< Updated upstream
-D:/CPP_Learning/07 AddressBook/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/CPP_Learning/07 AddressBook/cmake-build-debug/CMakeFiles/main.dir
-D:/CPP_Learning/07 AddressBook/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-=======
-/Users/lizeping/CPP_Learning/07 AddressBook/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/lizeping/CPP_Learning/07 AddressBook/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/lizeping/CPP_Learning/07 AddressBook/cmake-build-debug/CMakeFiles/main.dir
->>>>>>> Stashed changes
