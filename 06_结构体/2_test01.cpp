@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
 #include <string>
-#include <ctime> // Ëæ»úÊýÖÖ×Ó: srand((unsigned int)time(NULL));
+#include <ctime> // éšæœºæ•°ç§å­: srand((unsigned int)time(NULL));
 
 
 /*
-Ñ§Ð£ÕýÔÚ×ö±ÏÉèÏîÄ¿£¬Ã¿ÃûÀÏÊ¦´øÁì5¸öÑ§Éú£¬×Ü¹²ÓÐ3ÃûÀÏÊ¦£¬ÐèÇóÈçÏÂ
-Éè¼ÆÑ§ÉúºÍÀÏÊ¦µÄ½á¹¹Ìå£¬ÆäÖÐÔÚÀÏÊ¦µÄ½á¹¹ÌåÖÐ£¬ÓÐÀÏÊ¦ÐÕÃûºÍÒ»¸ö´æ·Å5ÃûÑ§ÉúµÄÊý×é×÷Îª³ÉÔ±
-Ñ§ÉúµÄ³ÉÔ±ÓÐÐÕÃû¡¢¿¼ÊÔ·ÖÊý£¬´´½¨Êý×é´æ·Å3ÃûÀÏÊ¦£¬Í¨¹ýº¯Êý¸øÃ¿¸öÀÏÊ¦¼°Ëù´øµÄÑ§Éú¸³Öµ
-×îÖÕ´òÓ¡³öÀÏÊ¦Êý¾ÝÒÔ¼°ÀÏÊ¦Ëù´øµÄÑ§ÉúÊý¾Ý¡£
+å­¦æ ¡æ­£åœ¨åšæ¯•è®¾é¡¹ç›®ï¼Œæ¯åè€å¸ˆå¸¦é¢†5ä¸ªå­¦ç”Ÿï¼Œæ€»å…±æœ‰3åè€å¸ˆï¼Œéœ€æ±‚å¦‚ä¸‹
+è®¾è®¡å­¦ç”Ÿå’Œè€å¸ˆçš„ç»“æž„ä½“ï¼Œå…¶ä¸­åœ¨è€å¸ˆçš„ç»“æž„ä½“ä¸­ï¼Œæœ‰è€å¸ˆå§“åå’Œä¸€ä¸ªå­˜æ”¾5åå­¦ç”Ÿçš„æ•°ç»„ä½œä¸ºæˆå‘˜
+å­¦ç”Ÿçš„æˆå‘˜æœ‰å§“åã€è€ƒè¯•åˆ†æ•°ï¼Œåˆ›å»ºæ•°ç»„å­˜æ”¾3åè€å¸ˆï¼Œé€šè¿‡å‡½æ•°ç»™æ¯ä¸ªè€å¸ˆåŠæ‰€å¸¦çš„å­¦ç”Ÿèµ‹å€¼
+æœ€ç»ˆæ‰“å°å‡ºè€å¸ˆæ•°æ®ä»¥åŠè€å¸ˆæ‰€å¸¦çš„å­¦ç”Ÿæ•°æ®ã€‚
 */
 
 struct student
@@ -21,14 +21,14 @@ struct teacher{
     struct student s_arr[5];
 };
 
-// ¸øÀÏÊ¦ºÍÑ§Éú¸³ÖµµÄº¯Êý
+// ç»™è€å¸ˆå’Œå­¦ç”Ÿèµ‹å€¼çš„å‡½æ•°
 void allocateSpace(struct teacher *t_arr,int len)
 {
     string nameSeed ="ABCDE";
     for (int i = 0; i < len; i++) {
         t_arr[i].name = "Teacher_";
         t_arr[i].name += nameSeed[i];
-        // Í¨¹ýÑ­»·¸øÃ¿ÃûÑ§ÉúËù´øµÄÑ§Éú¸³Öµ
+        // é€šè¿‡å¾ªçŽ¯ç»™æ¯åå­¦ç”Ÿæ‰€å¸¦çš„å­¦ç”Ÿèµ‹å€¼
         for (int j = 0; j < 5; j++) {
             t_arr[i].s_arr[j].name = "Student_";
             t_arr[i].s_arr[j].name += nameSeed[j];
@@ -39,31 +39,31 @@ void allocateSpace(struct teacher *t_arr,int len)
 
     }
 }
-// ´òÓ¡ËùÓÐÐÅÏ¢µÄº¯Êý
+// æ‰“å°æ‰€æœ‰ä¿¡æ¯çš„å‡½æ•°
 void printInfo(struct teacher *t_arr, int len)
 {
     for (int i = 0; i < len; ++i) {
-        cout << "ÀÏÊ¦ÐÕÃû£º" << t_arr[i].name << endl;
+        cout << "è€å¸ˆå§“åï¼š" << t_arr[i].name << endl;
         for (int j = 0; j < 5; ++j) {
-            cout << "\tÑ§ÉúÐÕÃû£º" << t_arr[i].s_arr[j].name
-            << "\t·ÖÊý£º" << t_arr[i].s_arr[j].score << endl;
+            cout << "\tå­¦ç”Ÿå§“åï¼š" << t_arr[i].s_arr[j].name
+            << "\tåˆ†æ•°ï¼š" << t_arr[i].s_arr[j].score << endl;
         }
     }
 }
 
 
 int main(){
-    // Ëæ»úÊýÖÖ×Ó
+    // éšæœºæ•°ç§å­
     srand((unsigned int)time(NULL));
 
-    // ´´½¨3ÃûÀÏÊ¦µÄÊý×é
+    // åˆ›å»º3åè€å¸ˆçš„æ•°ç»„
      struct teacher t_arr[3];
 
-    // Í¨¹ýº¯Êý¸øÈýÃûÀÏÊ¦µÄÐÅÏ¢¸³Öµ£¬²¢¸øÀÏÊ¦´øµÄÑ§ÉúµÄÐÅÏ¢¸³Öµ
+    // é€šè¿‡å‡½æ•°ç»™ä¸‰åè€å¸ˆçš„ä¿¡æ¯èµ‹å€¼ï¼Œå¹¶ç»™è€å¸ˆå¸¦çš„å­¦ç”Ÿçš„ä¿¡æ¯èµ‹å€¼
     int len = sizeof(t_arr)/sizeof(t_arr[0]);
     allocateSpace(t_arr,len);
 
-    // ´òÓ¡ËùÓÐÀÏÊ¦¼°Ëù´øÑ§ÉúµÄÐÅÏ¢
+    // æ‰“å°æ‰€æœ‰è€å¸ˆåŠæ‰€å¸¦å­¦ç”Ÿçš„ä¿¡æ¯
     printInfo(t_arr,len);
 
 

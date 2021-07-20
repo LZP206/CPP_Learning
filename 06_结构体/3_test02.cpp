@@ -4,12 +4,12 @@ using namespace std;
 
 
 /*
-Éè¼ÆÒ»¸öÓ¢ÐÛµÄ½á¹¹Ìå£¬°üÀ¨³ÉÔ±ÐÕÃû£¬ÄêÁä£¬ÐÔ±ð;
-´´½¨½á¹¹ÌåÊý×é£¬Êý×éÖÐ´æ·Å5ÃûÓ¢ÐÛ¡£
-Í¨¹ýÃ°ÅÝÅÅÐòµÄËã·¨£¬½«Êý×éÖÐµÄÓ¢ÐÛ°´ÕÕÄêÁä½øÐÐÉýÐòÅÅÐò£¬×îÖÕ´òÓ¡ÅÅÐòºóµÄ½á¹û
+è®¾è®¡ä¸€ä¸ªè‹±é›„çš„ç»“æž„ä½“ï¼ŒåŒ…æ‹¬æˆå‘˜å§“åï¼Œå¹´é¾„ï¼Œæ€§åˆ«;
+åˆ›å»ºç»“æž„ä½“æ•°ç»„ï¼Œæ•°ç»„ä¸­å­˜æ”¾5åè‹±é›„ã€‚
+é€šè¿‡å†’æ³¡æŽ’åºçš„ç®—æ³•ï¼Œå°†æ•°ç»„ä¸­çš„è‹±é›„æŒ‰ç…§å¹´é¾„è¿›è¡Œå‡åºæŽ’åºï¼Œæœ€ç»ˆæ‰“å°æŽ’åºåŽçš„ç»“æžœ
 */
 
-//Ó¢ÐÛ½á¹¹Ìå
+//è‹±é›„ç»“æž„ä½“
 struct hero
 {
     string name;
@@ -19,8 +19,8 @@ struct hero
 void printHero(struct hero *h_arr, int len)
 {
     for (int i = 0; i < len; i++) {
-        cout << "ÐÕÃû£º" << h_arr[i].name << "\tÄêÁä£º" << h_arr[i].age
-             << "\tÐÔ±ð£º" << h_arr[i].sex << endl;
+        cout << "å§“åï¼š" << h_arr[i].name << "\tå¹´é¾„ï¼š" << h_arr[i].age
+             << "\tæ€§åˆ«ï¼š" << h_arr[i].sex << endl;
     }
 }
 
@@ -43,17 +43,17 @@ void bubbleSort_age(struct hero *h_arr, int len)
 int main(){
     struct hero h_arr[5] =
             {
-                    {"Áõ±¸",23,"ÄÐ"},
-                    {"¹ØÓð",22,"ÄÐ"},
-                    {"ÕÅ·É",20,"ÄÐ"},
-                    {"ÕÔÔÆ",21,"ÄÐ"},
-                    {"õõ²õ",19,"Å®"},
+                    {"åˆ˜å¤‡",23,"ç”·"},
+                    {"å…³ç¾½",22,"ç”·"},
+                    {"å¼ é£ž",20,"ç”·"},
+                    {"èµµäº‘",21,"ç”·"},
+                    {"è²‚è‰",19,"å¥³"},
             };
     int len = sizeof(h_arr)/sizeof(h_arr[0]);
     printHero(h_arr,len);
     cout << endl;
 
-    cout << "¶ÔÊý×é°´ÄêÁä´óÐ¡½øÐÐÃ°ÅÝÉýÐòÅÅÐò:" << endl;
+    cout << "å¯¹æ•°ç»„æŒ‰å¹´é¾„å¤§å°è¿›è¡Œå†’æ³¡å‡åºæŽ’åº:" << endl;
     bubbleSort_age(h_arr,len);
     printHero(h_arr,len);
 
