@@ -45,6 +45,7 @@ ostream& operator<<(ostream& out, MyInteger myint) {
 //前置++ 先++ 再返回 
 void test01() {
 	MyInteger myInt;
+	cout << "前置++的结果为：" << endl;
 	cout << ++(++myInt) << endl;
 	cout << myInt << endl;
 }
@@ -53,7 +54,8 @@ void test01() {
 //后置++ 先返回 再++ 
 void test02() {
 	MyInteger myInt;
-	cout << myInt++ << endl;
+	cout << "后置++的结果为：" << endl;
+	cout << myInt++  << endl;
 	cout << myInt << endl;
 }
 
