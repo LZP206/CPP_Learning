@@ -1,0 +1,1621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CPP_Learning"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\01_HelloWorld\;CMake Files\02_程序结构\;CMake Files\03_数组\;CMake Files\04_函数\;CMake Files\05_指针\;CMake Files\06_结构体\;CMake Files\07_通讯录项目\;CMake Files\08_内存模型\;CMake Files\09_引用\;CMake Files\10_类和对象\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="01">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/01_HelloWorld/01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/01_HelloWorld"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/01_HelloWorld/Makefile&quot;  VERBOSE=1 01"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/01_HelloWorld/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/01_HelloWorld/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/01_HelloWorld/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="01/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/01_HelloWorld/01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/01_HelloWorld"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/01_HelloWorld/Makefile&quot;  VERBOSE=1 01/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/01_HelloWorld/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/01_HelloWorld/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/01_HelloWorld/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="2.3">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/2.3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 2.3"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="2.3/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/2.3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 2.3/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="2.2">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/2.2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 2.2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="2.2/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/2.2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 2.2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="2.1">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/2.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 2.1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="2.1/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/2.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 2.1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/02_程序结构/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3.2">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组/3.2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组/Makefile&quot;  VERBOSE=1 3.2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3.2/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组/3.2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组/Makefile&quot;  VERBOSE=1 3.2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3.1">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组/3.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组/Makefile&quot;  VERBOSE=1 3.1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3.1/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组/3.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组/Makefile&quot;  VERBOSE=1 3.1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/03_数组/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="4.3">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/4.3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 4.3"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="4.3/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/4.3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 4.3/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="4.2">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/4.2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 4.2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="4.2/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/4.2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 4.2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="4.1">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/4.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 4.1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="4.1/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/4.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 4.1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/04_函数/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="05">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/05_指针/05" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/05_指针"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/05_指针/Makefile&quot;  VERBOSE=1 05"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/05_指针/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/05_指针/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/05_指针/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="05/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/05_指针/05" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/05_指针"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/05_指针/Makefile&quot;  VERBOSE=1 05/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/05_指针/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/05_指针/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/05_指针/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="6.3">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/6.3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 6.3"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="6.3/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/6.3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 6.3/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="6.2">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/6.2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 6.2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="6.2/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/6.2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 6.2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="6.1">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/6.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 6.1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="6.1/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/6.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 6.1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/06_结构体/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="07">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/07_通讯录项目/07" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/07_通讯录项目"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/07_通讯录项目/Makefile&quot;  VERBOSE=1 07"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/07_通讯录项目/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/07_通讯录项目/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/07_通讯录项目/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="07/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/07_通讯录项目/07" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/07_通讯录项目"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/07_通讯录项目/Makefile&quot;  VERBOSE=1 07/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/07_通讯录项目/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/07_通讯录项目/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/07_通讯录项目/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="8.3">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/8.3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 8.3"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="8.3/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/8.3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 8.3/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="8.2">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/8.2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 8.2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="8.2/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/8.2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 8.2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="8.1">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/8.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 8.1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="8.1/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/8.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 8.1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/08_内存模型/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="09">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/09_引用/09" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/09_引用"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/09_引用/Makefile&quot;  VERBOSE=1 09"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/09_引用/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/09_引用/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/09_引用/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="09/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/09_引用/09" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/09_引用"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/09_引用/Makefile&quot;  VERBOSE=1 09/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/09_引用/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/09_引用/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/09_引用/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.5.3">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.5.3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.5.3"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.5.3/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.5.3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.5.3/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.1">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.1/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.4.3">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.4.3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.4.3"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.4.3/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.4.3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.4.3/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.5.1">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.5.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.5.1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.5.1/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.5.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.5.1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.3.1">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.3.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.3.1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.3.1/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.3.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.3.1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.4.2">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.4.2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.4.2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.4.2/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.4.2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.4.2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.4.1">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.4.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.4.1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.4.1/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.4.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.4.1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.3.4">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.3.4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.3.4"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.3.4/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.3.4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.3.4/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.5.2">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.5.2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.5.2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.5.2/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.5.2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.5.2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.3.3">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.3.3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.3.3"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.3.3/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.3.3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.3.3/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.2">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.2/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.3.2">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.3.2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.3.2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="10.3.2/fast">
+				<Option output="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/10.3.2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/lizeping/CPP_Learning/src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 10.3.2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/lizeping/CPP_Learning/01_HelloWorld/HelloWorld.cpp">
+			<Option target="01"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/02_程序结构/1_Selective.cpp">
+			<Option target="2.1"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/02_程序结构/2_Loop.cpp">
+			<Option target="2.2"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/02_程序结构/3_Jump.cpp">
+			<Option target="2.3"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/03_数组/1_OneDim.cpp">
+			<Option target="3.1"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/03_数组/2_TwoDim.cpp">
+			<Option target="3.2"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/04_函数/1_分文件编写.cpp">
+			<Option target="4.1"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/04_函数/2_Function.cpp">
+			<Option target="4.2"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/04_函数/3_FunctionPlus.cpp">
+			<Option target="4.3"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/05_指针/Point.cpp">
+			<Option target="05"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/06_结构体/1_Struct.cpp">
+			<Option target="6.1"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/06_结构体/2_test01.cpp">
+			<Option target="6.2"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/06_结构体/3_test02.cpp">
+			<Option target="6.3"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/07_通讯录项目/main.cpp">
+			<Option target="07"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/08_内存模型/1_global.cpp">
+			<Option target="8.1"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/08_内存模型/2_stack.cpp">
+			<Option target="8.2"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/08_内存模型/3_heap.cpp">
+			<Option target="8.3"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/09_引用/Reference.cpp">
+			<Option target="09"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/10_类和对象/1_Encapsulation.cpp">
+			<Option target="10.1"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/10_类和对象/2_对象的初始化和清理.cpp">
+			<Option target="10.2"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/10_类和对象/3.1_成员变量和成员函数分开存储.cpp">
+			<Option target="10.3.1"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/10_类和对象/3.2_this指针概念.cpp">
+			<Option target="10.3.2"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/10_类和对象/3.3_空指针访问成员函数.cpp">
+			<Option target="10.3.3"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/10_类和对象/3.4_const修饰成员函数.cpp">
+			<Option target="10.3.4"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/10_类和对象/4.1_全局函数做友元.cpp">
+			<Option target="10.4.1"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/10_类和对象/4.2_类做友元.cpp">
+			<Option target="10.4.2"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/10_类和对象/4.3_类成员函数做友元.cpp">
+			<Option target="10.4.3"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/10_类和对象/5.1_加法运算符重载.cpp">
+			<Option target="10.5.1"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/10_类和对象/5.2_左移运算符重载.cpp">
+			<Option target="10.5.2"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/10_类和对象/5.3_递增运算符重载.cpp">
+			<Option target="10.5.3"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/src/library/CircleType.cpp">
+			<Option target="4.3"/>
+			<Option target="4.1"/>
+			<Option target="05"/>
+			<Option target="10.5.3"/>
+			<Option target="10.1"/>
+			<Option target="10.4.3"/>
+			<Option target="10.5.1"/>
+			<Option target="10.3.1"/>
+			<Option target="10.4.2"/>
+			<Option target="10.4.1"/>
+			<Option target="10.3.4"/>
+			<Option target="10.5.2"/>
+			<Option target="10.3.3"/>
+			<Option target="10.2"/>
+			<Option target="10.3.2"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/src/library/PointType.cpp">
+			<Option target="4.3"/>
+			<Option target="4.1"/>
+			<Option target="05"/>
+			<Option target="10.5.3"/>
+			<Option target="10.1"/>
+			<Option target="10.4.3"/>
+			<Option target="10.5.1"/>
+			<Option target="10.3.1"/>
+			<Option target="10.4.2"/>
+			<Option target="10.4.1"/>
+			<Option target="10.3.4"/>
+			<Option target="10.5.2"/>
+			<Option target="10.3.3"/>
+			<Option target="10.2"/>
+			<Option target="10.3.2"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/src/library/bubbleSort.cpp">
+			<Option target="4.3"/>
+			<Option target="4.1"/>
+			<Option target="05"/>
+			<Option target="10.5.3"/>
+			<Option target="10.1"/>
+			<Option target="10.4.3"/>
+			<Option target="10.5.1"/>
+			<Option target="10.3.1"/>
+			<Option target="10.4.2"/>
+			<Option target="10.4.1"/>
+			<Option target="10.3.4"/>
+			<Option target="10.5.2"/>
+			<Option target="10.3.3"/>
+			<Option target="10.2"/>
+			<Option target="10.3.2"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/src/library/ifInCircle.cpp">
+			<Option target="4.3"/>
+			<Option target="4.1"/>
+			<Option target="05"/>
+			<Option target="10.5.3"/>
+			<Option target="10.1"/>
+			<Option target="10.4.3"/>
+			<Option target="10.5.1"/>
+			<Option target="10.3.1"/>
+			<Option target="10.4.2"/>
+			<Option target="10.4.1"/>
+			<Option target="10.3.4"/>
+			<Option target="10.5.2"/>
+			<Option target="10.3.3"/>
+			<Option target="10.2"/>
+			<Option target="10.3.2"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/src/library/printArray.cpp">
+			<Option target="4.3"/>
+			<Option target="4.1"/>
+			<Option target="05"/>
+			<Option target="10.5.3"/>
+			<Option target="10.1"/>
+			<Option target="10.4.3"/>
+			<Option target="10.5.1"/>
+			<Option target="10.3.1"/>
+			<Option target="10.4.2"/>
+			<Option target="10.4.1"/>
+			<Option target="10.3.4"/>
+			<Option target="10.5.2"/>
+			<Option target="10.3.3"/>
+			<Option target="10.2"/>
+			<Option target="10.3.2"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/src/library/swap.cpp">
+			<Option target="4.3"/>
+			<Option target="4.1"/>
+			<Option target="05"/>
+			<Option target="10.5.3"/>
+			<Option target="10.1"/>
+			<Option target="10.4.3"/>
+			<Option target="10.5.1"/>
+			<Option target="10.3.1"/>
+			<Option target="10.4.2"/>
+			<Option target="10.4.1"/>
+			<Option target="10.3.4"/>
+			<Option target="10.5.2"/>
+			<Option target="10.3.3"/>
+			<Option target="10.2"/>
+			<Option target="10.3.2"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/src/library/swap1.cpp">
+			<Option target="4.3"/>
+			<Option target="4.1"/>
+			<Option target="05"/>
+			<Option target="10.5.3"/>
+			<Option target="10.1"/>
+			<Option target="10.4.3"/>
+			<Option target="10.5.1"/>
+			<Option target="10.3.1"/>
+			<Option target="10.4.2"/>
+			<Option target="10.4.1"/>
+			<Option target="10.3.4"/>
+			<Option target="10.5.2"/>
+			<Option target="10.3.3"/>
+			<Option target="10.2"/>
+			<Option target="10.3.2"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/src/library/swap2.cpp">
+			<Option target="4.3"/>
+			<Option target="4.1"/>
+			<Option target="05"/>
+			<Option target="10.5.3"/>
+			<Option target="10.1"/>
+			<Option target="10.4.3"/>
+			<Option target="10.5.1"/>
+			<Option target="10.3.1"/>
+			<Option target="10.4.2"/>
+			<Option target="10.4.1"/>
+			<Option target="10.3.4"/>
+			<Option target="10.5.2"/>
+			<Option target="10.3.3"/>
+			<Option target="10.2"/>
+			<Option target="10.3.2"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/01_HelloWorld/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\01_HelloWorld\"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/02_程序结构/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\02_程序结构\"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/03_数组/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\03_数组\"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/04_函数/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\04_函数\"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/05_指针/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\05_指针\"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/06_结构体/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\06_结构体\"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/07_通讯录项目/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\07_通讯录项目\"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/08_内存模型/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\08_内存模型\"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/09_引用/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\09_引用\"/>
+		</Unit>
+		<Unit filename="/Users/lizeping/CPP_Learning/10_类和对象/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\10_类和对象\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
