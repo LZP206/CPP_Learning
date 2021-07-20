@@ -1,5 +1,0 @@
-/Users/lizeping/Documents/CPP Learning/06 Struct/cmake-build-debug/CMakeFiles/test02.dir
-/Users/lizeping/Documents/CPP Learning/06 Struct/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/lizeping/Documents/CPP Learning/06 Struct/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/lizeping/Documents/CPP Learning/06 Struct/cmake-build-debug/CMakeFiles/test01.dir
-/Users/lizeping/Documents/CPP Learning/06 Struct/cmake-build-debug/CMakeFiles/main.dir

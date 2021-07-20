@@ -1,5 +1,0 @@
-/Users/lizeping/OneDrive/CPP Learning/08 MemoryModel/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/lizeping/OneDrive/CPP Learning/08 MemoryModel/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/lizeping/OneDrive/CPP Learning/08 MemoryModel/cmake-build-debug/CMakeFiles/heap.dir
-/Users/lizeping/OneDrive/CPP Learning/08 MemoryModel/cmake-build-debug/CMakeFiles/stack.dir
-/Users/lizeping/OneDrive/CPP Learning/08 MemoryModel/cmake-build-debug/CMakeFiles/global.dir
