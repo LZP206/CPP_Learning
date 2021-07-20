@@ -4,7 +4,7 @@ include_directories()
 add_executable(10.1     1_Encapsulation.cpp ${dir_src})
 
 add_executable(10.2     2_对象的初始化和清理.cpp ${dir_src})
-add_executable(10.3.1   3.1_成员变量和成员函数分开存储.cpp ${dir_src})
+add_executable(10.3.1 3.1_成员变量和函数分开存储.cpp ${dir_src})
 add_executable(10.3.2   3.2_this指针概念.cpp ${dir_src})
 add_executable(10.3.3   3.3_空指针访问成员函数.cpp ${dir_src})
 add_executable(10.3.4   3.4_const修饰成员函数.cpp ${dir_src})

@@ -29,17 +29,22 @@ git config --global user.name "YOUR NAME"                       # 设置用户�
 git config --global user.email "YOUR EMAIL ADDRESS"             # 设置邮箱
 ```
 
-#2 cmakelistatus
+#2 cmakelists
 ```
 cmake_minimum_required(VERSION 3.17)
-
 project(PROJECT)
-
 set(CMAKE_CXX_STANDARD 17)
 
-include_directories(include)
-
-aux_source_directory(src dir_src)
+include_directories(头文件地址)
+aux_source_directory(源文件地址 dir_src)
 
 add_executable(main main.cpp ${dir_src})
+
+add_subdirectory(子目录文件名)
+
+
+在子目录中添加cmakelists
+include_directories()
+add_executable(Jump Jump.cpp)
+
 ```
