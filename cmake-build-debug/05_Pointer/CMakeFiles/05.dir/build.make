@@ -76,147 +76,147 @@ include 05_Pointer/CMakeFiles/05.dir/progress.make
 # Include the compile flags for this target's objects.
 include 05_Pointer/CMakeFiles/05.dir/flags.make
 
-05_Pointer/CMakeFiles/05.dir/main.cpp.o: 05_Pointer/CMakeFiles/05.dir/flags.make
-05_Pointer/CMakeFiles/05.dir/main.cpp.o: ../05_Pointer/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lizeping/CPP_Learning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object 05_Pointer/CMakeFiles/05.dir/main.cpp.o"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/05.dir/main.cpp.o -c /Users/lizeping/CPP_Learning/05_Pointer/main.cpp
+05_Pointer/CMakeFiles/05.dir/Point.cpp.o: 05_Pointer/CMakeFiles/05.dir/flags.make
+05_Pointer/CMakeFiles/05.dir/Point.cpp.o: ../05_Pointer/Point.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lizeping/CPP_Learning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object 05_Pointer/CMakeFiles/05.dir/Point.cpp.o"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/05.dir/Point.cpp.o -c /Users/lizeping/CPP_Learning/05_Pointer/Point.cpp
 
-05_Pointer/CMakeFiles/05.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/05.dir/main.cpp.i"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lizeping/CPP_Learning/05_Pointer/main.cpp > CMakeFiles/05.dir/main.cpp.i
+05_Pointer/CMakeFiles/05.dir/Point.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/05.dir/Point.cpp.i"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lizeping/CPP_Learning/05_Pointer/Point.cpp > CMakeFiles/05.dir/Point.cpp.i
 
-05_Pointer/CMakeFiles/05.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/05.dir/main.cpp.s"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lizeping/CPP_Learning/05_Pointer/main.cpp -o CMakeFiles/05.dir/main.cpp.s
+05_Pointer/CMakeFiles/05.dir/Point.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/05.dir/Point.cpp.s"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lizeping/CPP_Learning/05_Pointer/Point.cpp -o CMakeFiles/05.dir/Point.cpp.s
 
-05_Pointer/CMakeFiles/05.dir/__/library/CircleType.cpp.o: 05_Pointer/CMakeFiles/05.dir/flags.make
-05_Pointer/CMakeFiles/05.dir/__/library/CircleType.cpp.o: ../library/CircleType.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lizeping/CPP_Learning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object 05_Pointer/CMakeFiles/05.dir/__/library/CircleType.cpp.o"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/05.dir/__/library/CircleType.cpp.o -c /Users/lizeping/CPP_Learning/library/CircleType.cpp
+05_Pointer/CMakeFiles/05.dir/__/src/library/CircleType.cpp.o: 05_Pointer/CMakeFiles/05.dir/flags.make
+05_Pointer/CMakeFiles/05.dir/__/src/library/CircleType.cpp.o: ../src/library/CircleType.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lizeping/CPP_Learning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object 05_Pointer/CMakeFiles/05.dir/__/src/library/CircleType.cpp.o"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/05.dir/__/src/library/CircleType.cpp.o -c /Users/lizeping/CPP_Learning/src/library/CircleType.cpp
 
-05_Pointer/CMakeFiles/05.dir/__/library/CircleType.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/05.dir/__/library/CircleType.cpp.i"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lizeping/CPP_Learning/library/CircleType.cpp > CMakeFiles/05.dir/__/library/CircleType.cpp.i
+05_Pointer/CMakeFiles/05.dir/__/src/library/CircleType.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/05.dir/__/src/library/CircleType.cpp.i"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lizeping/CPP_Learning/src/library/CircleType.cpp > CMakeFiles/05.dir/__/src/library/CircleType.cpp.i
 
-05_Pointer/CMakeFiles/05.dir/__/library/CircleType.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/05.dir/__/library/CircleType.cpp.s"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lizeping/CPP_Learning/library/CircleType.cpp -o CMakeFiles/05.dir/__/library/CircleType.cpp.s
+05_Pointer/CMakeFiles/05.dir/__/src/library/CircleType.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/05.dir/__/src/library/CircleType.cpp.s"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lizeping/CPP_Learning/src/library/CircleType.cpp -o CMakeFiles/05.dir/__/src/library/CircleType.cpp.s
 
-05_Pointer/CMakeFiles/05.dir/__/library/PointType.cpp.o: 05_Pointer/CMakeFiles/05.dir/flags.make
-05_Pointer/CMakeFiles/05.dir/__/library/PointType.cpp.o: ../library/PointType.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lizeping/CPP_Learning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object 05_Pointer/CMakeFiles/05.dir/__/library/PointType.cpp.o"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/05.dir/__/library/PointType.cpp.o -c /Users/lizeping/CPP_Learning/library/PointType.cpp
+05_Pointer/CMakeFiles/05.dir/__/src/library/PointType.cpp.o: 05_Pointer/CMakeFiles/05.dir/flags.make
+05_Pointer/CMakeFiles/05.dir/__/src/library/PointType.cpp.o: ../src/library/PointType.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lizeping/CPP_Learning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object 05_Pointer/CMakeFiles/05.dir/__/src/library/PointType.cpp.o"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/05.dir/__/src/library/PointType.cpp.o -c /Users/lizeping/CPP_Learning/src/library/PointType.cpp
 
-05_Pointer/CMakeFiles/05.dir/__/library/PointType.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/05.dir/__/library/PointType.cpp.i"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lizeping/CPP_Learning/library/PointType.cpp > CMakeFiles/05.dir/__/library/PointType.cpp.i
+05_Pointer/CMakeFiles/05.dir/__/src/library/PointType.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/05.dir/__/src/library/PointType.cpp.i"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lizeping/CPP_Learning/src/library/PointType.cpp > CMakeFiles/05.dir/__/src/library/PointType.cpp.i
 
-05_Pointer/CMakeFiles/05.dir/__/library/PointType.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/05.dir/__/library/PointType.cpp.s"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lizeping/CPP_Learning/library/PointType.cpp -o CMakeFiles/05.dir/__/library/PointType.cpp.s
+05_Pointer/CMakeFiles/05.dir/__/src/library/PointType.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/05.dir/__/src/library/PointType.cpp.s"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lizeping/CPP_Learning/src/library/PointType.cpp -o CMakeFiles/05.dir/__/src/library/PointType.cpp.s
 
-05_Pointer/CMakeFiles/05.dir/__/library/bubbleSort.cpp.o: 05_Pointer/CMakeFiles/05.dir/flags.make
-05_Pointer/CMakeFiles/05.dir/__/library/bubbleSort.cpp.o: ../library/bubbleSort.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lizeping/CPP_Learning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object 05_Pointer/CMakeFiles/05.dir/__/library/bubbleSort.cpp.o"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/05.dir/__/library/bubbleSort.cpp.o -c /Users/lizeping/CPP_Learning/library/bubbleSort.cpp
+05_Pointer/CMakeFiles/05.dir/__/src/library/bubbleSort.cpp.o: 05_Pointer/CMakeFiles/05.dir/flags.make
+05_Pointer/CMakeFiles/05.dir/__/src/library/bubbleSort.cpp.o: ../src/library/bubbleSort.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lizeping/CPP_Learning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object 05_Pointer/CMakeFiles/05.dir/__/src/library/bubbleSort.cpp.o"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/05.dir/__/src/library/bubbleSort.cpp.o -c /Users/lizeping/CPP_Learning/src/library/bubbleSort.cpp
 
-05_Pointer/CMakeFiles/05.dir/__/library/bubbleSort.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/05.dir/__/library/bubbleSort.cpp.i"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lizeping/CPP_Learning/library/bubbleSort.cpp > CMakeFiles/05.dir/__/library/bubbleSort.cpp.i
+05_Pointer/CMakeFiles/05.dir/__/src/library/bubbleSort.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/05.dir/__/src/library/bubbleSort.cpp.i"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lizeping/CPP_Learning/src/library/bubbleSort.cpp > CMakeFiles/05.dir/__/src/library/bubbleSort.cpp.i
 
-05_Pointer/CMakeFiles/05.dir/__/library/bubbleSort.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/05.dir/__/library/bubbleSort.cpp.s"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lizeping/CPP_Learning/library/bubbleSort.cpp -o CMakeFiles/05.dir/__/library/bubbleSort.cpp.s
+05_Pointer/CMakeFiles/05.dir/__/src/library/bubbleSort.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/05.dir/__/src/library/bubbleSort.cpp.s"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lizeping/CPP_Learning/src/library/bubbleSort.cpp -o CMakeFiles/05.dir/__/src/library/bubbleSort.cpp.s
 
-05_Pointer/CMakeFiles/05.dir/__/library/ifInCircle.cpp.o: 05_Pointer/CMakeFiles/05.dir/flags.make
-05_Pointer/CMakeFiles/05.dir/__/library/ifInCircle.cpp.o: ../library/ifInCircle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lizeping/CPP_Learning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object 05_Pointer/CMakeFiles/05.dir/__/library/ifInCircle.cpp.o"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/05.dir/__/library/ifInCircle.cpp.o -c /Users/lizeping/CPP_Learning/library/ifInCircle.cpp
+05_Pointer/CMakeFiles/05.dir/__/src/library/ifInCircle.cpp.o: 05_Pointer/CMakeFiles/05.dir/flags.make
+05_Pointer/CMakeFiles/05.dir/__/src/library/ifInCircle.cpp.o: ../src/library/ifInCircle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lizeping/CPP_Learning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object 05_Pointer/CMakeFiles/05.dir/__/src/library/ifInCircle.cpp.o"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/05.dir/__/src/library/ifInCircle.cpp.o -c /Users/lizeping/CPP_Learning/src/library/ifInCircle.cpp
 
-05_Pointer/CMakeFiles/05.dir/__/library/ifInCircle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/05.dir/__/library/ifInCircle.cpp.i"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lizeping/CPP_Learning/library/ifInCircle.cpp > CMakeFiles/05.dir/__/library/ifInCircle.cpp.i
+05_Pointer/CMakeFiles/05.dir/__/src/library/ifInCircle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/05.dir/__/src/library/ifInCircle.cpp.i"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lizeping/CPP_Learning/src/library/ifInCircle.cpp > CMakeFiles/05.dir/__/src/library/ifInCircle.cpp.i
 
-05_Pointer/CMakeFiles/05.dir/__/library/ifInCircle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/05.dir/__/library/ifInCircle.cpp.s"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lizeping/CPP_Learning/library/ifInCircle.cpp -o CMakeFiles/05.dir/__/library/ifInCircle.cpp.s
+05_Pointer/CMakeFiles/05.dir/__/src/library/ifInCircle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/05.dir/__/src/library/ifInCircle.cpp.s"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lizeping/CPP_Learning/src/library/ifInCircle.cpp -o CMakeFiles/05.dir/__/src/library/ifInCircle.cpp.s
 
-05_Pointer/CMakeFiles/05.dir/__/library/printArray.cpp.o: 05_Pointer/CMakeFiles/05.dir/flags.make
-05_Pointer/CMakeFiles/05.dir/__/library/printArray.cpp.o: ../library/printArray.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lizeping/CPP_Learning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object 05_Pointer/CMakeFiles/05.dir/__/library/printArray.cpp.o"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/05.dir/__/library/printArray.cpp.o -c /Users/lizeping/CPP_Learning/library/printArray.cpp
+05_Pointer/CMakeFiles/05.dir/__/src/library/printArray.cpp.o: 05_Pointer/CMakeFiles/05.dir/flags.make
+05_Pointer/CMakeFiles/05.dir/__/src/library/printArray.cpp.o: ../src/library/printArray.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lizeping/CPP_Learning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object 05_Pointer/CMakeFiles/05.dir/__/src/library/printArray.cpp.o"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/05.dir/__/src/library/printArray.cpp.o -c /Users/lizeping/CPP_Learning/src/library/printArray.cpp
 
-05_Pointer/CMakeFiles/05.dir/__/library/printArray.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/05.dir/__/library/printArray.cpp.i"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lizeping/CPP_Learning/library/printArray.cpp > CMakeFiles/05.dir/__/library/printArray.cpp.i
+05_Pointer/CMakeFiles/05.dir/__/src/library/printArray.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/05.dir/__/src/library/printArray.cpp.i"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lizeping/CPP_Learning/src/library/printArray.cpp > CMakeFiles/05.dir/__/src/library/printArray.cpp.i
 
-05_Pointer/CMakeFiles/05.dir/__/library/printArray.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/05.dir/__/library/printArray.cpp.s"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lizeping/CPP_Learning/library/printArray.cpp -o CMakeFiles/05.dir/__/library/printArray.cpp.s
+05_Pointer/CMakeFiles/05.dir/__/src/library/printArray.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/05.dir/__/src/library/printArray.cpp.s"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lizeping/CPP_Learning/src/library/printArray.cpp -o CMakeFiles/05.dir/__/src/library/printArray.cpp.s
 
-05_Pointer/CMakeFiles/05.dir/__/library/swap.cpp.o: 05_Pointer/CMakeFiles/05.dir/flags.make
-05_Pointer/CMakeFiles/05.dir/__/library/swap.cpp.o: ../library/swap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lizeping/CPP_Learning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object 05_Pointer/CMakeFiles/05.dir/__/library/swap.cpp.o"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/05.dir/__/library/swap.cpp.o -c /Users/lizeping/CPP_Learning/library/swap.cpp
+05_Pointer/CMakeFiles/05.dir/__/src/library/swap.cpp.o: 05_Pointer/CMakeFiles/05.dir/flags.make
+05_Pointer/CMakeFiles/05.dir/__/src/library/swap.cpp.o: ../src/library/swap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lizeping/CPP_Learning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object 05_Pointer/CMakeFiles/05.dir/__/src/library/swap.cpp.o"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/05.dir/__/src/library/swap.cpp.o -c /Users/lizeping/CPP_Learning/src/library/swap.cpp
 
-05_Pointer/CMakeFiles/05.dir/__/library/swap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/05.dir/__/library/swap.cpp.i"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lizeping/CPP_Learning/library/swap.cpp > CMakeFiles/05.dir/__/library/swap.cpp.i
+05_Pointer/CMakeFiles/05.dir/__/src/library/swap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/05.dir/__/src/library/swap.cpp.i"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lizeping/CPP_Learning/src/library/swap.cpp > CMakeFiles/05.dir/__/src/library/swap.cpp.i
 
-05_Pointer/CMakeFiles/05.dir/__/library/swap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/05.dir/__/library/swap.cpp.s"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lizeping/CPP_Learning/library/swap.cpp -o CMakeFiles/05.dir/__/library/swap.cpp.s
+05_Pointer/CMakeFiles/05.dir/__/src/library/swap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/05.dir/__/src/library/swap.cpp.s"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lizeping/CPP_Learning/src/library/swap.cpp -o CMakeFiles/05.dir/__/src/library/swap.cpp.s
 
-05_Pointer/CMakeFiles/05.dir/__/library/swap1.cpp.o: 05_Pointer/CMakeFiles/05.dir/flags.make
-05_Pointer/CMakeFiles/05.dir/__/library/swap1.cpp.o: ../library/swap1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lizeping/CPP_Learning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object 05_Pointer/CMakeFiles/05.dir/__/library/swap1.cpp.o"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/05.dir/__/library/swap1.cpp.o -c /Users/lizeping/CPP_Learning/library/swap1.cpp
+05_Pointer/CMakeFiles/05.dir/__/src/library/swap1.cpp.o: 05_Pointer/CMakeFiles/05.dir/flags.make
+05_Pointer/CMakeFiles/05.dir/__/src/library/swap1.cpp.o: ../src/library/swap1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lizeping/CPP_Learning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object 05_Pointer/CMakeFiles/05.dir/__/src/library/swap1.cpp.o"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/05.dir/__/src/library/swap1.cpp.o -c /Users/lizeping/CPP_Learning/src/library/swap1.cpp
 
-05_Pointer/CMakeFiles/05.dir/__/library/swap1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/05.dir/__/library/swap1.cpp.i"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lizeping/CPP_Learning/library/swap1.cpp > CMakeFiles/05.dir/__/library/swap1.cpp.i
+05_Pointer/CMakeFiles/05.dir/__/src/library/swap1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/05.dir/__/src/library/swap1.cpp.i"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lizeping/CPP_Learning/src/library/swap1.cpp > CMakeFiles/05.dir/__/src/library/swap1.cpp.i
 
-05_Pointer/CMakeFiles/05.dir/__/library/swap1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/05.dir/__/library/swap1.cpp.s"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lizeping/CPP_Learning/library/swap1.cpp -o CMakeFiles/05.dir/__/library/swap1.cpp.s
+05_Pointer/CMakeFiles/05.dir/__/src/library/swap1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/05.dir/__/src/library/swap1.cpp.s"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lizeping/CPP_Learning/src/library/swap1.cpp -o CMakeFiles/05.dir/__/src/library/swap1.cpp.s
 
-05_Pointer/CMakeFiles/05.dir/__/library/swap2.cpp.o: 05_Pointer/CMakeFiles/05.dir/flags.make
-05_Pointer/CMakeFiles/05.dir/__/library/swap2.cpp.o: ../library/swap2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lizeping/CPP_Learning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object 05_Pointer/CMakeFiles/05.dir/__/library/swap2.cpp.o"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/05.dir/__/library/swap2.cpp.o -c /Users/lizeping/CPP_Learning/library/swap2.cpp
+05_Pointer/CMakeFiles/05.dir/__/src/library/swap2.cpp.o: 05_Pointer/CMakeFiles/05.dir/flags.make
+05_Pointer/CMakeFiles/05.dir/__/src/library/swap2.cpp.o: ../src/library/swap2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lizeping/CPP_Learning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object 05_Pointer/CMakeFiles/05.dir/__/src/library/swap2.cpp.o"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/05.dir/__/src/library/swap2.cpp.o -c /Users/lizeping/CPP_Learning/src/library/swap2.cpp
 
-05_Pointer/CMakeFiles/05.dir/__/library/swap2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/05.dir/__/library/swap2.cpp.i"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lizeping/CPP_Learning/library/swap2.cpp > CMakeFiles/05.dir/__/library/swap2.cpp.i
+05_Pointer/CMakeFiles/05.dir/__/src/library/swap2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/05.dir/__/src/library/swap2.cpp.i"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lizeping/CPP_Learning/src/library/swap2.cpp > CMakeFiles/05.dir/__/src/library/swap2.cpp.i
 
-05_Pointer/CMakeFiles/05.dir/__/library/swap2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/05.dir/__/library/swap2.cpp.s"
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lizeping/CPP_Learning/library/swap2.cpp -o CMakeFiles/05.dir/__/library/swap2.cpp.s
+05_Pointer/CMakeFiles/05.dir/__/src/library/swap2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/05.dir/__/src/library/swap2.cpp.s"
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lizeping/CPP_Learning/src/library/swap2.cpp -o CMakeFiles/05.dir/__/src/library/swap2.cpp.s
 
 # Object files for target 05
 05_OBJECTS = \
-"CMakeFiles/05.dir/main.cpp.o" \
-"CMakeFiles/05.dir/__/library/CircleType.cpp.o" \
-"CMakeFiles/05.dir/__/library/PointType.cpp.o" \
-"CMakeFiles/05.dir/__/library/bubbleSort.cpp.o" \
-"CMakeFiles/05.dir/__/library/ifInCircle.cpp.o" \
-"CMakeFiles/05.dir/__/library/printArray.cpp.o" \
-"CMakeFiles/05.dir/__/library/swap.cpp.o" \
-"CMakeFiles/05.dir/__/library/swap1.cpp.o" \
-"CMakeFiles/05.dir/__/library/swap2.cpp.o"
+"CMakeFiles/05.dir/Point.cpp.o" \
+"CMakeFiles/05.dir/__/src/library/CircleType.cpp.o" \
+"CMakeFiles/05.dir/__/src/library/PointType.cpp.o" \
+"CMakeFiles/05.dir/__/src/library/bubbleSort.cpp.o" \
+"CMakeFiles/05.dir/__/src/library/ifInCircle.cpp.o" \
+"CMakeFiles/05.dir/__/src/library/printArray.cpp.o" \
+"CMakeFiles/05.dir/__/src/library/swap.cpp.o" \
+"CMakeFiles/05.dir/__/src/library/swap1.cpp.o" \
+"CMakeFiles/05.dir/__/src/library/swap2.cpp.o"
 
 # External object files for target 05
 05_EXTERNAL_OBJECTS =
 
-05_Pointer/05: 05_Pointer/CMakeFiles/05.dir/main.cpp.o
-05_Pointer/05: 05_Pointer/CMakeFiles/05.dir/__/library/CircleType.cpp.o
-05_Pointer/05: 05_Pointer/CMakeFiles/05.dir/__/library/PointType.cpp.o
-05_Pointer/05: 05_Pointer/CMakeFiles/05.dir/__/library/bubbleSort.cpp.o
-05_Pointer/05: 05_Pointer/CMakeFiles/05.dir/__/library/ifInCircle.cpp.o
-05_Pointer/05: 05_Pointer/CMakeFiles/05.dir/__/library/printArray.cpp.o
-05_Pointer/05: 05_Pointer/CMakeFiles/05.dir/__/library/swap.cpp.o
-05_Pointer/05: 05_Pointer/CMakeFiles/05.dir/__/library/swap1.cpp.o
-05_Pointer/05: 05_Pointer/CMakeFiles/05.dir/__/library/swap2.cpp.o
+05_Pointer/05: 05_Pointer/CMakeFiles/05.dir/Point.cpp.o
+05_Pointer/05: 05_Pointer/CMakeFiles/05.dir/__/src/library/CircleType.cpp.o
+05_Pointer/05: 05_Pointer/CMakeFiles/05.dir/__/src/library/PointType.cpp.o
+05_Pointer/05: 05_Pointer/CMakeFiles/05.dir/__/src/library/bubbleSort.cpp.o
+05_Pointer/05: 05_Pointer/CMakeFiles/05.dir/__/src/library/ifInCircle.cpp.o
+05_Pointer/05: 05_Pointer/CMakeFiles/05.dir/__/src/library/printArray.cpp.o
+05_Pointer/05: 05_Pointer/CMakeFiles/05.dir/__/src/library/swap.cpp.o
+05_Pointer/05: 05_Pointer/CMakeFiles/05.dir/__/src/library/swap1.cpp.o
+05_Pointer/05: 05_Pointer/CMakeFiles/05.dir/__/src/library/swap2.cpp.o
 05_Pointer/05: 05_Pointer/CMakeFiles/05.dir/build.make
 05_Pointer/05: 05_Pointer/CMakeFiles/05.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lizeping/CPP_Learning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable 05"

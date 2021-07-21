@@ -1,3 +1,0 @@
-"C:\Application\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\8.1.dir/objects.a
-C:\Application\mingw64\bin\ar.exe cr CMakeFiles\8.1.dir/objects.a @CMakeFiles\8.1.dir\objects1.rsp
-C:\Application\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\8.1.dir/objects.a -Wl,--no-whole-archive -o 8.1.exe -Wl,--out-implib,lib8.1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\8.1.dir\linklibs.rsp

@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "8.1.exe"
-  "8.1.exe.manifest"
+  "8.1"
   "8.1.pdb"
-  "CMakeFiles/8.1.dir/1_global.cpp.obj"
-  "lib8.1.dll.a"
+  "CMakeFiles/8.1.dir/1_global.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

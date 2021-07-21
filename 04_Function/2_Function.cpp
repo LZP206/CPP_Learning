@@ -28,7 +28,7 @@ int add (int num1, int num2)  // num1，num2并没有实际的值，为形参
 
 
 // 定义函数，实现两个数字进行交换
-void swap(int num1, int num2) // 如果函数不需要返回值，声明的时候可以写无类型：void
+void swap_temp(int num1, int num2) // 如果函数不需要返回值，声明的时候可以写无类型：void
 {
     cout << "交换前：" << endl;
     cout << "num1 = " << num1 << endl;
@@ -114,7 +114,7 @@ int main()
     // 值传递时，==如果形参发生，并不会影响实参==!!!!!!!!!!!!!!!!!!
     int a = 10, b = 20;
 
-	swap(a, b);
+	swap_temp(a, b);
     cout << "main中的 a = " << a << endl;
 	cout << "main中的 b = " << b << endl;
 */

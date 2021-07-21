@@ -144,248 +144,248 @@ depend:
 	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/build
 .PHONY : 05/fast
 
-__/library/CircleType.o: __/library/CircleType.cpp.o
+Point.o: Point.cpp.o
 
-.PHONY : __/library/CircleType.o
-
-# target to build an object file
-__/library/CircleType.cpp.o:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/CircleType.cpp.o
-.PHONY : __/library/CircleType.cpp.o
-
-__/library/CircleType.i: __/library/CircleType.cpp.i
-
-.PHONY : __/library/CircleType.i
-
-# target to preprocess a source file
-__/library/CircleType.cpp.i:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/CircleType.cpp.i
-.PHONY : __/library/CircleType.cpp.i
-
-__/library/CircleType.s: __/library/CircleType.cpp.s
-
-.PHONY : __/library/CircleType.s
-
-# target to generate assembly for a file
-__/library/CircleType.cpp.s:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/CircleType.cpp.s
-.PHONY : __/library/CircleType.cpp.s
-
-__/library/PointType.o: __/library/PointType.cpp.o
-
-.PHONY : __/library/PointType.o
+.PHONY : Point.o
 
 # target to build an object file
-__/library/PointType.cpp.o:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/PointType.cpp.o
-.PHONY : __/library/PointType.cpp.o
+Point.cpp.o:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/Point.cpp.o
+.PHONY : Point.cpp.o
 
-__/library/PointType.i: __/library/PointType.cpp.i
+Point.i: Point.cpp.i
 
-.PHONY : __/library/PointType.i
+.PHONY : Point.i
 
 # target to preprocess a source file
-__/library/PointType.cpp.i:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/PointType.cpp.i
-.PHONY : __/library/PointType.cpp.i
+Point.cpp.i:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/Point.cpp.i
+.PHONY : Point.cpp.i
 
-__/library/PointType.s: __/library/PointType.cpp.s
+Point.s: Point.cpp.s
 
-.PHONY : __/library/PointType.s
+.PHONY : Point.s
 
 # target to generate assembly for a file
-__/library/PointType.cpp.s:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/PointType.cpp.s
-.PHONY : __/library/PointType.cpp.s
+Point.cpp.s:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/Point.cpp.s
+.PHONY : Point.cpp.s
 
-__/library/bubbleSort.o: __/library/bubbleSort.cpp.o
+__/src/library/CircleType.o: __/src/library/CircleType.cpp.o
 
-.PHONY : __/library/bubbleSort.o
+.PHONY : __/src/library/CircleType.o
 
 # target to build an object file
-__/library/bubbleSort.cpp.o:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/bubbleSort.cpp.o
-.PHONY : __/library/bubbleSort.cpp.o
+__/src/library/CircleType.cpp.o:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/CircleType.cpp.o
+.PHONY : __/src/library/CircleType.cpp.o
 
-__/library/bubbleSort.i: __/library/bubbleSort.cpp.i
+__/src/library/CircleType.i: __/src/library/CircleType.cpp.i
 
-.PHONY : __/library/bubbleSort.i
+.PHONY : __/src/library/CircleType.i
 
 # target to preprocess a source file
-__/library/bubbleSort.cpp.i:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/bubbleSort.cpp.i
-.PHONY : __/library/bubbleSort.cpp.i
+__/src/library/CircleType.cpp.i:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/CircleType.cpp.i
+.PHONY : __/src/library/CircleType.cpp.i
 
-__/library/bubbleSort.s: __/library/bubbleSort.cpp.s
+__/src/library/CircleType.s: __/src/library/CircleType.cpp.s
 
-.PHONY : __/library/bubbleSort.s
+.PHONY : __/src/library/CircleType.s
 
 # target to generate assembly for a file
-__/library/bubbleSort.cpp.s:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/bubbleSort.cpp.s
-.PHONY : __/library/bubbleSort.cpp.s
+__/src/library/CircleType.cpp.s:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/CircleType.cpp.s
+.PHONY : __/src/library/CircleType.cpp.s
 
-__/library/ifInCircle.o: __/library/ifInCircle.cpp.o
+__/src/library/PointType.o: __/src/library/PointType.cpp.o
 
-.PHONY : __/library/ifInCircle.o
+.PHONY : __/src/library/PointType.o
 
 # target to build an object file
-__/library/ifInCircle.cpp.o:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/ifInCircle.cpp.o
-.PHONY : __/library/ifInCircle.cpp.o
+__/src/library/PointType.cpp.o:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/PointType.cpp.o
+.PHONY : __/src/library/PointType.cpp.o
 
-__/library/ifInCircle.i: __/library/ifInCircle.cpp.i
+__/src/library/PointType.i: __/src/library/PointType.cpp.i
 
-.PHONY : __/library/ifInCircle.i
+.PHONY : __/src/library/PointType.i
 
 # target to preprocess a source file
-__/library/ifInCircle.cpp.i:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/ifInCircle.cpp.i
-.PHONY : __/library/ifInCircle.cpp.i
+__/src/library/PointType.cpp.i:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/PointType.cpp.i
+.PHONY : __/src/library/PointType.cpp.i
 
-__/library/ifInCircle.s: __/library/ifInCircle.cpp.s
+__/src/library/PointType.s: __/src/library/PointType.cpp.s
 
-.PHONY : __/library/ifInCircle.s
+.PHONY : __/src/library/PointType.s
 
 # target to generate assembly for a file
-__/library/ifInCircle.cpp.s:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/ifInCircle.cpp.s
-.PHONY : __/library/ifInCircle.cpp.s
+__/src/library/PointType.cpp.s:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/PointType.cpp.s
+.PHONY : __/src/library/PointType.cpp.s
 
-__/library/printArray.o: __/library/printArray.cpp.o
+__/src/library/bubbleSort.o: __/src/library/bubbleSort.cpp.o
 
-.PHONY : __/library/printArray.o
+.PHONY : __/src/library/bubbleSort.o
 
 # target to build an object file
-__/library/printArray.cpp.o:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/printArray.cpp.o
-.PHONY : __/library/printArray.cpp.o
+__/src/library/bubbleSort.cpp.o:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/bubbleSort.cpp.o
+.PHONY : __/src/library/bubbleSort.cpp.o
 
-__/library/printArray.i: __/library/printArray.cpp.i
+__/src/library/bubbleSort.i: __/src/library/bubbleSort.cpp.i
 
-.PHONY : __/library/printArray.i
+.PHONY : __/src/library/bubbleSort.i
 
 # target to preprocess a source file
-__/library/printArray.cpp.i:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/printArray.cpp.i
-.PHONY : __/library/printArray.cpp.i
+__/src/library/bubbleSort.cpp.i:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/bubbleSort.cpp.i
+.PHONY : __/src/library/bubbleSort.cpp.i
 
-__/library/printArray.s: __/library/printArray.cpp.s
+__/src/library/bubbleSort.s: __/src/library/bubbleSort.cpp.s
 
-.PHONY : __/library/printArray.s
+.PHONY : __/src/library/bubbleSort.s
 
 # target to generate assembly for a file
-__/library/printArray.cpp.s:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/printArray.cpp.s
-.PHONY : __/library/printArray.cpp.s
+__/src/library/bubbleSort.cpp.s:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/bubbleSort.cpp.s
+.PHONY : __/src/library/bubbleSort.cpp.s
 
-__/library/swap.o: __/library/swap.cpp.o
+__/src/library/ifInCircle.o: __/src/library/ifInCircle.cpp.o
 
-.PHONY : __/library/swap.o
+.PHONY : __/src/library/ifInCircle.o
 
 # target to build an object file
-__/library/swap.cpp.o:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/swap.cpp.o
-.PHONY : __/library/swap.cpp.o
+__/src/library/ifInCircle.cpp.o:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/ifInCircle.cpp.o
+.PHONY : __/src/library/ifInCircle.cpp.o
 
-__/library/swap.i: __/library/swap.cpp.i
+__/src/library/ifInCircle.i: __/src/library/ifInCircle.cpp.i
 
-.PHONY : __/library/swap.i
+.PHONY : __/src/library/ifInCircle.i
 
 # target to preprocess a source file
-__/library/swap.cpp.i:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/swap.cpp.i
-.PHONY : __/library/swap.cpp.i
+__/src/library/ifInCircle.cpp.i:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/ifInCircle.cpp.i
+.PHONY : __/src/library/ifInCircle.cpp.i
 
-__/library/swap.s: __/library/swap.cpp.s
+__/src/library/ifInCircle.s: __/src/library/ifInCircle.cpp.s
 
-.PHONY : __/library/swap.s
+.PHONY : __/src/library/ifInCircle.s
 
 # target to generate assembly for a file
-__/library/swap.cpp.s:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/swap.cpp.s
-.PHONY : __/library/swap.cpp.s
+__/src/library/ifInCircle.cpp.s:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/ifInCircle.cpp.s
+.PHONY : __/src/library/ifInCircle.cpp.s
 
-__/library/swap1.o: __/library/swap1.cpp.o
+__/src/library/printArray.o: __/src/library/printArray.cpp.o
 
-.PHONY : __/library/swap1.o
+.PHONY : __/src/library/printArray.o
 
 # target to build an object file
-__/library/swap1.cpp.o:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/swap1.cpp.o
-.PHONY : __/library/swap1.cpp.o
+__/src/library/printArray.cpp.o:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/printArray.cpp.o
+.PHONY : __/src/library/printArray.cpp.o
 
-__/library/swap1.i: __/library/swap1.cpp.i
+__/src/library/printArray.i: __/src/library/printArray.cpp.i
 
-.PHONY : __/library/swap1.i
+.PHONY : __/src/library/printArray.i
 
 # target to preprocess a source file
-__/library/swap1.cpp.i:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/swap1.cpp.i
-.PHONY : __/library/swap1.cpp.i
+__/src/library/printArray.cpp.i:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/printArray.cpp.i
+.PHONY : __/src/library/printArray.cpp.i
 
-__/library/swap1.s: __/library/swap1.cpp.s
+__/src/library/printArray.s: __/src/library/printArray.cpp.s
 
-.PHONY : __/library/swap1.s
+.PHONY : __/src/library/printArray.s
 
 # target to generate assembly for a file
-__/library/swap1.cpp.s:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/swap1.cpp.s
-.PHONY : __/library/swap1.cpp.s
+__/src/library/printArray.cpp.s:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/printArray.cpp.s
+.PHONY : __/src/library/printArray.cpp.s
 
-__/library/swap2.o: __/library/swap2.cpp.o
+__/src/library/swap.o: __/src/library/swap.cpp.o
 
-.PHONY : __/library/swap2.o
+.PHONY : __/src/library/swap.o
 
 # target to build an object file
-__/library/swap2.cpp.o:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/swap2.cpp.o
-.PHONY : __/library/swap2.cpp.o
+__/src/library/swap.cpp.o:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/swap.cpp.o
+.PHONY : __/src/library/swap.cpp.o
 
-__/library/swap2.i: __/library/swap2.cpp.i
+__/src/library/swap.i: __/src/library/swap.cpp.i
 
-.PHONY : __/library/swap2.i
+.PHONY : __/src/library/swap.i
 
 # target to preprocess a source file
-__/library/swap2.cpp.i:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/swap2.cpp.i
-.PHONY : __/library/swap2.cpp.i
+__/src/library/swap.cpp.i:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/swap.cpp.i
+.PHONY : __/src/library/swap.cpp.i
 
-__/library/swap2.s: __/library/swap2.cpp.s
+__/src/library/swap.s: __/src/library/swap.cpp.s
 
-.PHONY : __/library/swap2.s
+.PHONY : __/src/library/swap.s
 
 # target to generate assembly for a file
-__/library/swap2.cpp.s:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/library/swap2.cpp.s
-.PHONY : __/library/swap2.cpp.s
+__/src/library/swap.cpp.s:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/swap.cpp.s
+.PHONY : __/src/library/swap.cpp.s
 
-main.o: main.cpp.o
+__/src/library/swap1.o: __/src/library/swap1.cpp.o
 
-.PHONY : main.o
+.PHONY : __/src/library/swap1.o
 
 # target to build an object file
-main.cpp.o:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/main.cpp.o
-.PHONY : main.cpp.o
+__/src/library/swap1.cpp.o:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/swap1.cpp.o
+.PHONY : __/src/library/swap1.cpp.o
 
-main.i: main.cpp.i
+__/src/library/swap1.i: __/src/library/swap1.cpp.i
 
-.PHONY : main.i
+.PHONY : __/src/library/swap1.i
 
 # target to preprocess a source file
-main.cpp.i:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/main.cpp.i
-.PHONY : main.cpp.i
+__/src/library/swap1.cpp.i:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/swap1.cpp.i
+.PHONY : __/src/library/swap1.cpp.i
 
-main.s: main.cpp.s
+__/src/library/swap1.s: __/src/library/swap1.cpp.s
 
-.PHONY : main.s
+.PHONY : __/src/library/swap1.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/main.cpp.s
-.PHONY : main.cpp.s
+__/src/library/swap1.cpp.s:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/swap1.cpp.s
+.PHONY : __/src/library/swap1.cpp.s
+
+__/src/library/swap2.o: __/src/library/swap2.cpp.o
+
+.PHONY : __/src/library/swap2.o
+
+# target to build an object file
+__/src/library/swap2.cpp.o:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/swap2.cpp.o
+.PHONY : __/src/library/swap2.cpp.o
+
+__/src/library/swap2.i: __/src/library/swap2.cpp.i
+
+.PHONY : __/src/library/swap2.i
+
+# target to preprocess a source file
+__/src/library/swap2.cpp.i:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/swap2.cpp.i
+.PHONY : __/src/library/swap2.cpp.i
+
+__/src/library/swap2.s: __/src/library/swap2.cpp.s
+
+.PHONY : __/src/library/swap2.s
+
+# target to generate assembly for a file
+__/src/library/swap2.cpp.s:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/swap2.cpp.s
+.PHONY : __/src/library/swap2.cpp.s
 
 # Help Target
 help:
@@ -396,33 +396,33 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... 05"
-	@echo "... __/library/CircleType.o"
-	@echo "... __/library/CircleType.i"
-	@echo "... __/library/CircleType.s"
-	@echo "... __/library/PointType.o"
-	@echo "... __/library/PointType.i"
-	@echo "... __/library/PointType.s"
-	@echo "... __/library/bubbleSort.o"
-	@echo "... __/library/bubbleSort.i"
-	@echo "... __/library/bubbleSort.s"
-	@echo "... __/library/ifInCircle.o"
-	@echo "... __/library/ifInCircle.i"
-	@echo "... __/library/ifInCircle.s"
-	@echo "... __/library/printArray.o"
-	@echo "... __/library/printArray.i"
-	@echo "... __/library/printArray.s"
-	@echo "... __/library/swap.o"
-	@echo "... __/library/swap.i"
-	@echo "... __/library/swap.s"
-	@echo "... __/library/swap1.o"
-	@echo "... __/library/swap1.i"
-	@echo "... __/library/swap1.s"
-	@echo "... __/library/swap2.o"
-	@echo "... __/library/swap2.i"
-	@echo "... __/library/swap2.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Point.o"
+	@echo "... Point.i"
+	@echo "... Point.s"
+	@echo "... __/src/library/CircleType.o"
+	@echo "... __/src/library/CircleType.i"
+	@echo "... __/src/library/CircleType.s"
+	@echo "... __/src/library/PointType.o"
+	@echo "... __/src/library/PointType.i"
+	@echo "... __/src/library/PointType.s"
+	@echo "... __/src/library/bubbleSort.o"
+	@echo "... __/src/library/bubbleSort.i"
+	@echo "... __/src/library/bubbleSort.s"
+	@echo "... __/src/library/ifInCircle.o"
+	@echo "... __/src/library/ifInCircle.i"
+	@echo "... __/src/library/ifInCircle.s"
+	@echo "... __/src/library/printArray.o"
+	@echo "... __/src/library/printArray.i"
+	@echo "... __/src/library/printArray.s"
+	@echo "... __/src/library/swap.o"
+	@echo "... __/src/library/swap.i"
+	@echo "... __/src/library/swap.s"
+	@echo "... __/src/library/swap1.o"
+	@echo "... __/src/library/swap1.i"
+	@echo "... __/src/library/swap1.s"
+	@echo "... __/src/library/swap2.o"
+	@echo "... __/src/library/swap2.i"
+	@echo "... __/src/library/swap2.s"
 .PHONY : help
 
 

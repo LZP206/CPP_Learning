@@ -1,3 +1,1 @@
-"C:\Application\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\4.2.dir/objects.a
-C:\Application\mingw64\bin\ar.exe cr CMakeFiles\4.2.dir/objects.a @CMakeFiles\4.2.dir\objects1.rsp
-C:\Application\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\4.2.dir/objects.a -Wl,--no-whole-archive -o 4.2.exe -Wl,--out-implib,lib4.2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\4.2.dir\linklibs.rsp
+/Library/Developer/CommandLineTools/usr/bin/c++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/4.2.dir/2_Function.cpp.o -o 4.2 

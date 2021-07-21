@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "2.2.exe"
-  "2.2.exe.manifest"
+  "2.2"
   "2.2.pdb"
-  "CMakeFiles/2.2.dir/2_Loop.cpp.obj"
-  "lib2.2.dll.a"
+  "CMakeFiles/2.2.dir/2_Loop.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

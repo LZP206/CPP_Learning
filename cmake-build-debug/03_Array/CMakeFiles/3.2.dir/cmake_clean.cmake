@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "3.2.exe"
-  "3.2.exe.manifest"
+  "3.2"
   "3.2.pdb"
-  "CMakeFiles/3.2.dir/2_TwoDim.cpp.obj"
-  "lib3.2.dll.a"
+  "CMakeFiles/3.2.dir/2_TwoDim.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

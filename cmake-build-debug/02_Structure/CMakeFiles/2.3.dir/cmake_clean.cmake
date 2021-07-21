@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "2.3.exe"
-  "2.3.exe.manifest"
+  "2.3"
   "2.3.pdb"
-  "CMakeFiles/2.3.dir/3_Jump.cpp.obj"
-  "lib2.3.dll.a"
+  "CMakeFiles/2.3.dir/3_Jump.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

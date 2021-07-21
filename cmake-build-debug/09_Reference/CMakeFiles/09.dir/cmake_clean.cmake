@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "09.exe"
-  "09.exe.manifest"
+  "09"
   "09.pdb"
-  "CMakeFiles/09.dir/Reference.cpp.obj"
-  "lib09.dll.a"
+  "CMakeFiles/09.dir/Reference.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

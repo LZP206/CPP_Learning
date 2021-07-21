@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/CPP_Learning/02_Structure/3_Jump.cpp" "D:/CPP_Learning/cmake-build-debug/02_Structure/CMakeFiles/2.3.dir/3_Jump.cpp.obj"
+  "/Users/lizeping/CPP_Learning/02_Structure/3_Jump.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/02_Structure/CMakeFiles/2.3.dir/3_Jump.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

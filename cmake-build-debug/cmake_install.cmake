@@ -1,8 +1,8 @@
-# Install script for directory: D:/CPP_Learning
+# Install script for directory: /Users/lizeping/CPP_Learning
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/CPP_Learning")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,57 +34,57 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Application/mingw64/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "/Library/Developer/CommandLineTools/usr/bin/objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/CPP_Learning/cmake-build-debug/01_HelloWorld/cmake_install.cmake")
+  include("/Users/lizeping/CPP_Learning/cmake-build-debug/01_HelloWorld/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/CPP_Learning/cmake-build-debug/02_Structure/cmake_install.cmake")
+  include("/Users/lizeping/CPP_Learning/cmake-build-debug/02_Structure/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/CPP_Learning/cmake-build-debug/03_Array/cmake_install.cmake")
+  include("/Users/lizeping/CPP_Learning/cmake-build-debug/03_Array/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/CPP_Learning/cmake-build-debug/04_Function/cmake_install.cmake")
+  include("/Users/lizeping/CPP_Learning/cmake-build-debug/04_Function/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/CPP_Learning/cmake-build-debug/05_Point/cmake_install.cmake")
+  include("/Users/lizeping/CPP_Learning/cmake-build-debug/05_Pointer/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/CPP_Learning/cmake-build-debug/06_Struct/cmake_install.cmake")
+  include("/Users/lizeping/CPP_Learning/cmake-build-debug/06_Struct/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/CPP_Learning/cmake-build-debug/07_通讯录项目/cmake_install.cmake")
+  include("/Users/lizeping/CPP_Learning/cmake-build-debug/07_通讯录项目/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/CPP_Learning/cmake-build-debug/08_Memory/cmake_install.cmake")
+  include("/Users/lizeping/CPP_Learning/cmake-build-debug/08_Memory/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/CPP_Learning/cmake-build-debug/09_Reference/cmake_install.cmake")
+  include("/Users/lizeping/CPP_Learning/cmake-build-debug/09_Reference/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/CPP_Learning/cmake-build-debug/10_类和对象/cmake_install.cmake")
+  include("/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -95,5 +95,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/CPP_Learning/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/lizeping/CPP_Learning/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

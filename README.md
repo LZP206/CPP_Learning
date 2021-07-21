@@ -47,6 +47,6 @@ add_subdirectory(子目录文件名)
 
 在子目录中添加cmakelists
 include_directories()
-add_executable(main mian.cpp)
+add_executable(main main.cpp)
 
 ```
