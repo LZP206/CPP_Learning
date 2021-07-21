@@ -396,6 +396,6 @@ int main() {
     p.setPassword(255333);
     p.showPerson();
 
-
+    system("pause");
     return 0;
 }
