@@ -4,17 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/lizeping/CPP_Learning/10_类和对象/3.2_this指针概念.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.3.2.dir/3.2_this指针概念.cpp.o"
-  "/Users/lizeping/CPP_Learning/src/library/CircleType.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.3.2.dir/__/src/library/CircleType.cpp.o"
-  "/Users/lizeping/CPP_Learning/src/library/PointType.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.3.2.dir/__/src/library/PointType.cpp.o"
-  "/Users/lizeping/CPP_Learning/src/library/bubbleSort.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.3.2.dir/__/src/library/bubbleSort.cpp.o"
-  "/Users/lizeping/CPP_Learning/src/library/ifInCircle.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.3.2.dir/__/src/library/ifInCircle.cpp.o"
-  "/Users/lizeping/CPP_Learning/src/library/printArray.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.3.2.dir/__/src/library/printArray.cpp.o"
-  "/Users/lizeping/CPP_Learning/src/library/swap.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.3.2.dir/__/src/library/swap.cpp.o"
-  "/Users/lizeping/CPP_Learning/src/library/swap1.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.3.2.dir/__/src/library/swap1.cpp.o"
-  "/Users/lizeping/CPP_Learning/src/library/swap2.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.3.2.dir/__/src/library/swap2.cpp.o"
+  "D:/CPP_Learning/10_类和对象/3.2_this指针概念.cpp" "D:/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.3.2.dir/3.2_this指针概念.cpp.obj"
+  "D:/CPP_Learning/src/library/CircleType.cpp" "D:/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.3.2.dir/__/src/library/CircleType.cpp.obj"
+  "D:/CPP_Learning/src/library/PointType.cpp" "D:/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.3.2.dir/__/src/library/PointType.cpp.obj"
+  "D:/CPP_Learning/src/library/bubbleSort.cpp" "D:/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.3.2.dir/__/src/library/bubbleSort.cpp.obj"
+  "D:/CPP_Learning/src/library/ifInCircle.cpp" "D:/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.3.2.dir/__/src/library/ifInCircle.cpp.obj"
+  "D:/CPP_Learning/src/library/printArray.cpp" "D:/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.3.2.dir/__/src/library/printArray.cpp.obj"
+  "D:/CPP_Learning/src/library/swap.cpp" "D:/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.3.2.dir/__/src/library/swap.cpp.obj"
+  "D:/CPP_Learning/src/library/swap1.cpp" "D:/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.3.2.dir/__/src/library/swap1.cpp.obj"
+  "D:/CPP_Learning/src/library/swap2.cpp" "D:/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.3.2.dir/__/src/library/swap2.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

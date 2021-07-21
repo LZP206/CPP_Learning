@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/lizeping/CPP_Learning/09_Reference/Reference.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/09_Reference/CMakeFiles/09.dir/Reference.cpp.o"
+  "D:/CPP_Learning/09_Reference/Reference.cpp" "D:/CPP_Learning/cmake-build-debug/09_Reference/CMakeFiles/09.dir/Reference.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../include"
+  "../src/include"
   )
 
 # Targets to which this target links.

@@ -4,21 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/lizeping/CPP_Learning/05_指针/Point.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/05_指针/CMakeFiles/05.dir/Point.cpp.o"
-  "/Users/lizeping/CPP_Learning/src/library/CircleType.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/05_指针/CMakeFiles/05.dir/__/src/library/CircleType.cpp.o"
-  "/Users/lizeping/CPP_Learning/src/library/PointType.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/05_指针/CMakeFiles/05.dir/__/src/library/PointType.cpp.o"
-  "/Users/lizeping/CPP_Learning/src/library/bubbleSort.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/05_指针/CMakeFiles/05.dir/__/src/library/bubbleSort.cpp.o"
-  "/Users/lizeping/CPP_Learning/src/library/ifInCircle.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/05_指针/CMakeFiles/05.dir/__/src/library/ifInCircle.cpp.o"
-  "/Users/lizeping/CPP_Learning/src/library/printArray.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/05_指针/CMakeFiles/05.dir/__/src/library/printArray.cpp.o"
-  "/Users/lizeping/CPP_Learning/src/library/swap.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/05_指针/CMakeFiles/05.dir/__/src/library/swap.cpp.o"
-  "/Users/lizeping/CPP_Learning/src/library/swap1.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/05_指针/CMakeFiles/05.dir/__/src/library/swap1.cpp.o"
-  "/Users/lizeping/CPP_Learning/src/library/swap2.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/05_指针/CMakeFiles/05.dir/__/src/library/swap2.cpp.o"
+  "D:/CPP_Learning/05_指针/Point.cpp" "D:/CPP_Learning/cmake-build-debug/05_指针/CMakeFiles/05.dir/Point.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../src/include"
+  "/Users/lizeping/CPP_Learning/src/include"
   )
 
 # Targets to which this target links.
