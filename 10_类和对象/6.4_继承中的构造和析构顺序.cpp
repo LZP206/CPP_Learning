@@ -16,11 +16,11 @@ public:
 
     Base()
     {
-        cout << "Base¹¹Ôìº¯Êı" <<endl;
+        cout << "Baseæ„é€ å‡½æ•°" <<endl;
     }
     ~Base()
     {
-        cout << "BaseÎö¹¹º¯Êı" <<endl;
+        cout << "Baseææ„å‡½æ•°" <<endl;
     }
 
     void writem_C(int c)
@@ -50,31 +50,31 @@ public:
 
     Son()
     {
-        cout << "Son¹¹Ôìº¯Êı" <<endl;
+        cout << "Sonæ„é€ å‡½æ•°" <<endl;
     }
     ~Son()
     {
-        cout << "SonÎö¹¹º¯Êı" <<endl;
+        cout << "Sonææ„å‡½æ•°" <<endl;
     }
 
     void func()
     {
         m_A = 10;
-        m_B = 10;     //protectedÖ±½Ó¿ÉÒÔ·ÃÎÊ
+        m_B = 10;     //protectedç›´æ¥å¯ä»¥è®¿é—®
         m_D = 10;
-        //m_C = 10; //·ÃÎÊ²»µ½±¨´í
-        this->writem_C(10); //Í¨¹ıpublic³ÉÔ±º¯Êı·ÃÎÊ
+        //m_C = 10; //è®¿é—®ä¸åˆ°æŠ¥é”™
+        this->writem_C(10); //é€šè¿‡publicæˆå‘˜å‡½æ•°è®¿é—®
     }
 };
 
 void test01()
 {
     Son s;
-    // Êä³ö£º
-    // Base¹¹Ôìº¯Êı
-    // Son¹¹Ôìº¯Êı
-    // SonÎö¹¹º¯Êı
-    // BaseÎö¹¹º¯Êı
+    // è¾“å‡ºï¼š
+    // Baseæ„é€ å‡½æ•°
+    // Sonæ„é€ å‡½æ•°
+    // Sonææ„å‡½æ•°
+    // Baseææ„å‡½æ•°
     
 }
 
@@ -86,6 +86,5 @@ int main()
 {
     test01();
 
-    system("pause");
     return 0;
 }

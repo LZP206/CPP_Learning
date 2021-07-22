@@ -7,9 +7,9 @@ public:
 	int m_Age;
 };
 
-//¼Ì³ĞÇ°¼Óvirtual¹Ø¼ü×Öºó£¬±äÎªĞé¼Ì³Ğ¡£´ËÊ±¹«¹²µÄ¸¸ÀàAnimal³ÆÎªĞé»ùÀà
-//SheepÀàºÍTuoÀàÖĞµÄm_AgeÎªĞé»ùÀàÖ¸Õë==vbptr==
-//´ËÊ±Èı¸öÀàÖĞ¹²ÏíÒ»·İm_Age
+//ç»§æ‰¿å‰åŠ virtualå…³é”®å­—åï¼Œå˜ä¸ºè™šç»§æ‰¿ã€‚æ­¤æ—¶å…¬å…±çš„çˆ¶ç±»Animalç§°ä¸ºè™šåŸºç±»
+//Sheepç±»å’ŒTuoç±»ä¸­çš„m_Ageä¸ºè™šåŸºç±»æŒ‡é’ˆ==vbptr==
+//æ­¤æ—¶ä¸‰ä¸ªç±»ä¸­å…±äº«ä¸€ä»½m_Age
 class Sheep : virtual public Animal {};
 class Tuo   : virtual public Animal {};
 class SheepTuo : public Sheep, public Tuo {};
@@ -29,8 +29,6 @@ void test01()
 int main() {
 
 	test01();
-
-	system("pause");
 
 	return 0;
 }

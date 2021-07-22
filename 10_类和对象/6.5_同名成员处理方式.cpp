@@ -10,11 +10,11 @@ public:
     }
     void func()
     {
-        cout << "Base-func调用" << endl;
+        cout << "Base-func璋冪敤" << endl;
     }
     void func(int a)
     {
-        cout << "Base-func(int a)调用" << endl;
+        cout << "Base-func(int a)璋冪敤" << endl;
     }
 
 public:
@@ -32,11 +32,11 @@ public:
         m_A = 200;
     }
 
-    //当子类与父类拥有同名的成员函数，子类会隐藏父类中所有版本的同名成员函数
-	//如果想访问父类中被隐藏的同名成员函数，需要加父类的作用域
+    //褰撳瓙绫讳笌鐖剁被鎷ユ湁鍚屽悕鐨勬垚鍛樺嚱鏁帮紝瀛愮被浼氶殣钘忕埗绫讳腑鎵�鏈夌増鏈殑鍚屽悕鎴愬憳鍑芥暟
+	//濡傛灉鎯宠闂埗绫讳腑琚殣钘忕殑鍚屽悕鎴愬憳鍑芥暟锛岄渶瑕佸姞鐖剁被鐨勪綔鐢ㄥ煙
     void func()
     {
-        cout << "Son-func调用" << endl;
+        cout << "Son-func璋冪敤" << endl;
     }
 
 public:
@@ -47,8 +47,8 @@ public:
 void test01()
 {
     Son s;
-    cout << "Son下的m_A = " << s.m_A << endl;
-    cout << "Base下的m_A = " << s.Base::m_A << endl;
+    cout << "Son涓嬬殑m_A = " << s.m_A << endl;
+    cout << "Base涓嬬殑m_A = " << s.Base::m_A << endl;
 
     s.func();
     s.Base::func();
@@ -61,6 +61,5 @@ int main()
 {
     test01();
 
-    system("pause");
     return 0;
 }

@@ -16,7 +16,7 @@ public:
 public:
     static int m_A;
 };
-int Base::m_A = 100; //ÀàÍâ³õÊ¼»¯
+int Base::m_A = 100; //ç±»å¤–åˆå§‹åŒ–
 
 
 
@@ -36,35 +36,35 @@ public:
 int Son::m_A = 200;
 
 
-//Í¬Ãû³ÉÔ±ÊôĞÔ
+//åŒåæˆå‘˜å±æ€§
 void test01()
 {
-	//Í¨¹ı¶ÔÏó·ÃÎÊ
-	cout << "Í¨¹ı¶ÔÏó·ÃÎÊ£º " << endl;
+	//é€šè¿‡å¯¹è±¡è®¿é—®
+	cout << "é€šè¿‡å¯¹è±¡è®¿é—®ï¼š " << endl;
 	Son s;
-	cout << "Son  ÏÂ m_A = " << s.m_A << endl;
-	cout << "Base ÏÂ m_A = " << s.Base::m_A << endl;
+	cout << "Son  ä¸‹ m_A = " << s.m_A << endl;
+	cout << "Base ä¸‹ m_A = " << s.Base::m_A << endl;
 
-	//Í¨¹ıÀàÃû·ÃÎÊ
-	cout << "Í¨¹ıÀàÃû·ÃÎÊ£º " << endl;
-	cout << "Son  ÏÂ m_A = " << Son::m_A << endl;
-	cout << "Base ÏÂ m_A = " << Son::Base::m_A << endl;
+	//é€šè¿‡ç±»åè®¿é—®
+	cout << "é€šè¿‡ç±»åè®¿é—®ï¼š " << endl;
+	cout << "Son  ä¸‹ m_A = " << Son::m_A << endl;
+	cout << "Base ä¸‹ m_A = " << Son::Base::m_A << endl;
 }
 
 
-//Í¬Ãû³ÉÔ±º¯Êı
+//åŒåæˆå‘˜å‡½æ•°
 void test02()
 {
-	//Í¨¹ı¶ÔÏó·ÃÎÊ
-	cout << "Í¨¹ı¶ÔÏó·ÃÎÊ£º " << endl;
+	//é€šè¿‡å¯¹è±¡è®¿é—®
+	cout << "é€šè¿‡å¯¹è±¡è®¿é—®ï¼š " << endl;
 	Son s;
 	s.func();
 	s.Base::func();
 
-	cout << "Í¨¹ıÀàÃû·ÃÎÊ£º " << endl;
+	cout << "é€šè¿‡ç±»åè®¿é—®ï¼š " << endl;
 	Son::func();
 	Son::Base::func();
-	//³öÏÖÍ¬Ãû£¬×ÓÀà»áÒş²Øµô¸¸ÀàÖĞËùÓĞÍ¬Ãû³ÉÔ±º¯Êı£¬ĞèÒª¼Ó×÷×÷ÓÃÓò·ÃÎÊ
+	//å‡ºç°åŒåï¼Œå­ç±»ä¼šéšè—æ‰çˆ¶ç±»ä¸­æ‰€æœ‰åŒåæˆå‘˜å‡½æ•°ï¼Œéœ€è¦åŠ ä½œä½œç”¨åŸŸè®¿é—®
 	Son::Base::func(100);
 }
 
@@ -74,6 +74,5 @@ int main()
     test01();
     test02();
 
-    system("pause");
     return 0;
 }
