@@ -14,20 +14,23 @@ class Calculator
 public:
     int getResult(string oper)
     {
+        int temp;
         if(oper == "+")
         {
-            return m_Num1 + m_Num2;
+            temp = m_Num1 + m_Num2;
         }
         else if (oper == "-")
         {
-            return m_Num1 - m_Num2;
+            temp = m_Num1 - m_Num2;
         }
         else if (oper == "*")
         {
-            return m_Num1 * m_Num2;
+            temp = m_Num1 * m_Num2;
         }
         // 如果想扩展新的功能，需要修改源码；
         // 在实际开发中提倡开闭原则：即对扩展进行开放，对修改进行关闭
+
+        return temp;
     }
  
     int m_Num1;  //创建两个操作数
