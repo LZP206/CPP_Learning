@@ -11,6 +11,17 @@ class Base
 {
     public:
     virtual void func() = 0;
+
+    Base()
+    {
+        cout << "Base构造函数" << endl;
+    }
+    ~Base()
+    {
+        cout << "Base析构函数" << endl;
+    }
+
+    int m_A;
 };
 
 
@@ -20,6 +31,15 @@ class Son : public Base
     virtual void func() 
     {
         cout << "func函数的调用" << endl;
+    }
+
+    Son()
+    {
+        cout << "Son构造函数" << endl;
+    }
+    ~Son()
+    {
+        cout << "Son析构函数" << endl;
     }
 };
 
@@ -36,6 +56,7 @@ void test01()
     base->func();
     
     delete base;
+
 }
 
 
