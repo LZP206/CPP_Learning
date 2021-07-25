@@ -10,7 +10,11 @@ using namespace std;
 class Base
 {
     public:
-    virtual void func() = 0;
+    // virtual void func() = 0;
+    virtual void func()
+    {
+        cout << "Base-func函数调用" << endl;
+    }
 
     Base()
     {
@@ -52,10 +56,20 @@ void test01()
     //报错：不允许使用抽象类类型 "Base" 的对象: -- 函数 "Base::func" 是纯虚拟函数
     //Son s;  子类必须重写抽象类中的纯虚函数，否则也属于抽象类，无法实例化对象报错
 
-    Base * base = new(Son);
+    Base * base = new Son;
     base->func();
-    
     delete base;
+
+
+
+
+    //---------------------------------------
+
+    // Son s1;
+    // Base & base1 = s1;
+    // base1.func();
+
+     
 
 }
 
