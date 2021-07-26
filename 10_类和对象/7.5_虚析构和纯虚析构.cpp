@@ -3,7 +3,8 @@ using namespace std;
 
 // 如果基类含虚函数（不是纯虚函数），用delete没有warning，但会跳过派生类的析构函数调用。-----基类虚析构可解决
 // 如果基类含纯虚函数，这基类为抽象类，用delete会有warning(错误)，delete后面的代码无法实现
-// 抽象类需要虚析构 warning: delete called on 'Animal' that is abstract but has non-virtual destructor
+// mac-clang++下，抽象类需要虚析构 warning: delete called on 'Animal' that is abstract but has non-virtual destructor
+// win-g++下，基类是否为抽象类不想影响
 
 
 
