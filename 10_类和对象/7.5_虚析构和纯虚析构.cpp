@@ -14,7 +14,7 @@ class Animal
     Animal(){cout << "Animal构造函数调用" << endl;}
 
     // 虚析构可以解决父类指针释放子类对象不干净的问题
-    ~Animal() {cout << "Animal虚析构函数调用" << endl;}
+    virtual ~Animal() {cout << "Animal虚析构函数调用" << endl;}
 
     // virtual ~Animal() = 0; // 函数声明：纯虚析构  
 
@@ -85,33 +85,29 @@ class Cat : public Animal
 
 
 //子类创建在堆区new:需要手动delete
-// void test01()
-// {
-//     Animal * animal  = new Cat("Tom");
-//     animal->speak();
-//     cout << "test01函数调用" << endl;
-//     delete animal;
+void test01()
+{
+    Animal * animal  = new Cat("Tom");
+    animal->speak();
+    cout << "test01函数调用" << endl;
+    delete animal;
 
-// }
+}
 
 
-//子类没有创建在堆区:不用delete，基类和派生类的构造和析构函数都会被都调用
+// 子类没有创建在堆区:不用delete，基类和派生类的构造和析构函数都会被都调用
 void test02()
 {
     Cat cat("Tom");
     Animal * animal1 = &cat;
     animal1->speak();
-
-    Animal & animal2 = cat;
-    animal2.speak();
-
 }
 
 
 
 int main()
 {
-    test02();
+    test01();
     cout << "main函数调用" << endl;
     return 0;
 }
