@@ -36,7 +36,7 @@ void test02()
 
     // char buf[1024];
     // int num = 0;
-    // while (ifs.getline(buf, sizeof(buf))) // 方式2：文件数据按行读取，每次读取到换行符之前，直到没有数据可读
+    // while (ifs.getline(buf, sizeof(buf))) // 方式2：文件数据按行读取，每次读取sizeof(buf)个字符
     // {
     //     cout << "第" << ++num << "行：" << buf << endl;
     // }
