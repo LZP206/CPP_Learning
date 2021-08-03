@@ -19,7 +19,8 @@ void test01()
 void test02()
 {
     ifstream ifs;                   // 步骤二：创建导入文件流对象
-    ifs.open("test.txt", ios::in);  // 步骤三：打开文件，文件路径+打开方式 ，并判断文件是否已打开
+    ifs.open("test.txt", ios::in);  // 步骤三：打开文件，文件路径+打开方式
+    // 读取文件前需要判断文件是否打开
     if (!ifs.is_open())
     {
         cout << "文件打开失败" << endl;
