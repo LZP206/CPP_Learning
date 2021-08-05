@@ -32,16 +32,7 @@ workerManager::workerManager()
 		this->m_workerArray = new Worker * [this->m_workerNum];
 		initial_workerArray();
 		this->m_FileisEmpty = false;
-		
-		// 测试代码
-		// for (int i = 0; i < this->m_workerNum; i++)
-		// {
-		// 	this->m_workerArray[i]->showInfo();
-		// }
 	}
-
-
-
 }
 
 
@@ -265,6 +256,8 @@ int workerManager::isexist_ID(int input_ID)
 	{
 		if (this->m_workerArray[i]->m_ID == input_ID)
 		{
+			cout << "该员工信息为：" << endl;
+			this->m_workerArray[i]->showInfo();
 			index = i;
 			break;
 		}
@@ -280,24 +273,46 @@ void workerManager::delete_WorkerInfo()
 		cout << "文件不存在或记录为空！" << endl;
 	}
 	else{
-		int inptut_ID;
-		cout << "请输入员工编号：" << endl;
-		cin >> inptut_ID;
-		int index = isexist_ID(inptut_ID);
-		if (index == -1)
+		int input_ID;
+		bool input_choice;
+		bool input_choice_conf;
+		bool FLAG = false;
+		do
 		{
-			cout << "删除失败，未找到该员工" << endl;
-		}
-		else
-		{
-			for (int i = index; i < this->m_workerNum -1; i++)
+			cout << "请输入员工编号：" << endl;
+			cin >> input_ID;
+			int index = isexist_ID(input_ID);
+			if (index == -1)
 			{
-				this->m_workerArray[i] = this->m_workerArray[i+1];
+				cout << "删除失败，未找到该员工" << endl;
+				cout << "请选择操作：0-退出删除员工信息  1-重新输入员工编号" << endl;
+				cin >> input_choice;
+				FLAG = input_choice == true ? true : false;
 			}
-			this->m_workerNum--;
-			this->saveInfo();
-			cout << "删除成功，员工记录已更改" << endl;
-		}
+			else
+			{
+				cout << "是否确定要删除该员工信息：" << endl;
+				cout << "请选择操作：0-No  1-Yes" << endl;
+				cin >> input_choice_conf;
+				if (input_choice_conf == false)
+				{
+					cout << "请选择操作：0-退出删除员工信息  1-重新输入员工编号" << endl;
+					cin >> input_choice;
+					FLAG = input_choice == true ? true : false;
+				}
+				else if (input_choice_conf == true)
+				{
+					for (int i = index; i < this->m_workerNum -1; i++)
+					{
+						this->m_workerArray[i] = this->m_workerArray[i+1];
+					}
+					this->m_workerNum--;
+					this->saveInfo();
+					cout << "删除成功，员工记录已更改" << endl;
+					FLAG = false;
+				}
+			}
+		} while (FLAG == true);
 	}
 }
 
@@ -309,60 +324,177 @@ void workerManager::modify_WorkerInfo()
 		cout << "文件不存在或记录为空！" << endl;
 	}
 	else{
-		int inptut_ID;
-		cout << "请输入员工的编号：" << endl;
-		cin >> inptut_ID;
-		int index = isexist_ID(inptut_ID);
-		if(index == -1)
+		int input_ID;
+		bool input_choice;
+		bool input_choice_conf;
+		bool FLAG = false;
+		do
 		{
-			cout << "删除失败，未找到该员工" << endl;
-		}
-		else
-		{
-			this->m_workerArray[index] = NULL;
-			int new_ID;
-			string new_Name;
-			int new_selectPosName;
-			int new_selectDeptName;
-
-			cout << "请输入新姓名：" << endl;
-			cin >> new_Name;
-
-			cout << "请输入新编号：" << endl;
-			cin >> new_ID;
-
-			cout << "请选择员工所属部门：" << endl;
-			cout << "101-技术部\t"
-				 << "102-销售部\t"
-				 << "103-法务部\t"
-				 << "104-财务部\t"
-				 << "105-人力部" << endl;
-			cin >> new_selectDeptName;
-
-			cout << "请选择员工岗位：" << endl;
-			cout << "1-总裁\t"
-				 << "2-经理\t"
-				 << "3-职员" << endl;
-			cin >> new_selectPosName;
-
-			Worker * temp_worker = NULL;
-			switch (new_selectPosName)
+			cout << "请输入员工的编号：" << endl;
+			cin >> input_ID;
+			int index = isexist_ID(input_ID);
+			if (index == -1)
 			{
-			case 1:
-				temp_worker = new Boss(new_ID, new_Name, new_selectDeptName);
-				break;
-			case 2:
-				temp_worker = new Manager(new_ID, new_Name, new_selectDeptName);
-				break;
-			case 3:
-				temp_worker = new Employee(new_ID, new_Name, new_selectDeptName);
-				break;
-			default:
-				break;
+				cout << "修改失败，未找到该员工" << endl;
+				cout << "请选择操作：0-退出修改员工信息  1-重新输入员工编号" << endl;
+				cin >> input_choice;
+				FLAG = input_choice == true ? true : false;
 			}
-			this->m_workerArray[index] = temp_worker;
-			cout << "员工信息修改成功！！" << endl;
-			this->saveInfo();
-		}
+			else
+			{
+				cout << "是否确定要修改该员工信息：" << endl;
+				cout << "请选择操作：0-No  1-Yes" << endl;
+				cin >> input_choice_conf;
+				if (input_choice_conf == false)
+				{
+					cout << "请选择操作：0-退出修改员工信息  1-重新输入员工编号" << endl;
+					cin >> input_choice;
+					FLAG = input_choice == true ? true : false;
+				}
+				else if (input_choice_conf == true)
+				{
+					int new_ID;
+					string new_Name;
+					int new_selectPosName;
+					int new_selectDeptName;
+
+					cout << "请输入新姓名：" << endl;
+					cin >> new_Name;
+
+					cout << "请输入新编号：" << endl;
+					cin >> new_ID;
+
+					cout << "请选择员工所属部门：" << endl;
+					cout << "101-技术部\t"
+						<< "102-销售部\t"
+						<< "103-法务部\t"
+						<< "104-财务部\t"
+						<< "105-人力部" << endl;
+					cin >> new_selectDeptName;
+
+					cout << "请选择员工岗位：" << endl;
+					cout << "1-总裁\t"
+						<< "2-经理\t"
+						<< "3-职员" << endl;
+					cin >> new_selectPosName;
+
+					Worker * temp_worker = NULL;
+					switch (new_selectPosName)
+					{
+					case 1:
+						temp_worker = new Boss(new_ID, new_Name, new_selectDeptName);
+						break;
+					case 2:
+						temp_worker = new Manager(new_ID, new_Name, new_selectDeptName);
+						break;
+					case 3:
+						temp_worker = new Employee(new_ID, new_Name, new_selectDeptName);
+						break;
+					default:
+						break;
+					}
+					this->m_workerArray[index] = NULL;
+					this->m_workerArray[index] = temp_worker;
+					this->saveInfo();
+					cout << "修改成功，员工记录已更改" << endl;
+					FLAG = false;
+				}
+			}
+		} while (FLAG == true);
 	}
+}
+
+
+
+void workerManager::find_WorkerInfo()
+{
+	if (this->m_FileisEmpty)
+	{
+		cout << "文件不存在或记录为空！" << endl;
+	}
+	else
+	{
+		int input_choice_find;
+		bool FLAG_case;
+		int input_choice;
+		bool FLAG = false;
+		cout << "请选择查找方式：1-按编号  2-按姓名" << endl;
+		cin >> input_choice_find;
+		do{
+			if (input_choice_find == 1)
+			{
+				int input_ID;
+				int index;
+				do{
+					FLAG = false;
+					FLAG_case = false;
+					cout << "请输入查找的员工编号：" << endl;
+					cin >> input_ID;
+					index = this->isexist_ID(input_ID);
+					if (index == -1)
+					{
+						cout << "查找失败，未找到该员工" << endl;
+						cout << "请选择操作：0-退出查找员工  1-重新输入编号  2-按照姓名查找" << endl;
+						cin >> input_choice;
+						FLAG_case = input_choice == 1 ? true : false;
+						if (input_choice == 2)
+						{
+							FLAG = true;
+							input_choice_find = 2;
+						}
+					}
+				} while (FLAG_case == true);
+			}
+			else if (input_choice_find == 2)
+			{
+				string input_Name;
+				int index[this->m_workerNum];
+				do{
+					cout << "请输入查找的员工姓名：" << endl;
+					cin >> input_Name;
+					bool isexist = false;
+					FLAG = false;
+					int temp_Num = 0;
+					for (int i = 0; i < this->m_workerNum; i++)
+					{
+						if (this->m_workerArray[i]->m_Name == input_Name)
+						{
+							index[temp_Num] = i;
+							temp_Num++;
+							isexist = true;
+						}
+					}
+					if (isexist == false)
+					{
+						cout << "查找失败，未找到该员工" << endl;
+						cout << "请选择操作：0-退出查找员工  1-重新输入姓名  2-按照编号查找" << endl;
+						cin >> input_choice;
+						FLAG_case = input_choice == 1 ? true : false;
+						if (input_choice == 2)
+						{
+							FLAG = true;
+							input_choice_find = 1;
+						}
+					}
+					else
+					{
+						cout << "该员工信息为：" << endl;
+						for (int i = 0; i < temp_Num; i++)
+						{
+							this->m_workerArray[index[i]]->showInfo();
+						}
+						FLAG_case = false;
+						FLAG = false;
+					}
+				} while (FLAG_case == true);
+			}
+			else
+			{
+				cout << "输入有误，请重新输入：" << endl;
+				cin >> input_choice_find;
+				FLAG = true;
+			}
+		} while (FLAG == true);
+	}
+	
 }

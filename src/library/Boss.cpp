@@ -13,11 +13,10 @@ Boss::~Boss()
 
 void Boss::showInfo()
 {
-    cout << "编号：" << this->m_ID << "\t"
-         << "姓名：" << this->m_Name << "\t"
-         << "部门：" << this->m_DeptID << this->getDeptName() << "\t"
-         << "岗位：" << this->getPosName() << "\t"
-         << "职责：" << "管理公司所有事务" << endl;
+    cout << this->m_ID << "\t"
+         << this->m_Name << "\t"
+         << this->getDeptName() << "\t"
+         << this->getPosName() << "\t" << endl;
 }
 
 string Boss::getPosName()

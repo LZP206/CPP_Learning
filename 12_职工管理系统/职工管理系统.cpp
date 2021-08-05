@@ -56,6 +56,7 @@ int main()
             managerFramework.modify_WorkerInfo();
             break;
         case 5: // 查找职工信息
+            managerFramework.find_WorkerInfo();
             break;
         case 6: // 按照编号排序
             break;

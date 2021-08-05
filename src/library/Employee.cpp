@@ -13,11 +13,10 @@ Employee::~Employee()
 
 void Employee::showInfo()
 {
-    cout << "编号：" << this->m_ID << "\t"
-         << "姓名：" << this->m_Name << "\t"
-         << "部门：" << this->m_DeptID << this->getDeptName() << "\t"
-         << "岗位：" << this->getPosName() << "\t"
-         << "职责：" << "完成经理交给的任务" << endl;
+    cout << this->m_ID << "\t"
+         << this->m_Name << "\t"
+         << this->getDeptName() << "\t"
+         << this->getPosName() << "\t" << endl;
 }
 
 string Employee::getPosName()

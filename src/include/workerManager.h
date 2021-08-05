@@ -26,6 +26,7 @@ public:
     int isexist_ID(int input_ID);
     void delete_WorkerInfo();
     void modify_WorkerInfo();
+    void find_WorkerInfo();
     
 
     int m_workerNum;
