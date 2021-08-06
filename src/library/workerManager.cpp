@@ -47,6 +47,12 @@ workerManager::~workerManager()
 
 
 
+
+// -----------------------------------------------------------------------
+
+
+
+
 void workerManager::Show_Menu()
 {
     cout << "********************************************" << endl;
@@ -109,8 +115,13 @@ void workerManager::addWorker()
 			cout << "请输入员工姓名：" << endl;
 			cin >> temp_Name;
 
-			cout << "请输入员工编号：" << endl;
-			cin >> temp_ID;
+			while (true)
+			{
+				cout << "请输入员工编号：" << endl;
+				cin >> temp_ID;
+				if (this->isexist_ID(temp_ID) == -1 ){break;}
+				cout << "该员工编号已存在，请重新输入" << endl;
+			}
 
 			cout << "请选择员工所属部门：" << endl;
 			cout << "101-技术部\t"
@@ -174,65 +185,6 @@ void workerManager::saveInfo()
 
 
 
-int workerManager::getInfo_workerNum()
-{
-	ifstream input_workerInfo;
-	input_workerInfo.open(Filename, ios::in);
-	char buffer[1024];
-	int num = 0;
-	while ( input_workerInfo.getline(buffer, sizeof(buffer)) )
-	{
-		num++;
-	}
-	input_workerInfo.close();
-	return num;
-}
-
-
-void workerManager::initial_workerArray()
-{
-	ifstream input_workerInfo;
-	input_workerInfo.open(Filename, ios::in);
-	int temp_ID;
-	string temp_Name;
-	string temp_DeptName;
-	string temp_PosName;
-
-	int index = 0;
-	while (input_workerInfo >> temp_ID && input_workerInfo >> temp_Name && 
-		   input_workerInfo >> temp_DeptName && input_workerInfo >> temp_PosName)
-	{
-		int temp_DeptID = DeptNametoID(temp_DeptName);
-		Worker * temp_worker = NULL;
-		if (temp_PosName == "职员")
-		{
-			temp_worker = new Employee(temp_ID, temp_Name, temp_DeptID);
-		}
-		else if (temp_PosName == "经理") 
-		{
-			temp_worker = new Manager(temp_ID, temp_Name, temp_DeptID);
-		}
-		else if (temp_PosName == "总裁") 
-		{
-			temp_worker = new Boss(temp_ID, temp_Name, temp_DeptID);
-		}
-		this->m_workerArray[index] = temp_worker;
-		index++;
-	}
-}
-
-int workerManager::DeptNametoID(string temp_DeptName)
-{
-	int temp_DeptID;
-	if (temp_DeptName == "技术部") {temp_DeptID = 101;}
-	else if (temp_DeptName == "销售部") {temp_DeptID = 102;}
-	else if (temp_DeptName == "法务部") {temp_DeptID = 103;}
-	else if (temp_DeptName == "财务部") {temp_DeptID = 104;}
-	else if (temp_DeptName == "人力部") {temp_DeptID = 105;}
-	return temp_DeptID;
-}
-
-
 
 void workerManager::show_WorkerInfo()
 {
@@ -245,24 +197,6 @@ void workerManager::show_WorkerInfo()
 			this->m_workerArray[i]->showInfo();
 		}
 	}
-}
-
-
-
-int workerManager::isexist_ID(int input_ID)
-{
-	int index = -1;
-	for (int i = 0; i < this->m_workerNum; i++)
-	{
-		if (this->m_workerArray[i]->m_ID == input_ID)
-		{
-			cout << "该员工信息为：" << endl;
-			this->m_workerArray[i]->showInfo();
-			index = i;
-			break;
-		}
-	}
-	return index;
 }
 
 
@@ -291,6 +225,8 @@ void workerManager::delete_WorkerInfo()
 			}
 			else
 			{
+				cout << "该员工信息为：" << endl;
+				this->m_workerArray[index]->showInfo();
 				cout << "是否确定要删除该员工信息：" << endl;
 				cout << "请选择操作：0-No  1-Yes" << endl;
 				cin >> input_choice_conf;
@@ -342,6 +278,8 @@ void workerManager::modify_WorkerInfo()
 			}
 			else
 			{
+				cout << "该员工信息为：" << endl;
+				this->m_workerArray[index]->showInfo();
 				cout << "是否确定要修改该员工信息：" << endl;
 				cout << "请选择操作：0-No  1-Yes" << endl;
 				cin >> input_choice_conf;
@@ -361,9 +299,15 @@ void workerManager::modify_WorkerInfo()
 					cout << "请输入新姓名：" << endl;
 					cin >> new_Name;
 
-					cout << "请输入新编号：" << endl;
-					cin >> new_ID;
-
+					while (true)
+					{
+						cout << "请输入新编号：" << endl;
+						cin >> new_ID;
+						if (this->isexist_ID(new_ID) == -1 
+						    || new_ID == this->m_workerArray[index]->m_ID){break;}
+						cout << "该员工编号已存在，请重新输入" << endl;
+					}
+					
 					cout << "请选择员工所属部门：" << endl;
 					cout << "101-技术部\t"
 						<< "102-销售部\t"
@@ -443,6 +387,11 @@ void workerManager::find_WorkerInfo()
 							input_choice_find = 2;
 						}
 					}
+					else
+					{
+						cout << "该员工信息为：" << endl;
+						this->m_workerArray[index]->showInfo();
+					}
 				} while (FLAG_case == true);
 			}
 			else if (input_choice_find == 2)
@@ -454,6 +403,7 @@ void workerManager::find_WorkerInfo()
 					cin >> input_Name;
 					bool isexist = false;
 					FLAG = false;
+					FLAG_case = false;
 					int temp_Num = 0;
 					for (int i = 0; i < this->m_workerNum; i++)
 					{
@@ -478,13 +428,11 @@ void workerManager::find_WorkerInfo()
 					}
 					else
 					{
-						cout << "该员工信息为：" << endl;
+						cout << "共查询到" << temp_Num << "条信息：" << endl;
 						for (int i = 0; i < temp_Num; i++)
 						{
 							this->m_workerArray[index[i]]->showInfo();
 						}
-						FLAG_case = false;
-						FLAG = false;
 					}
 				} while (FLAG_case == true);
 			}
@@ -497,4 +445,170 @@ void workerManager::find_WorkerInfo()
 		} while (FLAG == true);
 	}
 	
+}
+
+
+
+void workerManager::sort_WorkerInfo()
+{
+	if (this->m_FileisEmpty)
+	{
+		cout << "文件不存在或记录为空！" << endl;
+	}
+	else
+	{
+		int input_choice;
+		cout << "请选择排序方式：1-降序  2-升序" << endl;
+		cin >> input_choice;
+		for (int i = 0; i < this->m_workerNum; i++)
+		{
+			int MinMax = i;
+			for (int j = i+1; j < this->m_workerNum; j++)
+			{
+				if (input_choice == 1)
+				{
+					if (this->m_workerArray[MinMax]->m_ID < this->m_workerArray[j]->m_ID)
+					{
+						MinMax = j;
+					}
+				}
+				else
+				{
+					if (this->m_workerArray[MinMax]->m_ID > this->m_workerArray[j]->m_ID)
+					{
+						MinMax = j;
+					}
+				}
+				
+			}
+			if (MinMax != i)
+			{
+				Worker * temp = this->m_workerArray[i];
+				this->m_workerArray[i] = this->m_workerArray[MinMax];
+				this->m_workerArray[MinMax] = temp;
+			}
+		}
+		cout << "操作成功，排序后结果为：" << endl;
+		this->show_WorkerInfo();
+		this->saveInfo();
+	}
+}
+
+
+
+void workerManager::clearInfo()
+{
+	cout << "是否确认清空：1-Yes  0-No" << endl;
+
+	bool input_choice;
+	cin >> input_choice;
+
+	if (input_choice == true)
+	{
+		//打开模式 ios::trunc 如果存在删除文件并重新创建
+		ofstream output_workerInfo(Filename, ios::trunc);
+		output_workerInfo.close();
+
+		if (this->m_workerArray != NULL)
+		{
+            for (int i = 0; i < this->m_workerNum; i++)
+			{
+				if (this->m_workerArray[i] != NULL)
+				{
+					delete this->m_workerArray[i];
+					this->m_workerArray[i] = NULL;
+				}
+			}
+			this->m_workerNum= 0;
+			delete[] this->m_workerArray;
+			this->m_workerArray = NULL;
+			this->m_FileisEmpty = true;
+		}
+		cout << "清空成功！" << endl;
+	}
+}
+
+
+
+
+
+// -----------------------------------------------------------------------
+
+
+
+
+
+
+int workerManager::getInfo_workerNum()
+{
+	ifstream input_workerInfo;
+	input_workerInfo.open(Filename, ios::in);
+	char buffer[1024];
+	int num = 0;
+	while ( input_workerInfo.getline(buffer, sizeof(buffer)) )
+	{
+		num++;
+	}
+	input_workerInfo.close();
+	return num;
+}
+
+
+void workerManager::initial_workerArray()
+{
+	ifstream input_workerInfo;
+	input_workerInfo.open(Filename, ios::in);
+	int temp_ID;
+	string temp_Name;
+	string temp_DeptName;
+	string temp_PosName;
+
+	int index = 0;
+	while (input_workerInfo >> temp_ID && input_workerInfo >> temp_Name && 
+		   input_workerInfo >> temp_DeptName && input_workerInfo >> temp_PosName)
+	{
+		int temp_DeptID = DeptNametoID(temp_DeptName);
+		Worker * temp_worker = NULL;
+		if (temp_PosName == "职员")
+		{
+			temp_worker = new Employee(temp_ID, temp_Name, temp_DeptID);
+		}
+		else if (temp_PosName == "经理") 
+		{
+			temp_worker = new Manager(temp_ID, temp_Name, temp_DeptID);
+		}
+		else if (temp_PosName == "总裁") 
+		{
+			temp_worker = new Boss(temp_ID, temp_Name, temp_DeptID);
+		}
+		this->m_workerArray[index] = temp_worker;
+		index++;
+	}
+}
+
+
+int workerManager::DeptNametoID(string temp_DeptName)
+{
+	int temp_DeptID;
+	if (temp_DeptName == "技术部") {temp_DeptID = 101;}
+	else if (temp_DeptName == "销售部") {temp_DeptID = 102;}
+	else if (temp_DeptName == "法务部") {temp_DeptID = 103;}
+	else if (temp_DeptName == "财务部") {temp_DeptID = 104;}
+	else if (temp_DeptName == "人力部") {temp_DeptID = 105;}
+	return temp_DeptID;
+}
+
+
+int workerManager::isexist_ID(int input_ID)
+{
+	int index = -1;
+	for (int i = 0; i < this->m_workerNum; i++)
+	{
+		if (this->m_workerArray[i]->m_ID == input_ID)
+		{
+			index = i;
+			break;
+		}
+	}
+	return index;
 }

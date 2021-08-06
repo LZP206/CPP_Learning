@@ -1,10 +1,7 @@
 #include <iostream>
 using namespace std;
 #include "workerManager.h"
-#include "Worker.h"
-#include "Employee.h"
-#include "Manager.h"
-#include "Boss.h"
+
 
 
 // ------------------------多态测试------------------------
@@ -59,8 +56,10 @@ int main()
             managerFramework.find_WorkerInfo();
             break;
         case 6: // 按照编号排序
+            managerFramework.sort_WorkerInfo();
             break;
         case 7: // 清空所有文档
+            managerFramework.clearInfo();
             break;
         default:
             break;
