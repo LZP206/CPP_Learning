@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-//ç±»æ¨¡æ¿
+//ÀàÄ£°å
 template<class NameType, class AgeType = int> 
 class Person
 {
@@ -25,14 +25,14 @@ public:
 
 
 
-//1ã€æŒ‡å®šä¼ å…¥çš„ç±»å‹  -----å¸¸ç”¨æ–¹æ³•
+//1¡¢Ö¸¶¨´«ÈëµÄÀàĞÍ  -----³£ÓÃ·½·¨
 void printPerson1(Person<string, int> &p) 
 {
 	p.showPerson();
 }
 void test01()
 {
-	Person <string, int >p("å­™æ‚Ÿç©º", 100);
+	Person <string, int >p("ËïÎò¿Õ", 100);
 	printPerson1(p);
 }
 
@@ -40,17 +40,17 @@ void test01()
 
 
 
-//2ã€å‚æ•°æ¨¡æ¿åŒ–
+//2¡¢²ÎÊıÄ£°å»¯
 template <class T1, class T2>
 void printPerson2(Person<T1, T2>&p)
 {
 	p.showPerson();
-	cout << "T1çš„ç±»å‹ä¸ºï¼š " << typeid(T1).name() << endl;
-	cout << "T2çš„ç±»å‹ä¸ºï¼š " << typeid(T2).name() << endl;
+	cout << "T1µÄÀàĞÍÎª£º " << typeid(T1).name() << endl;
+	cout << "T2µÄÀàĞÍÎª£º " << typeid(T2).name() << endl;
 }
 void test02()
 {
-	Person <string, int >p("çŒªå…«æˆ’", 90);
+	Person <string, int >p("Öí°Ë½ä", 90);
 	printPerson2(p);
 }
 
@@ -59,17 +59,17 @@ void test02()
 
 
 
-//3ã€æ•´ä¸ªç±»æ¨¡æ¿åŒ–
+//3¡¢Õû¸öÀàÄ£°å»¯
 template<class T>
 void printPerson3(T & p)
 {
-	cout << "Tçš„ç±»å‹ä¸ºï¼š " << typeid(T).name() << endl;
+	cout << "TµÄÀàĞÍÎª£º " << typeid(T).name() << endl;
 	p.showPerson();
 
 }
 void test03()
 {
-	Person <string, int >p("å”åƒ§", 30);
+	Person <string, int >p("ÌÆÉ®", 30);
 	printPerson3(p);
 }
 
@@ -79,9 +79,10 @@ void test03()
 
 
 int main() {
-    test01();
-	test02();
+    // test01();
+	// test02();
     test03();
 
+	system("pause");
 	return 0;
 }
