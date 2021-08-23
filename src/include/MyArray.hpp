@@ -2,14 +2,14 @@
 #include <iostream>
 using namespace std;
 
-// æ•°ç»„ç±»æ¨¡æ¿è¦æ±‚
-// * å¯ä»¥å¯¹å†…ç½®æ•°æ®ç±»åž‹ä»¥åŠè‡ªå®šä¹‰æ•°æ®ç±»åž‹çš„æ•°æ®è¿›è¡Œå­˜å‚¨
-// * å°†æ•°ç»„ä¸­çš„æ•°æ®å­˜å‚¨åˆ°å †åŒº
-// * æž„é€ å‡½æ•°ä¸­å¯ä»¥ä¼ å…¥æ•°ç»„çš„å®¹é‡
-// * æä¾›å¯¹åº”çš„æ‹·è´æž„é€ å‡½æ•°ä»¥åŠoperator=é˜²æ­¢æµ…æ‹·è´é—®é¢˜
-// * æä¾›å°¾æ’æ³•å’Œå°¾åˆ æ³•å¯¹æ•°ç»„ä¸­çš„æ•°æ®è¿›è¡Œå¢žåŠ å’Œåˆ é™¤
-// * å¯ä»¥é€šè¿‡ä¸‹æ ‡çš„æ–¹å¼è®¿é—®æ•°ç»„ä¸­çš„å…ƒç´ 
-// * å¯ä»¥èŽ·å–æ•°ç»„ä¸­å½“å‰å…ƒç´ ä¸ªæ•°å’Œæ•°ç»„çš„å®¹é‡
+// Êý×éÀàÄ£°åÒªÇó
+// * ¿ÉÒÔ¶ÔÄÚÖÃÊý¾ÝÀàÐÍÒÔ¼°×Ô¶¨ÒåÊý¾ÝÀàÐÍµÄÊý¾Ý½øÐÐ´æ´¢
+// * ½«Êý×éÖÐµÄÊý¾Ý´æ´¢µ½¶ÑÇø
+// * ¹¹Ôìº¯ÊýÖÐ¿ÉÒÔ´«ÈëÊý×éµÄÈÝÁ¿
+// * Ìá¹©¶ÔÓ¦µÄ¿½±´¹¹Ôìº¯ÊýÒÔ¼°operator=·ÀÖ¹Ç³¿½±´ÎÊÌâ
+// * Ìá¹©Î²²å·¨ºÍÎ²É¾·¨¶ÔÊý×éÖÐµÄÊý¾Ý½øÐÐÔö¼ÓºÍÉ¾³ý
+// * ¿ÉÒÔÍ¨¹ýÏÂ±êµÄ·½Ê½·ÃÎÊÊý×éÖÐµÄÔªËØ
+// * ¿ÉÒÔ»ñÈ¡Êý×éÖÐµ±Ç°ÔªËØ¸öÊýºÍÊý×éµÄÈÝÁ¿
 
 
 
@@ -23,36 +23,38 @@ private:
     int m_Size;
 public:
     MyArray(int capacity);
-    MyArray<T>::MyArray(const MyArray & arr);
+    MyArray(const MyArray & arr);
     ~MyArray();
 
-    // é‡è½½ = 
+    // ÖØÔØ = 
     MyArray & operator=(const MyArray & arr)
     {
-        if (this->m_Capacity != NULL)
+        if (this->pAddress != NULL)
         {
-            delete[] this->m_Capacity;
-            this->m_Capacity = NULL;
+            delete[] this->pAddress;
+            this->pAddress = NULL;
             this->m_Size = 0;
             this->m_Capacity = 0;
         }
         this->m_Capacity = arr.m_Capacity;
         this->m_Size = arr.m_Size;
-        this->m_Capacity = new T[this->m_Size];
+        this->pAddress = new T[this->m_Size];
         for (int i = 0; i < this->m_Size; i++)
         {
             this->pAddress[i] = arr.pAddress[i];
         }
+        cout << "ÔËËã·û=ÖØÔØ" << endl;
         return *this;
     }
 
-    // é‡è½½ã€ã€‘
+    // ÖØÔØ[]
     T & operator[](int index)
     {
+        cout << "ÔËËã·û[]ÖØÔØ" << endl;
         return this->pAddress[index];
     }
 
-    // å°¾æ’æ³•
+    // Î²²å·¨
     void push_Back(const T & val)
     {
         if (this->m_Capacity == this->m_Size)
@@ -61,10 +63,10 @@ public:
         }
         this->pAddress[this->m_Size] = val;
         this->m_Size++;
-        
+        cout << "Î²²å·¨ÊµÏÖ" << endl;
     }
 
-    // å°¾åˆ æ³•
+    // Î²É¾·¨
     void pop_Back()
     {
         if (this->m_Size == 0)
@@ -72,18 +74,21 @@ public:
             return;
         }
         this->m_Size--;
+        cout << "Î²É¾·¨ÊµÏÖ" << endl;
     }
 
-    // èŽ·å–æ•°ç»„å¤§å°
+    // »ñÈ¡Êý×é´óÐ¡
     int getArrSize()
     {
         return this->m_Size;
+        cout << "»ñÈ¡Êý×é´óÐ¡ÊµÏÖ" << endl;
     }
     
-    // èŽ·å–æ•°ç»„å®¹é‡
+    // »ñÈ¡Êý×éÈÝÁ¿
     int getArrCapacity()
     {
         return this->m_Capacity;
+        cout << "»ñÈ¡Êý×éÈÝÁ¿ÊµÏÖ" << endl;
     }
 
 
@@ -91,16 +96,17 @@ public:
 
 
 
-// æœ‰å‚æž„é€ 
+// ÓÐ²Î¹¹Ôì
 template<typename T>
 MyArray<T>::MyArray(int capacity)
 {
     this->m_Capacity = capacity;
     this->m_Size = 0;
     this->pAddress = new T[this->m_Capacity];
+    cout << "ÓÐ²Î¹¹Ôìµ÷ÓÃ" << endl;
 }
 
-// æ‹·è´æž„é€ 
+// ¿½±´¹¹Ôì
 template<typename T>
 MyArray<T>::MyArray(const MyArray & arr)
 {
@@ -110,23 +116,24 @@ MyArray<T>::MyArray(const MyArray & arr)
     for (int i = 0; i < this->m_Size; i++)
     {
         this->pAddress[i] = arr.pAddress[i];
-        // =ï¼š  æ™®é€šç±»åž‹æ•°æ®å¯ä»¥ç›´æŽ¥=èµ‹å€¼   æŒ‡é’ˆç±»åž‹éœ€è¦æ·±æ‹·è´
-        // å¦‚æžœTä¸ºå¯¹è±¡ï¼Œè€Œä¸”è¿˜åŒ…å«æŒ‡é’ˆï¼Œå¿…é¡»éœ€è¦é‡è½½ = æ“ä½œç¬¦ï¼Œå› ä¸ºè¿™ä¸ªç­‰å·ä¸æ˜¯ æž„é€  è€Œæ˜¯èµ‹å€¼ï¼Œ
+        // =£º  ÆÕÍ¨ÀàÐÍÊý¾Ý¿ÉÒÔÖ±½Ó=¸³Öµ   Ö¸ÕëÀàÐÍÐèÒªÉî¿½±´
+        // Èç¹ûTÎª¶ÔÏó£¬¶øÇÒ»¹°üº¬Ö¸Õë£¬±ØÐëÐèÒªÖØÔØ = ²Ù×÷·û£¬ÒòÎªÕâ¸öµÈºÅ²»ÊÇ ¹¹Ôì ¶øÊÇ¸³Öµ£¬
     }
-    
+    cout << "¿½±´¹¹Ôìµ÷ÓÃ" << endl;
 }
 
 
-// æžæž„å‡½æ•°
+// Îö¹¹º¯Êý
 template<typename T>
 MyArray<T>::~MyArray()
 {
-    if (this->m_Capacity != NULL)
+    if (this->pAddress != NULL)
     {
-        delete[] this->m_Capacity;
-        this->m_Capacity = NULL;
+        delete[] this->pAddress;
+        this->pAddress = NULL;
         this->m_Size = 0;
         this->m_Capacity = 0;
+        cout << "Îö¹¹º¯Êýµ÷ÓÃ" << endl;
     }
     
 }
