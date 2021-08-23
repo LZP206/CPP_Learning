@@ -3,14 +3,11 @@ using namespace std;
 #include "MyArray.hpp"
 
 
-
-
-
 // --------------------------------------------------------------------------------------------------
 //测试内置数据类型
 
 
-void printIntArray(MyArray<int> & input_arr)
+void printIntArray(MyArray<int> & input_arr)   // 不能加const！！  原因：传入为const常对象，常对象只能调用常函数
 {
     for (int i = 0; i < input_arr.getArrSize(); i++)
     {
@@ -36,7 +33,7 @@ void test01()
     cout << "Capacity: " << arr2.getArrCapacity() << "  Size: "  << arr2.getArrSize() << endl;
 
     cout << "----------------------------" << endl;
-    
+
     MyArray<int> arr3(1);
     cout << "Capacity: " << arr3.getArrCapacity() << "  Size: "  << arr3.getArrSize() << endl;
     arr3 = arr1;
