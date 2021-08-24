@@ -66,6 +66,16 @@ void test02() {
 }
 
 
+void test03()
+{
+    for (int i = 0; i != 5; i++)
+    {
+        cout << i << " ";
+    }
+    cout << endl;
+}
+
+
 int main() {
 
 	test01();
@@ -74,6 +84,11 @@ int main() {
     cout << "--------------------------" << endl;
 
 	test02();
+
+    cout << "--------------------------" << endl;
+    cout << "--------------------------" << endl;
+
+    test03();
 
 	system("pause");
 
