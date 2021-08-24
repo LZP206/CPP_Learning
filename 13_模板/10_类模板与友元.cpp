@@ -10,14 +10,14 @@ template<class T1, class T2> void printPerson2(Person<T1, T2> & p);
 template<class T1, class T2>
 class Person
 {
-	// È«¾Öº¯ÊıÅäºÏÓÑÔª-------ÀàÄÚÊµÏÖ
+	// å…¨å±€å‡½æ•°é…åˆå‹å…ƒ-------ç±»å†…å®ç°
 	friend void printPerson(Person<T1, T2> & p)
 	{
-		cout << "ÀàÄÚÊµÏÖ ---- ĞÕÃû£º " << p.m_Name << " ÄêÁä£º" << p.m_Age << endl;
+		cout << "ç±»å†…å®ç° ---- å§“åï¼š " << p.m_Name << " å¹´é¾„ï¼š" << p.m_Age << endl;
 	}
 
 
-	// È«¾Öº¯ÊıÅäºÏÓÑÔª-------ÀàÍâÊµÏÖ
+	// å…¨å±€å‡½æ•°é…åˆå‹å…ƒ-------ç±»å¤–å®ç°
 	friend void printPerson2<T1, T2>(Person<T1, T2> & p);
 
 public:
@@ -37,7 +37,7 @@ private:
 template<class T1, class T2>
 void printPerson2(Person<T1, T2> & p)
 {
-	cout << "ÀàÍâÊµÏÖ ---- ĞÕÃû£º " << p.m_Name << " ÄêÁä£º" << p.m_Age << endl;
+	cout << "ç±»å¤–å®ç° ---- å§“åï¼š " << p.m_Name << " å¹´é¾„ï¼š" << p.m_Age << endl;
 }
 
 
@@ -55,6 +55,5 @@ int main()
 {
     test01();
 
-    system("pause");
     return 0;
 }

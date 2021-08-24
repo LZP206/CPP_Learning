@@ -4,10 +4,10 @@ using namespace std;
 
 
 // --------------------------------------------------------------------------------------------------
-//²âÊÔÄÚÖÃÊı¾İÀàĞÍ
+//æµ‹è¯•å†…ç½®æ•°æ®ç±»å‹
 
 
-void printIntArray(MyArray<int> & input_arr)   // ²»ÄÜ¼Óconst£¡£¡  Ô­Òò£º´«ÈëÎªconst³£¶ÔÏó£¬³£¶ÔÏóÖ»ÄÜµ÷ÓÃ³£º¯Êı
+void printIntArray(MyArray<int> & input_arr)   // ä¸èƒ½åŠ constï¼ï¼  åŸå› ï¼šä¼ å…¥ä¸ºconstå¸¸å¯¹è±¡ï¼Œå¸¸å¯¹è±¡åªèƒ½è°ƒç”¨å¸¸å‡½æ•°
 {
     for (int i = 0; i < input_arr.getArrSize(); i++)
     {
@@ -43,7 +43,7 @@ void test01()
 
 
 // --------------------------------------------------------------------------------------------------
-//²âÊÔ×Ô¶¨ÒåÊı¾İÀàĞÍ
+//æµ‹è¯•è‡ªå®šä¹‰æ•°æ®ç±»å‹
 
 
 class Person {
@@ -72,9 +72,9 @@ void printPersonArray(MyArray<Person> & input_arr)
 void test02()
 {
     MyArray<Person> arr1(10);
-    Person p1("ËïÎò¿Õ", 30);
-	Person p2("º«ĞÅ", 20);
-	Person p3("æ§¼º", 18);
+    Person p1("å­™æ‚Ÿç©º", 30);
+	Person p2("éŸ©ä¿¡", 20);
+	Person p3("å¦²å·±", 18);
     arr1.push_Back(p1);
     arr1.push_Back(p2);
     arr1.push_Back(p3);
@@ -95,6 +95,5 @@ int main()
 {
     test01();
 
-    system("pause");
     return 0;
 }
