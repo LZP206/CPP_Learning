@@ -2,14 +2,14 @@
 #include <iostream>
 using namespace std;
 
-// æ•°ç»„ç±»æ¨¡æ¿è¦æ±‚
-// * å¯ä»¥å¯¹å†…ç½®æ•°æ®ç±»å‹ä»¥åŠè‡ªå®šä¹‰æ•°æ®ç±»å‹çš„æ•°æ®è¿›è¡Œå­˜å‚¨
-// * å°†æ•°ç»„ä¸­çš„æ•°æ®å­˜å‚¨åˆ°å †åŒº
-// * æ„é€ å‡½æ•°ä¸­å¯ä»¥ä¼ å…¥æ•°ç»„çš„å®¹é‡
-// * æä¾›å¯¹åº”çš„æ‹·è´æ„é€ å‡½æ•°ä»¥åŠoperator=é˜²æ­¢æµ…æ‹·è´é—®é¢˜
-// * æä¾›å°¾æ’æ³•å’Œå°¾åˆ æ³•å¯¹æ•°ç»„ä¸­çš„æ•°æ®è¿›è¡Œå¢åŠ å’Œåˆ é™¤
-// * å¯ä»¥é€šè¿‡ä¸‹æ ‡çš„æ–¹å¼è®¿é—®æ•°ç»„ä¸­çš„å…ƒç´ 
-// * å¯ä»¥è·å–æ•°ç»„ä¸­å½“å‰å…ƒç´ ä¸ªæ•°å’Œæ•°ç»„çš„å®¹é‡
+// Êı×éÀàÄ£°åÒªÇó
+// * ¿ÉÒÔ¶ÔÄÚÖÃÊı¾İÀàĞÍÒÔ¼°×Ô¶¨ÒåÊı¾İÀàĞÍµÄÊı¾İ½øĞĞ´æ´¢
+// * ½«Êı×éÖĞµÄÊı¾İ´æ´¢µ½¶ÑÇø
+// * ¹¹Ôìº¯ÊıÖĞ¿ÉÒÔ´«ÈëÊı×éµÄÈİÁ¿
+// * Ìá¹©¶ÔÓ¦µÄ¿½±´¹¹Ôìº¯ÊıÒÔ¼°operator=·ÀÖ¹Ç³¿½±´ÎÊÌâ
+// * Ìá¹©Î²²å·¨ºÍÎ²É¾·¨¶ÔÊı×éÖĞµÄÊı¾İ½øĞĞÔö¼ÓºÍÉ¾³ı
+// * ¿ÉÒÔÍ¨¹ıÏÂ±êµÄ·½Ê½·ÃÎÊÊı×éÖĞµÄÔªËØ
+// * ¿ÉÒÔ»ñÈ¡Êı×éÖĞµ±Ç°ÔªËØ¸öÊıºÍÊı×éµÄÈİÁ¿
 
 
 
@@ -26,7 +26,7 @@ public:
     MyArray(const MyArray & arr);
     ~MyArray();
 
-    // é‡è½½ = 
+    // ÖØÔØ = 
     MyArray & operator=(const MyArray & arr)
     {
         if (this->pAddress != NULL)
@@ -43,18 +43,18 @@ public:
         {
             this->pAddress[i] = arr.pAddress[i];
         }
-        cout << "è¿ç®—ç¬¦=é‡è½½" << endl;
+        cout << "ÔËËã·û=ÖØÔØ" << endl;
         return *this;
     }
 
-    // é‡è½½[]
+    // ÖØÔØ[]
     T & operator[](int index)
     {
-        cout << "è¿ç®—ç¬¦[]é‡è½½" << endl;
+        cout << "ÔËËã·û[]ÖØÔØ" << endl;
         return this->pAddress[index];
     }
 
-    // å°¾æ’æ³•
+    // Î²²å·¨
     void push_Back(const T & val)
     {
         if (this->m_Capacity == this->m_Size)
@@ -63,10 +63,10 @@ public:
         }
         this->pAddress[this->m_Size] = val;
         this->m_Size++;
-        cout << "å°¾æ’æ³•å®ç°" << endl;
+        cout << "Î²²å·¨ÊµÏÖ" << endl;
     }
 
-    // å°¾åˆ æ³•
+    // Î²É¾·¨
     void pop_Back()
     {
         if (this->m_Size == 0)
@@ -74,21 +74,21 @@ public:
             return;
         }
         this->m_Size--;
-        cout << "å°¾åˆ æ³•å®ç°" << endl;
+        cout << "Î²É¾·¨ÊµÏÖ" << endl;
     }
 
-    // è·å–æ•°ç»„å¤§å°
+    // »ñÈ¡Êı×é´óĞ¡
     int getArrSize()
     {
         return this->m_Size;
-        cout << "è·å–æ•°ç»„å¤§å°å®ç°" << endl;
+        cout << "»ñÈ¡Êı×é´óĞ¡ÊµÏÖ" << endl;
     }
     
-    // è·å–æ•°ç»„å®¹é‡
+    // »ñÈ¡Êı×éÈİÁ¿
     int getArrCapacity()
     {
         return this->m_Capacity;
-        cout << "è·å–æ•°ç»„å®¹é‡å®ç°" << endl;
+        cout << "»ñÈ¡Êı×éÈİÁ¿ÊµÏÖ" << endl;
     }
 
 
@@ -96,17 +96,17 @@ public:
 
 
 
-// æœ‰å‚æ„é€ 
+// ÓĞ²Î¹¹Ôì
 template<typename T>
 MyArray<T>::MyArray(int capacity)
 {
     this->m_Capacity = capacity;
     this->m_Size = 0;
     this->pAddress = new T[this->m_Capacity];
-    cout << "æœ‰å‚æ„é€ è°ƒç”¨" << endl;
+    cout << "ÓĞ²Î¹¹Ôìµ÷ÓÃ" << endl;
 }
 
-// æ‹·è´æ„é€ 
+// ¿½±´¹¹Ôì
 template<typename T>
 MyArray<T>::MyArray(const MyArray & arr)
 {
@@ -116,14 +116,14 @@ MyArray<T>::MyArray(const MyArray & arr)
     for (int i = 0; i < this->m_Size; i++)
     {
         this->pAddress[i] = arr.pAddress[i];
-        // =ï¼š  æ™®é€šç±»å‹æ•°æ®å¯ä»¥ç›´æ¥=èµ‹å€¼   æŒ‡é’ˆç±»å‹éœ€è¦æ·±æ‹·è´
-        // å¦‚æœTä¸ºå¯¹è±¡ï¼Œè€Œä¸”è¿˜åŒ…å«æŒ‡é’ˆï¼Œå¿…é¡»éœ€è¦é‡è½½ = æ“ä½œç¬¦ï¼Œå› ä¸ºè¿™ä¸ªç­‰å·ä¸æ˜¯ æ„é€  è€Œæ˜¯èµ‹å€¼ï¼Œ
+        // =£º  ÆÕÍ¨ÀàĞÍÊı¾İ¿ÉÒÔÖ±½Ó=¸³Öµ   Ö¸ÕëÀàĞÍĞèÒªÉî¿½±´
+        // Èç¹ûTÎª¶ÔÏó£¬¶øÇÒ»¹°üº¬Ö¸Õë£¬±ØĞëĞèÒªÖØÔØ = ²Ù×÷·û£¬ÒòÎªÕâ¸öµÈºÅ²»ÊÇ ¹¹Ôì ¶øÊÇ¸³Öµ£¬
     }
-    cout << "æ‹·è´æ„é€ è°ƒç”¨" << endl;
+    cout << "¿½±´¹¹Ôìµ÷ÓÃ" << endl;
 }
 
 
-// ææ„å‡½æ•°
+// Îö¹¹º¯Êı
 template<typename T>
 MyArray<T>::~MyArray()
 {
@@ -133,7 +133,7 @@ MyArray<T>::~MyArray()
         this->pAddress = NULL;
         this->m_Size = 0;
         this->m_Capacity = 0;
-        cout << "ææ„å‡½æ•°è°ƒç”¨" << endl;
+        cout << "Îö¹¹º¯Êıµ÷ÓÃ" << endl;
     }
     
 }
