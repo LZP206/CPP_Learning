@@ -261,7 +261,7 @@ void test08()
     string subStr = str.substr(1, 3);
     cout << "subStr = " << subStr << endl;
 
-    string email_account = "lizeping@tju.edu.com";
+    string email_account = "lizeping@tju.edu.cn";
     int pos_end = email_account.find('@');
     string email_username = email_account.substr(0, pos_end);
     cout << "username: " << email_username << endl;
