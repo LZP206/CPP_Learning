@@ -4,10 +4,19 @@ using namespace std;
 #include <deque>
 #include <algorithm>
 
-template<typename T>
-void printDeque(const deque<T> & d)
+
+void printDeque(const deque<int> & d)
 {
     for(deque<int>::const_iterator it = d.begin(); it != d.end(); it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+}
+
+void printDeque(const deque<char> & d)
+{
+    for(deque<char>::const_iterator it = d.begin(); it != d.end(); it++)
     {
         cout << *it << " ";
     }
@@ -204,6 +213,80 @@ void test04()
 
 
 
+// ----------------------5.deque数据存取----------------------
+
+// 函数原型：
+
+// at(int idx);     //返回索引idx所指的数据
+// operator[];      //返回索引idx所指的数据
+// front();         //返回容器中第一个数据元素
+// back();          //返回容器中最后一个数据元素
+
+void test05()
+{
+    deque<int> d;
+    d.push_back(10);
+    d.push_back(20);
+    d.push_front(100);
+    d.push_front(200);
+
+    for (int i = 0; i < d.size(); i++) 
+    {
+        cout << d[i] << " ";
+    }
+    cout << endl;
+
+
+    for (int i = 0; i < d.size(); i++) 
+    {
+        cout << d.at(i) << " ";
+    }
+    cout << endl;
+
+    cout << "第一个数据为" << d.front() << endl;
+    cout << "最后一个数据为" << d.back() << endl;
+}
+
+
+
+
+
+// ----------------------6.deque数据排序----------------------
+
+// 函数原型：
+
+// sort(iterator beg, iterator end) //对beg和end区间内元素进行排序
+
+void test06()
+{
+    deque<char> d;
+    d.push_back('a');
+    d.push_back('b');
+    d.push_front('c');
+    d.push_front('d');
+
+    for (int i = 0; i < d.size(); i++)
+    {
+        cout << d.at(i) << " ";
+    }
+    cout << endl;
+
+    sort(d.begin(), d.end());
+
+    for (int i = 0; i < d.size(); i++)
+    {
+        cout << d.at(i) << " ";
+    }
+    cout << endl;
+
+
+
+    printDeque(d);
+
+    // sort(d.begin(), d.end());
+    // printDeque(d);
+
+}
 
 
 
@@ -211,6 +294,6 @@ void test04()
 // ----------------------main函数----------------------
 int main()
 {
-    test04();
+    test06();
     return 0;
 }
