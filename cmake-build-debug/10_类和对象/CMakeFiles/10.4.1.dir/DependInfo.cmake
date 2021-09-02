@@ -5,14 +5,19 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/lizeping/CPP_Learning/10_类和对象/4.1_全局函数做友元.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.4.1.dir/4.1_全局函数做友元.cpp.o"
+  "/Users/lizeping/CPP_Learning/src/library/Boss.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.4.1.dir/__/src/library/Boss.cpp.o"
   "/Users/lizeping/CPP_Learning/src/library/CircleType.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.4.1.dir/__/src/library/CircleType.cpp.o"
+  "/Users/lizeping/CPP_Learning/src/library/Employee.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.4.1.dir/__/src/library/Employee.cpp.o"
+  "/Users/lizeping/CPP_Learning/src/library/Manager.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.4.1.dir/__/src/library/Manager.cpp.o"
   "/Users/lizeping/CPP_Learning/src/library/PointType.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.4.1.dir/__/src/library/PointType.cpp.o"
+  "/Users/lizeping/CPP_Learning/src/library/Worker.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.4.1.dir/__/src/library/Worker.cpp.o"
   "/Users/lizeping/CPP_Learning/src/library/bubbleSort.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.4.1.dir/__/src/library/bubbleSort.cpp.o"
   "/Users/lizeping/CPP_Learning/src/library/ifInCircle.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.4.1.dir/__/src/library/ifInCircle.cpp.o"
   "/Users/lizeping/CPP_Learning/src/library/printArray.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.4.1.dir/__/src/library/printArray.cpp.o"
   "/Users/lizeping/CPP_Learning/src/library/swap.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.4.1.dir/__/src/library/swap.cpp.o"
   "/Users/lizeping/CPP_Learning/src/library/swap1.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.4.1.dir/__/src/library/swap1.cpp.o"
   "/Users/lizeping/CPP_Learning/src/library/swap2.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.4.1.dir/__/src/library/swap2.cpp.o"
+  "/Users/lizeping/CPP_Learning/src/library/workerManager.cpp" "/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/CMakeFiles/10.4.1.dir/__/src/library/workerManager.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

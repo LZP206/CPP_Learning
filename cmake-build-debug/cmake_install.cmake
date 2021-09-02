@@ -87,6 +87,26 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/lizeping/CPP_Learning/cmake-build-debug/10_类和对象/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/lizeping/CPP_Learning/cmake-build-debug/11_文件操作/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/lizeping/CPP_Learning/cmake-build-debug/12_职工管理系统/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/lizeping/CPP_Learning/cmake-build-debug/13_模板/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/lizeping/CPP_Learning/cmake-build-debug/14_STL/cmake_install.cmake")
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()

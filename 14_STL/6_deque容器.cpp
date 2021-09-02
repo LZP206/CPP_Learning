@@ -4,24 +4,24 @@ using namespace std;
 #include <deque>
 #include <algorithm>
 
-
-void printDeque(const deque<int> & d)
+template<typename T>
+void printDeque(const deque<T> & d)
 {
-    for(deque<int>::const_iterator it = d.begin(); it != d.end(); it++)
+    for( auto it = d.begin(); it != d.end(); it++ )
     {
         cout << *it << " ";
     }
     cout << endl;
 }
 
-void printDeque(const deque<char> & d)
-{
-    for(deque<char>::const_iterator it = d.begin(); it != d.end(); it++)
-    {
-        cout << *it << " ";
-    }
-    cout << endl;
-}
+//void printDeque(const deque<char> & d)
+//{
+//    for(auto it = d.begin(); it != d.end(); it++)
+//    {
+//        cout << *it << " ";
+//    }
+//    cout << endl;
+//}
 
 
 // ----------------------1.deque构造函数----------------------

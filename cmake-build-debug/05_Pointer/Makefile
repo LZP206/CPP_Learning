@@ -171,6 +171,33 @@ Point.cpp.s:
 	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/Point.cpp.s
 .PHONY : Point.cpp.s
 
+__/src/library/Boss.o: __/src/library/Boss.cpp.o
+
+.PHONY : __/src/library/Boss.o
+
+# target to build an object file
+__/src/library/Boss.cpp.o:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/Boss.cpp.o
+.PHONY : __/src/library/Boss.cpp.o
+
+__/src/library/Boss.i: __/src/library/Boss.cpp.i
+
+.PHONY : __/src/library/Boss.i
+
+# target to preprocess a source file
+__/src/library/Boss.cpp.i:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/Boss.cpp.i
+.PHONY : __/src/library/Boss.cpp.i
+
+__/src/library/Boss.s: __/src/library/Boss.cpp.s
+
+.PHONY : __/src/library/Boss.s
+
+# target to generate assembly for a file
+__/src/library/Boss.cpp.s:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/Boss.cpp.s
+.PHONY : __/src/library/Boss.cpp.s
+
 __/src/library/CircleType.o: __/src/library/CircleType.cpp.o
 
 .PHONY : __/src/library/CircleType.o
@@ -198,6 +225,60 @@ __/src/library/CircleType.cpp.s:
 	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/CircleType.cpp.s
 .PHONY : __/src/library/CircleType.cpp.s
 
+__/src/library/Employee.o: __/src/library/Employee.cpp.o
+
+.PHONY : __/src/library/Employee.o
+
+# target to build an object file
+__/src/library/Employee.cpp.o:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/Employee.cpp.o
+.PHONY : __/src/library/Employee.cpp.o
+
+__/src/library/Employee.i: __/src/library/Employee.cpp.i
+
+.PHONY : __/src/library/Employee.i
+
+# target to preprocess a source file
+__/src/library/Employee.cpp.i:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/Employee.cpp.i
+.PHONY : __/src/library/Employee.cpp.i
+
+__/src/library/Employee.s: __/src/library/Employee.cpp.s
+
+.PHONY : __/src/library/Employee.s
+
+# target to generate assembly for a file
+__/src/library/Employee.cpp.s:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/Employee.cpp.s
+.PHONY : __/src/library/Employee.cpp.s
+
+__/src/library/Manager.o: __/src/library/Manager.cpp.o
+
+.PHONY : __/src/library/Manager.o
+
+# target to build an object file
+__/src/library/Manager.cpp.o:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/Manager.cpp.o
+.PHONY : __/src/library/Manager.cpp.o
+
+__/src/library/Manager.i: __/src/library/Manager.cpp.i
+
+.PHONY : __/src/library/Manager.i
+
+# target to preprocess a source file
+__/src/library/Manager.cpp.i:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/Manager.cpp.i
+.PHONY : __/src/library/Manager.cpp.i
+
+__/src/library/Manager.s: __/src/library/Manager.cpp.s
+
+.PHONY : __/src/library/Manager.s
+
+# target to generate assembly for a file
+__/src/library/Manager.cpp.s:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/Manager.cpp.s
+.PHONY : __/src/library/Manager.cpp.s
+
 __/src/library/PointType.o: __/src/library/PointType.cpp.o
 
 .PHONY : __/src/library/PointType.o
@@ -224,6 +305,33 @@ __/src/library/PointType.s: __/src/library/PointType.cpp.s
 __/src/library/PointType.cpp.s:
 	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/PointType.cpp.s
 .PHONY : __/src/library/PointType.cpp.s
+
+__/src/library/Worker.o: __/src/library/Worker.cpp.o
+
+.PHONY : __/src/library/Worker.o
+
+# target to build an object file
+__/src/library/Worker.cpp.o:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/Worker.cpp.o
+.PHONY : __/src/library/Worker.cpp.o
+
+__/src/library/Worker.i: __/src/library/Worker.cpp.i
+
+.PHONY : __/src/library/Worker.i
+
+# target to preprocess a source file
+__/src/library/Worker.cpp.i:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/Worker.cpp.i
+.PHONY : __/src/library/Worker.cpp.i
+
+__/src/library/Worker.s: __/src/library/Worker.cpp.s
+
+.PHONY : __/src/library/Worker.s
+
+# target to generate assembly for a file
+__/src/library/Worker.cpp.s:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/Worker.cpp.s
+.PHONY : __/src/library/Worker.cpp.s
 
 __/src/library/bubbleSort.o: __/src/library/bubbleSort.cpp.o
 
@@ -387,6 +495,33 @@ __/src/library/swap2.cpp.s:
 	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/swap2.cpp.s
 .PHONY : __/src/library/swap2.cpp.s
 
+__/src/library/workerManager.o: __/src/library/workerManager.cpp.o
+
+.PHONY : __/src/library/workerManager.o
+
+# target to build an object file
+__/src/library/workerManager.cpp.o:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/workerManager.cpp.o
+.PHONY : __/src/library/workerManager.cpp.o
+
+__/src/library/workerManager.i: __/src/library/workerManager.cpp.i
+
+.PHONY : __/src/library/workerManager.i
+
+# target to preprocess a source file
+__/src/library/workerManager.cpp.i:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/workerManager.cpp.i
+.PHONY : __/src/library/workerManager.cpp.i
+
+__/src/library/workerManager.s: __/src/library/workerManager.cpp.s
+
+.PHONY : __/src/library/workerManager.s
+
+# target to generate assembly for a file
+__/src/library/workerManager.cpp.s:
+	cd /Users/lizeping/CPP_Learning/cmake-build-debug && $(MAKE) $(MAKESILENT) -f 05_Pointer/CMakeFiles/05.dir/build.make 05_Pointer/CMakeFiles/05.dir/__/src/library/workerManager.cpp.s
+.PHONY : __/src/library/workerManager.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -399,12 +534,24 @@ help:
 	@echo "... Point.o"
 	@echo "... Point.i"
 	@echo "... Point.s"
+	@echo "... __/src/library/Boss.o"
+	@echo "... __/src/library/Boss.i"
+	@echo "... __/src/library/Boss.s"
 	@echo "... __/src/library/CircleType.o"
 	@echo "... __/src/library/CircleType.i"
 	@echo "... __/src/library/CircleType.s"
+	@echo "... __/src/library/Employee.o"
+	@echo "... __/src/library/Employee.i"
+	@echo "... __/src/library/Employee.s"
+	@echo "... __/src/library/Manager.o"
+	@echo "... __/src/library/Manager.i"
+	@echo "... __/src/library/Manager.s"
 	@echo "... __/src/library/PointType.o"
 	@echo "... __/src/library/PointType.i"
 	@echo "... __/src/library/PointType.s"
+	@echo "... __/src/library/Worker.o"
+	@echo "... __/src/library/Worker.i"
+	@echo "... __/src/library/Worker.s"
 	@echo "... __/src/library/bubbleSort.o"
 	@echo "... __/src/library/bubbleSort.i"
 	@echo "... __/src/library/bubbleSort.s"
@@ -423,6 +570,9 @@ help:
 	@echo "... __/src/library/swap2.o"
 	@echo "... __/src/library/swap2.i"
 	@echo "... __/src/library/swap2.s"
+	@echo "... __/src/library/workerManager.o"
+	@echo "... __/src/library/workerManager.i"
+	@echo "... __/src/library/workerManager.s"
 .PHONY : help
 
 
