@@ -22,16 +22,18 @@ class Person
     public:
     Person(string name, int score_ave)
     {
-        this->m_name = name;
-        this->m_score_ave = score_ave;
+        this->m_Name = name;
+        this->m_Score_ave = score_ave;
     }
 
-    private:
-    string m_name;
-    int m_score_ave;
+    public:
+    string m_Name;
+    int m_Score_ave;
 };
 
 
+
+// --------------------- 创建选手 ----------------------
 void createPerson(vector<Person> & input_array)
 {
     string nameseed = "ABCDE";
@@ -45,17 +47,76 @@ void createPerson(vector<Person> & input_array)
 
         input_array.push_back(person_temp);
     }
+    // cout << "--------------" << endl;
+    // cout << input_array.size() <<endl;        // 5
+    // cout << input_array.capacity() << endl;   // 8
+}
+
+
+
+// --------------------- 给选手打分 ----------------------
+void setScore(vector<Person> & input_array)
+{
+    for (vector<Person>::iterator it = input_array.begin(); it != input_array.end(); it++)
+    {
+        deque<int> _set_score_array;
+        for (int i = 0; i < 10; i++)
+        {
+            int _temp_score = rand() % 41 + 60;
+            _set_score_array.push_back(_temp_score);
+        }
+
+        sort(_set_score_array.begin(),_set_score_array.end());
+        _set_score_array.pop_front();
+        _set_score_array.pop_back();
+
+        int sum_score = 0;
+        for (deque<int>::iterator dit = _set_score_array.begin(); dit != _set_score_array.end(); dit++)
+		{
+			sum_score += *dit; 
+		}
+
+		int avg_score = sum_score / _set_score_array.size();
+		it->m_Score_ave = avg_score;
+    }
+}
+
+
+
+// --------------------- 显示最后得分 ----------------------
+void showScore(vector<Person>& input_array)
+{
+	for (vector<Person>::iterator it = input_array.begin(); it != input_array.end(); it++)
+	{
+		cout << "姓名：" << it->m_Name << "\t平均分：" << it->m_Score_ave << endl;
+	}
 }
 
 
 
 
 
-
+// --------------------- main() ----------------------
 int main()
 {
     vector<Person> person_array;
     createPerson(person_array);
+    // 测试
+	// for (vector<Person>::iterator it = person_array.begin(); it != person_array.end(); it++)
+	// {
+	// 	cout << "姓名： " << it->m_Name << " 分数： " << it->m_Score_ave << endl;
+	// }
+
+	//随机数种子
+	srand((unsigned int)time(NULL));
+    setScore(person_array);
+
+    showScore(person_array);
+
+
+
+
+
 
     return 0;
 }
