@@ -113,10 +113,5 @@ int main()
 
     showScore(person_array);
 
-
-
-
-
-
     return 0;
 }
