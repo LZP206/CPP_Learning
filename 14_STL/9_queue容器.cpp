@@ -57,8 +57,8 @@ void test01()
 
     while (!q.empty())
     {
-        cout << "队头：" << "姓名-" << q.front().m_Name << "年龄-" << q.front().m_Age << endl;
-        cout << "队尾：" << "姓名-" << q.back().m_Name << "年龄-" << q.back().m_Age << endl;
+        cout << "队头：" << "姓名-" << q.front().m_Name << "\t年龄-" << q.front().m_Age << endl;
+        cout << "队尾：" << "姓名-" << q.back().m_Name << "\t年龄-" << q.back().m_Age << endl;
 
         q.pop();
         cout << endl;
