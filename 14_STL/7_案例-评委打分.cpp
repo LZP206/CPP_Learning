@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+#include <ctime>
 #include <vector>
 #include <deque>
 #include <algorithm>
@@ -107,7 +108,6 @@ int main()
 	// 	cout << "姓名： " << it->m_Name << " 分数： " << it->m_Score_ave << endl;
 	// }
 
-	//随机数种子
 	srand((unsigned int)time(NULL));
     setScore(person_array);
 

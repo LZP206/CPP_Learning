@@ -16,13 +16,13 @@ void printList(const list<T>& _list_input)
 
 
 
-// --------------------------- 1.listæ„é€ å‡½æ•° ---------------------------
-// å‡½æ•°åŸå‹ï¼š
+// --------------------------- 1.list¹¹Ôìº¯Êı ---------------------------
+// º¯ÊıÔ­ĞÍ£º
 
-// list<T> lst;                       //listé‡‡ç”¨é‡‡ç”¨æ¨¡æ¿ç±»å®ç°,å¯¹è±¡çš„é»˜è®¤æ„é€ å½¢å¼ï¼š
-// list(beg,end);                     //æ„é€ å‡½æ•°å°†[beg, end)åŒºé—´ä¸­çš„å…ƒç´ æ‹·è´ç»™æœ¬èº«ã€‚
-// list(n,elem);                      //æ„é€ å‡½æ•°å°†nä¸ªelemæ‹·è´ç»™æœ¬èº«ã€‚
-// list(const list &lst);             //æ‹·è´æ„é€ å‡½æ•°ã€‚
+// list<T> lst;                       //list²ÉÓÃ²ÉÓÃÄ£°åÀàÊµÏÖ,¶ÔÏóµÄÄ¬ÈÏ¹¹ÔìĞÎÊ½£º
+// list(beg,end);                     //¹¹Ôìº¯Êı½«[beg, end)Çø¼äÖĞµÄÔªËØ¿½±´¸ø±¾Éí¡£
+// list(n,elem);                      //¹¹Ôìº¯Êı½«n¸öelem¿½±´¸ø±¾Éí¡£
+// list(const list &lst);             //¿½±´¹¹Ôìº¯Êı¡£
 
 void test01()
 {
@@ -44,13 +44,13 @@ void test01()
 }
 
 
-// --------------------------- 2.listèµ‹å€¼å’Œäº¤æ¢ ---------------------------
-// å‡½æ•°åŸå‹ï¼š
+// --------------------------- 2.list¸³ÖµºÍ½»»» ---------------------------
+// º¯ÊıÔ­ĞÍ£º
 
-// assign(beg, end);                   //å°†[beg, end)åŒºé—´ä¸­çš„æ•°æ®æ‹·è´èµ‹å€¼ç»™æœ¬èº«ã€‚
-// assign(n, elem);                    //å°†nä¸ªelemæ‹·è´èµ‹å€¼ç»™æœ¬èº«ã€‚
-// list& operator=(const list &lst);   //é‡è½½ç­‰å·æ“ä½œç¬¦
-// swap(lst);                          //å°†lstä¸æœ¬èº«çš„å…ƒç´ äº’æ¢ã€‚
+// assign(beg, end);                   //½«[beg, end)Çø¼äÖĞµÄÊı¾İ¿½±´¸³Öµ¸ø±¾Éí¡£
+// assign(n, elem);                    //½«n¸öelem¿½±´¸³Öµ¸ø±¾Éí¡£
+// list& operator=(const list &lst);   //ÖØÔØµÈºÅ²Ù×÷·û
+// swap(lst);                          //½«lstÓë±¾ÉíµÄÔªËØ»¥»»¡£
 void test02()
 {
     list<int>L1;
@@ -60,7 +60,7 @@ void test02()
 	L1.push_back(40);
 	printList(L1);
 
-	// èµ‹å€¼--ä¸‰ç§æ–¹å¼
+	// ¸³Öµ--ÈıÖÖ·½Ê½
 	list<int>L2;
 	L2 = L1;
 	printList(L2);
@@ -75,15 +75,260 @@ void test02()
 
     cout << "---------------------" << endl;
 
-    cout << "äº¤æ¢å‰ï¼š " << endl;
+    cout << "½»»»Ç°£º " << endl;
 	printList(L1);
 	printList(L4);
 
     L1.swap(L4);
-    cout << "äº¤æ¢åï¼š " << endl;
+    cout << "½»»»ºó£º " << endl;
 	printList(L1);
 	printList(L4);
 }
+
+
+
+
+// --------------------------- 3.list´óĞ¡²Ù×÷ ---------------------------
+// º¯ÊıÔ­ĞÍ£º
+
+// size();          		//·µ»ØÈİÆ÷ÖĞÔªËØµÄ¸öÊı
+// empty();        		//ÅĞ¶ÏÈİÆ÷ÊÇ·ñÎª¿Õ
+// resize(num);     		//ÖØĞÂÖ¸¶¨ÈİÆ÷µÄ³¤¶ÈÎªnum£¬ÈôÈİÆ÷±ä³¤£¬ÔòÒÔÄ¬ÈÏÖµ(0)Ìî³äĞÂÎ»ÖÃ¡£
+//   ?				 		 //Èç¹ûÈİÆ÷±ä¶Ì£¬ÔòÄ©Î²³¬³öÈİÆ÷³¤¶ÈµÄÔªËØ±»É¾³ı¡£
+// resize(num, elem);      //ÖØĞÂÖ¸¶¨ÈİÆ÷µÄ³¤¶ÈÎªnum£¬ÈôÈİÆ÷±ä³¤£¬ÔòÒÔelemÖµÌî³äĞÂÎ»ÖÃ¡£
+//    						//Èç¹ûÈİÆ÷±ä¶Ì£¬ÔòÄ©Î²³¬³öÈİÆ÷³¤¶ÈµÄÔªËØ±»É¾³ı¡£
+
+void test03()
+{
+	list<int>L1;
+	L1.push_back(10);
+	L1.push_back(20);
+	L1.push_back(30);
+	L1.push_back(40);
+
+	if (L1.empty())
+	{
+		cout << "L1Îª¿Õ" << endl;
+	}
+	else
+	{
+		cout << "L1²»Îª¿Õ" << endl;
+		cout << "L1µÄ´óĞ¡Îª£º " << L1.size() << endl;
+	}
+
+	//ÖØĞÂÖ¸¶¨´óĞ¡
+	L1.resize(10);
+	printList(L1);
+
+	L1.resize(2);
+	printList(L1);
+
+	L1.resize(10, 30);
+	printList(L1);
+}
+
+
+
+
+// --------------------------- 4.list²åÈëºÍÉ¾³ı ---------------------------
+// º¯ÊıÔ­ĞÍ£º
+
+// push_back(elem);        //ÔÚÈİÆ÷Î²²¿¼ÓÈëÒ»¸öÔªËØ
+// pop_back();             //É¾³ıÈİÆ÷ÖĞ×îºóÒ»¸öÔªËØ
+// push_front(elem);       //ÔÚÈİÆ÷¿ªÍ·²åÈëÒ»¸öÔªËØ
+// pop_front();            //´ÓÈİÆ÷¿ªÍ·ÒÆ³ıµÚÒ»¸öÔªËØ
+// insert(pos,elem);       //ÔÚposÎ»ÖÃ²åelemÔªËØµÄ¿½±´£¬·µ»ØĞÂÊı¾İµÄÎ»ÖÃ¡£
+// insert(pos,n,elem);     //ÔÚposÎ»ÖÃ²åÈën¸öelemÊı¾İ£¬ÎŞ·µ»ØÖµ¡£
+// insert(pos,beg,end);    //ÔÚposÎ»ÖÃ²åÈë[beg,end)Çø¼äµÄÊı¾İ£¬ÎŞ·µ»ØÖµ¡£
+// clear();                //ÒÆ³ıÈİÆ÷µÄËùÓĞÊı¾İ
+// erase(beg,end);         //É¾³ı[beg,end)Çø¼äµÄÊı¾İ£¬·µ»ØÏÂÒ»¸öÊı¾İµÄÎ»ÖÃ¡£
+// erase(pos);             //É¾³ıposÎ»ÖÃµÄÊı¾İ£¬·µ»ØÏÂÒ»¸öÊı¾İµÄÎ»ÖÃ¡£
+// remove(elem);           //É¾³ıÈİÆ÷ÖĞËùÓĞÓëelemÖµÆ¥ÅäµÄÔªËØ¡£
+
+void test04()
+{
+	list<int> L;
+	//Î²²å
+	L.push_back(10);
+	L.push_back(20);
+	L.push_back(30);
+	//Í·²å
+	L.push_front(100);
+	L.push_front(200);
+	L.push_front(300);
+
+	printList(L);
+
+	//Î²É¾
+	L.pop_back();
+	printList(L);
+
+	//Í·É¾
+	L.pop_front();
+	printList(L);
+
+	//²åÈë
+	list<int>::iterator it = L.begin();
+	L.insert(++it, 1000);
+	printList(L);
+
+	//É¾³ı
+	it = L.begin();
+	L.erase(++it);
+	printList(L);
+
+	//ÒÆ³ı
+	L.push_back(10000);
+	L.push_back(10000);
+	L.push_back(10000);
+	printList(L);
+	L.remove(10000);
+	printList(L);
+    
+    //Çå¿Õ
+	L.clear();
+	printList(L);
+}
+
+
+
+
+
+
+
+
+// --------------------------- 5.listÊı¾İ´æÈ¡ ---------------------------
+// º¯ÊıÔ­ĞÍ£º
+
+// front();       //·µ»ØµÚÒ»¸öÔªËØ¡£
+// back();        //·µ»Ø×îºóÒ»¸öÔªËØ¡£
+
+void test05()
+{
+	list<int> L1_temp;
+	L1_temp.push_back(10);
+	L1_temp.push_back(20);
+	L1_temp.push_back(30);
+	L1_temp.push_back(40);
+	L1_temp.push_back(50);
+	L1_temp.push_back(60);
+	printList(L1_temp);
+
+	list<int>::iterator it = L1_temp.begin();
+	int count = 2;
+	for (int i_temp = 1; i_temp < count; i_temp++) { it++;}
+	cout << *it << endl;
+
+	cout << L1_temp.front() << " -> " << L1_temp.back() << endl;
+}
+
+
+
+
+
+// --------------------------- 6.list·´×ªºÍÅÅĞò ---------------------------
+// º¯ÊıÔ­ĞÍ£º
+
+// reverse();     //·´×ªÁ´±í
+// sort();        //Á´±íÅÅĞò
+
+
+bool compare(int val_1, int val_2)
+{
+	return val_1 > val_2;
+}
+
+
+
+void test06()
+{
+	list<int> L1_temp;
+	L1_temp.push_back(5);
+	L1_temp.push_back(2);
+	L1_temp.push_back(3);
+	L1_temp.push_back(6);
+	L1_temp.push_back(1);
+	L1_temp.push_back(4);
+	printList(L1_temp);
+
+	L1_temp.reverse();
+	printList(L1_temp);
+
+	L1_temp.sort();
+	printList(L1_temp);
+
+	L1_temp.sort(compare);
+	printList(L1_temp);
+
+}
+
+
+
+
+
+// --------------------------- 7.listÅÅĞò°¸Àı ---------------------------
+// ÅÅĞò¹æÔò£º°´ÕÕÄêÁä½øĞĞÉıĞò£¬Èç¹ûÄêÁäÏàÍ¬°´ÕÕÉí¸ß½øĞĞ½µĞò
+
+class Person {
+public:
+	Person(string name, int age , int height) {
+		m_Name = name;
+		m_Age = age;
+		m_Height = height;
+	}
+
+public:
+	string m_Name;  
+	int m_Age;      
+	int m_Height;   
+};
+
+
+bool ComparePerson(Person& p1, Person& p2) 
+{
+	if (p1.m_Age == p2.m_Age) 
+	{
+		return p1.m_Height > p2.m_Height;
+	}
+	return  p1.m_Age < p2.m_Age;
+}
+
+
+void test07() 
+{
+	list<Person> L;
+	Person p1("Áõ±¸", 35 , 175);
+	Person p2("²Ü²Ù", 45 , 180);
+	Person p3("ËïÈ¨", 40 , 170);
+	Person p4("ÕÔÔÆ", 25 , 190);
+	Person p5("ÕÅ·É", 35 , 160);
+	Person p6("¹ØÓğ", 35 , 200);
+	L.push_back(p1);
+	L.push_back(p2);
+	L.push_back(p3);
+	L.push_back(p4);
+	L.push_back(p5);
+	L.push_back(p6);
+
+
+	for (list<Person>::iterator it = L.begin(); it != L.end(); it++) {
+		cout << "ĞÕÃû£º " << it->m_Name << " ÄêÁä£º " << it->m_Age 
+              << " Éí¸ß£º " << it->m_Height << endl;
+	}
+
+	cout << "---------------------------------" << endl;
+	L.sort(ComparePerson); //ÅÅĞò
+
+	for (list<Person>::iterator it = L.begin(); it != L.end(); it++) {
+		cout << "ĞÕÃû£º " << it->m_Name << " ÄêÁä£º " << it->m_Age 
+              << " Éí¸ß£º " << it->m_Height << endl;
+	}
+}
+
+
+
+
+
 
 
 
@@ -92,6 +337,8 @@ void test02()
 
 int main()
 {
-    test02();
+    test07();
+
+	system("pause");
     return 0;
 }
