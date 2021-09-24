@@ -362,7 +362,7 @@ void test08()
 
 int main()
 {
-    test08();
+    test06();
 
     return 0;
 }
