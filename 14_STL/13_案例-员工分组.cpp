@@ -62,7 +62,10 @@ void showWorkerByGroup(multimap<int,Worker2> & m_input)
 {
     cout << "策划部门：" << endl;
     multimap<int,Worker2>::iterator pos = m_input.find(CEHUA);
-    int count = m_input.count(CEHUA); // 统计具体人数
+    // 在multimap中，同一个键关联的元素必然相邻存放。基于这个事实，就可以将某个键对应的值一一输出
+    // 使用find和count函数。count函数求出某个键出现的次数，find函数返回一个迭代器，指向第一个拥有正在查找的键的实例。
+
+    int count = m_input.count(CEHUA); 
     int index = 0;
     for (; pos != m_input.end() && index < count; pos++ , index++)
     {
@@ -73,7 +76,7 @@ void showWorkerByGroup(multimap<int,Worker2> & m_input)
 
     cout << "美术部门： " << endl;
     pos = m_input.find(MEISHU);
-    count = m_input.count(MEISHU); // 统计具体人数
+    count = m_input.count(MEISHU); 
     index = 0;
     for (; pos != m_input.end() && index < count; pos++, index++)
     {
@@ -84,7 +87,7 @@ void showWorkerByGroup(multimap<int,Worker2> & m_input)
 
     cout << "研发部门： " << endl;
     pos = m_input.find(YANFA);
-    count = m_input.count(YANFA); // 统计具体人数
+    count = m_input.count(YANFA); 
     index = 0;
     for (; pos != m_input.end() && index < count; pos++, index++)
     {
