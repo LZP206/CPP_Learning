@@ -91,6 +91,5 @@ int main()
 {
     test03();
 
-    system("pause");
     return 0;
 }
