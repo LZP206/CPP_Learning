@@ -12,8 +12,18 @@
     - end 结束迭代器
     - _Pred 函数或者谓词（返回bool类型的仿函数）
 
-- adjacent_find    //查找相邻重复元素
-- binary_search    //二分查找法
+- adjacent_find(iterator beg, iterator end);  
+    - 查找相邻重复元素,返回相邻元素的第一个位置的迭代器
+    - beg 开始迭代器
+    - end 结束迭代器
+
+- bool binary_search(iterator beg, iterator end, value);  
+    - 查找指定的元素，查到返回true,否则false
+    - 注意: 在**无序序列中不可用**
+    - beg 开始迭代器
+    - end 结束迭代器
+- value 查找的元素
+
 - count            //统计元素个数
 - count_if         //按条件统计元素个数
 */
@@ -38,8 +48,7 @@ class Person
     }
     bool operator==(const Person & PERSON_IN)
     {
-        if (this->m_Age == PERSON_IN.m_Age && this->m_Name == PERSON_IN.m_Name)
-        {
+        if (this->m_Age == PERSON_IN.m_Age && this->m_Name == PERSON_IN.m_Name){
             return true;
         }
         return false;
@@ -69,12 +78,10 @@ void test01()
     vector<int> VEC_TEST;
     for (int i = 0; i < 10; i++){VEC_TEST.push_back(i+1);}
     vector<int>::iterator it = find(VEC_TEST.begin(),VEC_TEST.end(),5);
-    if (it == VEC_TEST.end())
-    {
+    if (it == VEC_TEST.end()){
         cout << "element not found" << endl;
     }
-    else
-    {
+    else{
         cout << "element found is " << *it << endl;
     }
 
@@ -88,12 +95,10 @@ void test01()
     VEC_PERSON.push_back(Person("ddd",40));
     Person TAGET = Person("bbb",20);
     vector<Person>::iterator it_Person = find(VEC_PERSON.begin(),VEC_PERSON.end(),TAGET);
-    if (it_Person == VEC_PERSON.end())
-    {
+    if (it_Person == VEC_PERSON.end()){
         cout << "element not found" << endl;
     }
-    else
-    {
+    else{
         cout << "element found: " << *it_Person << endl;
     }
 }
@@ -105,16 +110,14 @@ void test01()
 class is_Greater_than_Five
 {
     public:
-    bool operator()(const int & VAL_COMPARE)
-    {
+    bool operator()(const int & VAL_COMPARE){
         return VAL_COMPARE > 5;
     }
 };
 class is_Age_Greater20
 {
     public:
-    bool operator()(const Person & PER_COMPARE)
-    {
+    bool operator()(const Person & PER_COMPARE){
         return PER_COMPARE.m_Age > 20;
     }
 };
@@ -125,12 +128,10 @@ void test02()
     vector<int> VEC_INT;
     for (int i = 0; i < 10; i++){VEC_INT.push_back(i);}
     vector<int>::iterator it = find_if(VEC_INT.begin(),VEC_INT.end(),is_Greater_than_Five());
-    if (it == VEC_INT.end())
-    {
+    if (it == VEC_INT.end()){
         cout << "element not found" << endl;
     }
-    else
-    {
+    else{
         cout << "element found: " << *it << endl;
     }
 
@@ -143,14 +144,11 @@ void test02()
     VEC_PERSON.push_back(Person("ccc",30));
     VEC_PERSON.push_back(Person("ddd",40));
     vector<Person>::iterator it_Person = find_if(VEC_PERSON.begin(),VEC_PERSON.end(),is_Age_Greater20());
-    if (it_Person == VEC_PERSON.end())
-    {
+    if (it_Person == VEC_PERSON.end()){
         cout << "element not found" << endl;
     }
-    else
-    {
-        while (it_Person != VEC_PERSON.end())
-        {
+    else{
+        while (it_Person != VEC_PERSON.end()){
             cout << "element found: " << *it_Person << endl;
             it_Person++;
         }
@@ -160,8 +158,83 @@ void test02()
 
 
 
+//---------------------------------------------------------------------------
+// 3.adjacent_find 
+class is_Age_Adjacent
+{
+    public:
+    bool operator()(const Person& p1, const Person& p2)
+    {
+        return p1.m_Age == p2.m_Age;
+    }
+};
+
+void test03()
+{
+    // 内置数据类型
+	vector<int> VEC_INT;
+	VEC_INT.push_back(1);
+	VEC_INT.push_back(2);
+	VEC_INT.push_back(5);
+	VEC_INT.push_back(2);
+	VEC_INT.push_back(4);
+	VEC_INT.push_back(4);
+	VEC_INT.push_back(3);
+
+	//查找相邻重复元素
+	vector<int>::iterator it = adjacent_find(VEC_INT.begin(), VEC_INT.end());
+	if (it == VEC_INT.end()) {
+		cout << "element not found" << endl;
+	}
+	else {
+		cout << "element found: " << *it << endl;
+	}
+
+    cout << "----------------------------" << endl;
+
+    // 自定义数据类型
+    vector<Person> VEC_PERSON;
+    VEC_PERSON.push_back(Person("aaa",10));
+    VEC_PERSON.push_back(Person("bbb",20));
+    VEC_PERSON.push_back(Person("ccc",20));
+    VEC_PERSON.push_back(Person("ddd",40));
+    vector<Person>::iterator it_Person = adjacent_find(VEC_PERSON.begin(),VEC_PERSON.end(),is_Age_Adjacent());
+    if (it_Person == VEC_PERSON.end()) {
+		cout << "element not found" << endl;
+	}
+	else {
+		cout << "element found: " << *it_Person << endl;
+	}
+}
 
 
+
+
+
+//---------------------------------------------------------------------------
+// 4.binary_search
+void test04()
+{
+	vector<int> VEC_INT;
+	for (int i = 0; i < 10; i++){VEC_INT.push_back(i);}
+	bool ret = binary_search(VEC_INT.begin(), VEC_INT.end(),2);
+	if (ret){
+		cout << "element is found" << endl;
+	}
+	else{
+		cout << "element not found" << endl;
+	}
+
+    cout << "----------------------------" << endl;
+    // vector<Person> VEC_PERSON;
+    // VEC_PERSON.push_back(Person("aaa",10));
+    // VEC_PERSON.push_back(Person("bbb",20));
+    // VEC_PERSON.push_back(Person("ccc",20));
+    // VEC_PERSON.push_back(Person("ddd",40));
+    // Person TAGET = Person("bbb",20);
+    // ret = binary_search(VEC_PERSON.begin(),VEC_PERSON.end(),TAGET);
+
+}
 
 
 
@@ -174,7 +247,7 @@ void test02()
 //---------------------------------------------------------------------------
 int main()
 {
-    test02();
-    system("pause");
+    test04();
+
     return 0;
 }
