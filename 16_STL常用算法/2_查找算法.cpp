@@ -213,8 +213,22 @@ void test03()
 
 //---------------------------------------------------------------------------
 // 4.binary_search
+bool operator<(const Person & PERSON_IN1,const Person & PERSON_IN2)
+{
+    return PERSON_IN1.m_Age < PERSON_IN2.m_Age;
+}
+class Binary_Compare
+{
+    public:
+    bool operator()(const Person & VAL_COM,const Person & INTERATOR)
+    {
+        return VAL_COM.m_Age < INTERATOR.m_Age;
+    }
+};
+
 void test04()
 {
+    // 内置数据类型
 	vector<int> VEC_INT;
 	for (int i = 0; i < 10; i++){VEC_INT.push_back(i);}
 	bool ret = binary_search(VEC_INT.begin(), VEC_INT.end(),2);
@@ -226,14 +240,27 @@ void test04()
 	}
 
     cout << "----------------------------" << endl;
-    // vector<Person> VEC_PERSON;
-    // VEC_PERSON.push_back(Person("aaa",10));
-    // VEC_PERSON.push_back(Person("bbb",20));
-    // VEC_PERSON.push_back(Person("ccc",20));
-    // VEC_PERSON.push_back(Person("ddd",40));
-    // Person TAGET = Person("bbb",20);
+
+    // 自定义数据类型 
+    // binary_search本质上判断 输入数据<*iterator？ 因此需重载 < 关系符
+    vector<Person> VEC_PERSON;
+    VEC_PERSON.push_back(Person("aaa",10));
+    VEC_PERSON.push_back(Person("bbb",20));
+    VEC_PERSON.push_back(Person("ccc",20));
+    VEC_PERSON.push_back(Person("ddd",40));
+    Person TAGET = Person("eee",20);
+
+    // 方法一：重载 operator<
     // ret = binary_search(VEC_PERSON.begin(),VEC_PERSON.end(),TAGET);
 
+    // 方法二：自定义比较函数
+    ret = binary_search(VEC_PERSON.begin(),VEC_PERSON.end(),TAGET,Binary_Compare());
+    if (ret){
+		cout << "element is found" << endl;
+	}
+	else{
+		cout << "element not found" << endl;
+	}
 }
 
 
@@ -248,6 +275,6 @@ void test04()
 int main()
 {
     test04();
-
+    system("pause");
     return 0;
 }
