@@ -22,10 +22,19 @@
     - 注意: 在**无序序列中不可用**
     - beg 开始迭代器
     - end 结束迭代器
-- value 查找的元素
+    - value 查找的元素
 
-- count            //统计元素个数
-- count_if         //按条件统计元素个数
+- count(iterator beg, iterator end, value);  
+    - 统计元素出现次数
+    - beg 开始迭代器
+    - end 结束迭代器
+    - value 统计的元素
+
+- count_if(iterator beg, iterator end, _Pred);  
+    - 按条件统计元素出现次数
+    - beg 开始迭代器
+    - end 结束迭代器
+    - _Pred 谓词
 */
 
 
@@ -269,12 +278,107 @@ void test04()
 
 
 
+//---------------------------------------------------------------------------
+// 5.count
+void test05()
+{
+    // 内置数据类型
+	vector<int> VEC_INT;
+	VEC_INT.push_back(1);
+	VEC_INT.push_back(2);
+	VEC_INT.push_back(4);
+	VEC_INT.push_back(5);
+	VEC_INT.push_back(3);
+	VEC_INT.push_back(4);
+	VEC_INT.push_back(4);
+
+	int num = count(VEC_INT.begin(), VEC_INT.end(), 4);
+	cout << "the number of 4: " << num << endl;
+
+    cout << "----------------------------" << endl;
+
+    // 自定义数据类型 (需要重载==运算符)
+    vector<Person> VEC_PER;
+    Person p1("刘备", 35);
+	Person p2("关羽", 35);
+	Person p3("张飞", 35);
+	Person p4("赵云", 30);
+	Person p5("曹操", 25);
+	VEC_PER.push_back(p1);
+	VEC_PER.push_back(p2);
+	VEC_PER.push_back(p3);
+	VEC_PER.push_back(p4);
+	VEC_PER.push_back(p5);
+    
+    Person p_target("张飞",35);
+	int num2 = count(VEC_PER.begin(), VEC_PER.end(), p_target);
+	cout << "number = " << num2 << endl;
+}
+
+
+
+
+
+
+//---------------------------------------------------------------------------
+// 6.count_if
+class Greater4
+{
+    public:
+	bool operator()(int val){return val >= 4;}
+};
+class AgeLess35
+{
+    public:
+	bool operator()(const Person &p){return p.m_Age < 35;}
+};
+
+
+void test06()
+{
+    vector<int> VEC_int;
+	VEC_int.push_back(1);
+	VEC_int.push_back(2);
+	VEC_int.push_back(4);
+	VEC_int.push_back(5);
+	VEC_int.push_back(3);
+	VEC_int.push_back(4);
+	VEC_int.push_back(4);
+
+	int num_int = count_if(VEC_int.begin(), VEC_int.end(), Greater4());
+	cout << "the number >= 4: " << num_int << endl;
+
+    cout << "----------------------------" << endl;
+
+    vector<Person> VEC_Person;
+
+	Person p1("刘备", 35);
+	Person p2("关羽", 35);
+	Person p3("张飞", 35);
+	Person p4("赵云", 30);
+	Person p5("曹操", 25);
+
+	VEC_Person.push_back(p1);
+	VEC_Person.push_back(p2);
+	VEC_Person.push_back(p3);
+	VEC_Person.push_back(p4);
+	VEC_Person.push_back(p5);
+
+	int num_Person = count_if(VEC_Person.begin(), VEC_Person.end(), AgeLess35());
+	cout << "the number of age < 35: " << num_Person << endl;
+}
+
+
+
+
+
+
 
 
 //---------------------------------------------------------------------------
 int main()
 {
-    test04();
+    test06();
     system("pause");
     return 0;
 }
