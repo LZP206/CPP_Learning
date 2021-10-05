@@ -1,11 +1,13 @@
 #include <iostream>
 using namespace std;
 
-// 如果基类含虚函数（不是纯虚函数），用delete没有warning，但会跳过派生类的析构函数调用。-----基类虚析构可解决
-// 如果基类含纯虚函数，这基类为抽象类，用delete会有warning(错误)，delete后面的代码无法实现
-// mac-clang++下，抽象类需要虚析构 warning: delete called on 'Animal' that is abstract but has non-virtual destructor
-// win-g++下，基类是否为抽象类不想影响
 
+// 子类创建在堆区new:需要手动delete
+// 1.如果基类含虚函数（不是纯虚函数），  用delete没有 warning，但会跳过子类的析构函数调用 （如果子类没有在堆区开辟空间则不会有影响）
+// 2.如果基类含纯虚函数，这基类为抽象类，用delete会有 warning，delete后面的代码无法实现(mac-clang++下)  ------> 抽象类必须虚析构
+// （warning: delete called on 'Animal' that is abstract but has non-virtual destructor）
+
+// win-g++下，基类是否为抽象类不想影响， 都是第一种情况
 
 
 class Animal
@@ -14,14 +16,14 @@ class Animal
     Animal(){cout << "Animal构造函数调用" << endl;}
 
     // 虚析构可以解决父类指针释放子类对象不干净的问题
-    virtual ~Animal() {cout << "Animal虚析构函数调用" << endl;}
+    ~Animal() {cout << "Animal虚析构函数调用" << endl;}
 
     // virtual ~Animal() = 0; // 函数声明：纯虚析构  
 
-    // virtual void speak() {cout << "Animal-speak" << endl;} // 虚函数
-    virtual void speak() = 0; // 纯虚函数
+    virtual void speak() {cout << "Animal-speak" << endl;} // 基类含有虚函数
+    // virtual void speak() = 0; // 基类含有纯虚函数
 };
-// Animal::~Animal()  // 纯析构需要类内写声明类外写实现
+// Animal::~Animal()  // 纯虚析构需要类内写声明类外写实现
 // {
 //     cout << "Animal纯虚析构函数调用" << endl;
 // }
@@ -84,14 +86,13 @@ class Cat : public Animal
 
 
 
-//子类创建在堆区new:需要手动delete
+// 子类创建在堆区new:需要手动delete
 void test01()
 {
     Animal * animal  = new Cat("Tom");
     animal->speak();
     cout << "test01函数调用" << endl;
     delete animal;
-
 }
 
 
@@ -101,13 +102,14 @@ void test02()
     Cat cat("Tom");
     Animal * animal1 = &cat;
     animal1->speak();
+    cout << "test02函数调用" << endl;
 }
 
 
 
 int main()
 {
-    test01();
+    test02();
     cout << "main函数调用" << endl;
     return 0;
 }
