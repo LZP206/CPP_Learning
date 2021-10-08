@@ -16,7 +16,7 @@ int main()
         switch(choice)
         {
             case 1:   // 1.开始演讲比赛  
-                _for_test_Manager.start_Speech();
+            _for_test_Manager.start_Speech();
                 break;
             case 2:   // 2.查看往届记录
                 break;

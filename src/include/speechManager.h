@@ -26,6 +26,7 @@ public:
     void start_Speech_Draw();       // 抽签
     void start_Speech_Contest();    // 打分
     void show_Score();              // 结果
+    void saveRecord();              // 保存结果
 
 
     vector<int> v_round01;       // 第一轮12人的编号

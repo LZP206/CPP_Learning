@@ -50,17 +50,23 @@ void speechManager::start_Speech()
     // 第一轮比赛
     this->start_Speech_Draw();   // 1.抽签
     this->start_Speech_Contest();// 2.打分排名
-    // 3.显示晋级结果
+    this->show_Score();          // 3.显示晋级结果
+
+    cout << "按任意键后回车继续...";
+    cin.ignore(1024, '\n'); cin.get();
+    system("clear");
 
     // 第二轮比赛
+    this->m_Index++;
+    this->start_Speech_Draw();   // 1.抽签
+    this->start_Speech_Contest();// 2.打分排名
+    this->show_Score();          // 3.显示晋级结果
 
-    // 1.抽签
+    cout << "按任意键后回车继续...";
+    cin.ignore(1024, '\n'); cin.get();
+    system("clear");
 
-    // 2.比赛
-
-    // 3.显示最终结果
-
-    // 4.保存分数
+    this->saveRecord();                // 4.保存分数
 }
 
 
@@ -69,7 +75,7 @@ void speechManager::start_Speech()
 void speechManager::start_Speech_Draw()
 {
     cout << "开始第" << this->m_Index << "轮比赛抽签" << endl;
-    cout << "-----------------------" << endl;
+    cout << "------------------------------------------" << endl;
     cout << "第" << this->m_Index << "轮比赛抽签结果如下：" << endl;
     if (this->m_Index == 1)
     {
@@ -87,7 +93,7 @@ void speechManager::start_Speech_Draw()
         }
         cout << endl;
     }
-    cout << "-----------------------" << endl;
+    cout << "------------------------------------------" << endl;
     cout << endl;
 }
 
@@ -97,7 +103,7 @@ void speechManager::start_Speech_Draw()
 // ------------------------------ 打分排名 ------------------------------
 void speechManager::start_Speech_Contest()
 {
-    cout << "------ 第" << this->m_Index << "轮比赛正式开始 ------" << endl;
+    cout << "开\n始\n打\n分\n.\n.\n.\n" << endl;
     vector<int> v_temp;
     if (this->m_Index == 1){v_temp = v_round01;}
     else{v_temp = v_round02;}
@@ -122,14 +128,14 @@ void speechManager::start_Speech_Contest()
 
         if (num % 6 == 0)
         {
-            cout << "第" << num / 6 << "小组比赛名次：" << endl;
-            cout << "-----------------------" << endl;
+            cout<< "第" << this->m_Index << "轮比赛" << "第" << num / 6 << "小组名次" << endl;
+            cout << "------------------------------------------" << endl;
             for (multimap<double,int,greater<double> >::iterator it2 = ranker_temp.begin(); it2 != ranker_temp.end(); it2++)
             {
                 cout << " 编号： " << it2->second << " 姓名： " << this->m_Speaker[it2->second].m_Name 
                      << " 成绩： " << this->m_Speaker[it2->second].m_Score[this->m_Index - 1] << endl;
             }
-            cout << "-----------------------" << endl;
+            cout << "------------------------------------------" << endl;
             int count = 0;
             for (multimap<double,int,greater<double> >::iterator it2 = ranker_temp.begin(); it2 != ranker_temp.end() && count < 3; it2++, count++)
             {
@@ -137,13 +143,38 @@ void speechManager::start_Speech_Contest()
                 else {v_final.push_back((*it2).second);}
             }
             ranker_temp.clear();
-            
-            cout << endl;
         }
     }
-    cout << "------ 第" << this->m_Index << "轮比赛结束 ------" << endl;
+    cout << endl;
 }
 
+
+
+
+// ------------------------------ 显示晋级结果 ------------------------------
+void speechManager::show_Score()
+{
+    cout << "第" << this->m_Index << "轮晋级选手信息如下" << endl;
+    cout << "------------------------------------------" << endl;
+    if (this->m_Index == 1)
+    {
+        for (vector<int>::iterator it = v_round02.begin(); it != v_round02.end(); it++)
+        {
+            cout << " 编号： " << *it << " 姓名： " << this->m_Speaker[*it].m_Name 
+                 << " 成绩： " << this->m_Speaker[*it].m_Score[this->m_Index - 1] << endl;
+        }
+    }
+    else
+    {
+        for (vector<int>::iterator it = v_final.begin(); it != v_final.end(); it++)
+        {
+            cout << " 编号： " << *it << " 姓名： " << this->m_Speaker[*it].m_Name 
+                 << " 成绩： " << this->m_Speaker[*it].m_Score[this->m_Index - 1] << endl;
+        }
+    }
+    cout << "------------------------------------------" << endl;
+    cout << endl;
+}
 
 
 
