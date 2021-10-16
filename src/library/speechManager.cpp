@@ -179,6 +179,29 @@ void speechManager::show_Score()
 
 
 
+// ------------------------------ 保存结果 ------------------------------
+void speechManager::saveRecord()
+{
+    ofstream record_output;
+    record_output.open("speech.csv", ios::out | ios::app); // 以追加方式写文件
+
+    for (vector<int>::iterator it = v_final.begin(); it != v_final.end(); it++)
+    {
+        record_output << *it << "," << m_Speaker[*it].m_Score[1] << ",";
+    }
+    record_output << endl;
+
+    record_output.close();
+    cout << "记录已经保存" << endl;
+}
+
+
+
+
+
+
+
+
 
 
 

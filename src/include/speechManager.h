@@ -8,6 +8,7 @@ using namespace std;
 #include <algorithm>
 #include <numeric>
 #include <ctime>
+#include <fstream>
 
 
 class speechManager
