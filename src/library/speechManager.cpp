@@ -4,6 +4,7 @@ speechManager::speechManager()
 {
     this->init_Speech();    // 第一步：初始化属性
     this->create_Speaker(); // 第二步：创建12名选手
+    this->loadRecord();     // 第三步：获取往届记录
 }
 
 speechManager::~speechManager()
@@ -43,7 +44,7 @@ void speechManager::create_Speaker()
 
 
 
-// ------------------------------ 开始比赛 ------------------------------
+// ------------------------------ 1.开始演讲比赛 ------------------------------
 void speechManager::start_Speech()
 {
     srand((unsigned int)time(NULL));
@@ -62,11 +63,12 @@ void speechManager::start_Speech()
     this->start_Speech_Contest();// 2.打分排名
     this->show_Score();          // 3.显示晋级结果
 
+    this->saveRecord();                // 4.保存分数
+    cout << "记录以保存，本届比赛结束！" << endl;
+
     cout << "按任意键后回车继续...";
     cin.ignore(1024, '\n'); cin.get();
     system("clear");
-
-    this->saveRecord();                // 4.保存分数
 }
 
 
@@ -198,8 +200,52 @@ void speechManager::saveRecord()
 
 
 
+// ------------------------------ 2.查看往届比赛 ------------------------------
+void speechManager::loadRecord()
+{
+    ifstream record_input;
+    record_input.open("speech.csv", ios::in);
+    if (!record_input.is_open())
+    {
+        this->fileIsEmpty = true;
+        cout << "文件不存在！" << endl;
+        record_input.close();
+        return;
+    }
+    char temp_ch;
+    record_input >> temp_ch;
+    if (record_input.eof())
+    {
+        this->fileIsEmpty = true;
+        cout << "文件为空！" << endl;
+        record_input.close();
+        return;
+    }
 
+    this->fileIsEmpty = false;
+    record_input.putback(temp_ch); //读取的单个字符放回去
 
+    string data;
+    int index = 0;
+    while (record_input >> data)
+    {
+        cout << data << endl;
+        vector<string> vec;
+        int pos = -1;
+        int start = 0;
+        while (true)
+        {
+            pos = data.find(",", start); //从0开始查找 ','
+            if (pos == -1){break;}
+            string tmp = data.substr(start, pos - start); //找到了,进行分割 参数1 起始位置，参数2 截取长度
+            vec.push_back(tmp);
+            start = pos + 1;
+        }
+        this->m_Record.insert(make_pair(index, vec));
+        index++;
+    }
+    record_input.close();
+}
 
 
 
