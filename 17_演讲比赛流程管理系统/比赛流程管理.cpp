@@ -19,6 +19,7 @@ int main()
             _for_test_Manager.start_Speech();
                 break;
             case 2:   // 2.查看往届记录
+            _for_test_Manager.showRecord();
                 break;
             case 3:   // 3.清空比赛记录
                 break;

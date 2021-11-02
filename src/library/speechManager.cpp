@@ -200,7 +200,7 @@ void speechManager::saveRecord()
 
 
 
-// ------------------------------ 2.查看往届比赛 ------------------------------
+// ------------------------------ 查看往届比赛 ------------------------------
 void speechManager::loadRecord()
 {
     ifstream record_input;
@@ -229,7 +229,7 @@ void speechManager::loadRecord()
     int index = 0;
     while (record_input >> data)
     {
-        cout << data << endl;
+        // cout << data << endl;
         vector<string> vec;
         int pos = -1;
         int start = 0;
@@ -245,6 +245,15 @@ void speechManager::loadRecord()
         index++;
     }
     record_input.close();
+}
+
+
+
+
+// ------------------------------ 2.显示往届记录 ------------------------------
+void speechManager::showRecord()
+{
+    
 }
 
 

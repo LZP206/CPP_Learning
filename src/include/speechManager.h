@@ -22,14 +22,14 @@ public:
 
     void init_Speech();   // 初始化属性
     void create_Speaker();// 创建选手
+    void loadRecord();    // 查看往届比赛
 
     void start_Speech();            // 功能 1.开始演讲比赛
     void start_Speech_Draw();       // 抽签
     void start_Speech_Contest();    // 打分
     void show_Score();              // 结果
     void saveRecord();              // 保存结果
-
-    void loadRecord();              // 功能 2.查看往届比赛
+    void showRecord();              // 功能 2.显示往届得分
 
 
     vector<int> v_round01;       // 第一轮12人的编号
