@@ -29,7 +29,8 @@ public:
     void start_Speech_Contest();    // 打分
     void show_Score();              // 结果
     void saveRecord();              // 保存结果
-    void showRecord();              // 功能 2.显示往届得分
+    void showRecord();              // 功能 2.显示往届记录
+    void clearRecord();             // 功能 3.清空比赛记录
 
 
     vector<int> v_round01;       // 第一轮12人的编号

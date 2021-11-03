@@ -22,6 +22,7 @@ int main()
             _for_test_Manager.showRecord();
                 break;
             case 3:   // 3.清空比赛记录
+            _for_test_Manager.clearRecord();
                 break;
             case 0:   // 0.退出比赛程序
                 _for_test_Manager.exit_Manager();

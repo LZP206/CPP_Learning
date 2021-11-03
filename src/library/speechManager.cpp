@@ -22,6 +22,8 @@ void speechManager::init_Speech()
     this->m_Speaker.clear();
     // 初始化比赛轮数
     this->m_Index = 1;
+    // 初始化记录容器
+    this->m_Record.clear();
 }
 
 
@@ -62,9 +64,13 @@ void speechManager::start_Speech()
     this->start_Speech_Draw();   // 1.抽签
     this->start_Speech_Contest();// 2.打分排名
     this->show_Score();          // 3.显示晋级结果
-
-    this->saveRecord();                // 4.保存分数
+    this->saveRecord();          // 4.保存分数
     cout << "记录以保存，本届比赛结束！" << endl;
+
+    // 重置比赛
+    this->init_Speech();
+    this->create_Speaker();
+    this->loadRecord();
 
     cout << "按任意键后回车继续...";
     cin.ignore(1024, '\n'); cin.get();
@@ -195,6 +201,7 @@ void speechManager::saveRecord()
 
     record_output.close();
     cout << "记录已经保存" << endl;
+    this->fileIsEmpty = false;
 }
 
 
@@ -253,8 +260,50 @@ void speechManager::loadRecord()
 // ------------------------------ 2.显示往届记录 ------------------------------
 void speechManager::showRecord()
 {
-    
+    if (this->fileIsEmpty)
+    {
+        cout << "文件不存在或文件为空！" << endl;
+    }
+    for (int i = 0; i < this->m_Record.size(); i++)
+    {
+        cout << "第" << i + 1 << "届 " <<
+        "冠军编号：" << this->m_Record[i][0] << " 得分：" << this->m_Record[i][1] << " "
+        "亚军编号：" << this->m_Record[i][2] << " 得分：" << this->m_Record[i][3] << " "
+        "季军编号：" << this->m_Record[i][4] << " 得分：" << this->m_Record[i][5] << endl;
+    }
+    cout << "按任意键后回车继续...";
+    cin.ignore(1024, '\n'); cin.get();
+    system("clear");
 }
+
+
+
+// ------------------------------ 3.清空往届记录 ------------------------------
+void speechManager::clearRecord()
+{
+    cout << "确认清空？" << endl;
+    cout << "1.确认" << endl;
+    cout << "2.返回" << endl;
+    int select = 0;
+    cin >> select;
+    if (select == 1)
+    {
+        //打开模式 ios::trunc 如果存在删除文件并重新创建
+        ofstream ofs("speech.csv", ios::trunc);
+        ofs.close();
+        this->init_Speech();
+        this->create_Speaker();
+        this->loadRecord();
+        cout << "清空成功！" << endl;
+
+        cout << "按任意键后回车继续...";
+        cin.ignore(1024, '\n'); cin.get();
+    }
+    system("clear");
+}
+
+
+
 
 
 
