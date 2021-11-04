@@ -207,7 +207,7 @@ void speechManager::saveRecord()
 
 
 
-// ------------------------------ 查看往届比赛 ------------------------------
+// ------------------------------ 加载往届记录 ------------------------------
 void speechManager::loadRecord()
 {
     ifstream record_input;
