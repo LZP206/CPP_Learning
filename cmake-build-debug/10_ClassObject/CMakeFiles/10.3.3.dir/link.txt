@@ -1,3 +1,0 @@
-"C:\Application\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\10.3.3.dir/objects.a
-C:\Application\mingw64\bin\ar.exe cr CMakeFiles\10.3.3.dir/objects.a @CMakeFiles\10.3.3.dir\objects1.rsp
-C:\Application\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\10.3.3.dir/objects.a -Wl,--no-whole-archive -o 10.3.3.exe -Wl,--out-implib,lib10.3.3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\10.3.3.dir\linklibs.rsp
