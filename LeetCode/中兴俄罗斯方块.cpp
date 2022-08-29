@@ -5,23 +5,22 @@ using namespace std;
 
 class Solution {
     public:
-    int needSUM2(vector<int> &nums) {
+    int needSUM_V2(vector<int> &nums) {
         int sum = 0;
         int left = 0;
         int right = nums.size()-1;
         while (left < right) {
             while(nums[left] == 0) left++;
-            while(nums[right] == 0) right--;
-            if (left < right) {
-                for(int i = left; i<=right;i++){
+            while (nums[right] == 0) right--;
+            if (left < right){ 
+                for (int i = left; i <= right; i++) {
                     if(nums[i] == 0) sum++;
-                    nums[i]--;
+                    if(nums[i] > 0) nums[i]--;
                 }
             }
         }
         return sum;
     }
-
 
 
     int needSUM(vector<int> &nums) {
@@ -64,7 +63,7 @@ class Solution {
                 if (nums[i] > nums[i-1] && nums[i] > nums[i+1]) array.push_back(i);
                 if (nums[i] == nums[i-1] && nums[i] > nums[i+1]) array.push_back(i);
                 if (nums[i] > nums[i-1] && nums[i] == nums[i+1]) array.push_back(i);
-
+                
                 // if ( (nums[i] >= nums[i-1] && nums[i] > nums[i+1]) || (nums[i] > nums[i-1] && nums[i] >= nums[i+1]) ) array.push_back(i);
             }
         }
@@ -88,7 +87,7 @@ int main() {
     test.push_back(1);
     test.push_back(2);
     test.push_back(1);
-
+    
     vector<int> test2;
     test2.push_back(4);
     test2.push_back(4);
@@ -100,19 +99,17 @@ int main() {
     test2.push_back(2);
     test2.push_back(3);
     test2.push_back(3);
-
-
-
+    
     Solution s;
     int res = s.needSUM(test);
-    cout << res << endl;
-    s.printArray(test);
-    cout << endl;
+    cout << res << " "; s.printArray(test); cout << endl;
+    res = s.needSUM(test2); 
+    cout << res << " "; s.printArray(test2); cout << endl;
 
+    cout << s.needSUM_V2(test) << endl;
+    cout << s.needSUM_V2(test2) << endl;
+    
 
-
-    // res = s.needSUM(test2); 
-    // cout << res << endl;
-    // s.printArray(test2);
+    system("pause");
     return 0;
 }
