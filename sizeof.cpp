@@ -1,5 +1,5 @@
-using namespace std;
 #include <iostream>
+using namespace std;
 
 struct AAA{
     int a1;
@@ -53,13 +53,20 @@ class BB {
 
 
 int main() {
-    int (*A)[5];// 数组指针，表示指向5个int数组的指针
-    cout << sizeof(A) << endl;
-    cout << sizeof(*(A+1)) << endl;
-    int a[5] = {1,2,3,4,5};
-    cout << *(a+1) << "与" << a[1] << "等价" <<endl;
+    int (*A)[5]; 
+    cout << sizeof(A) << endl; // 8
+    cout << sizeof(*(A+1)) << endl; // 20
+    cout << *(A+1) << " == " << A[1] << endl; // 0x14 == 0x14
+    cout << *A << " == " << A << " != " << &A << endl; // 0x0 == 0x0 != 0x7ffeefbff4e0
 
-    AAA aaa; cout << sizeof(aaa) << endl;  // 16 = 4+4+8 内存对齐，第一个8字节里可以放两个int
+    int a[5] = {1,2,3,4,5};
+    cout << sizeof(a) << endl;  // 20
+    cout << sizeof(*a) << endl; // 4
+    cout << *(a+1) << " == " << a[1] << endl; // 2 == 2
+    cout << &a << " == " << a << endl; // 0x7ffeefbff4f0 == 0x7ffeefbff4f0
+    cout << &a+1 << " != " << a+1 << endl; // 0x7ffeefbff504 != 0x7ffeefbff4f4
+
+    AAA aaa; cout << sizeof(aaa) << endl;  // 16 = 4+4+8 
     BBB bbb; cout << sizeof(bbb) << endl;  // 24 = 8+8+8
     CCC ccc; cout << sizeof(ccc) << endl;  // 12 = 4+4+4 
     DDD ddd; cout << sizeof(ddd) << endl;  // 8 = 2+2+4
@@ -68,6 +75,7 @@ int main() {
     BB bb; cout << sizeof(bb) << endl;  // 24
 
 
-    system("pause");
+
+    // system("pause");
     return 0;
 }

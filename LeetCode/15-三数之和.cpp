@@ -25,7 +25,7 @@ class Solution {
                     result.push_back(vector<int>{nums[i], nums[left], nums[right]});
                     while (right > left && nums[left] == nums[left+1]) {left++;}// 第二个数去重
                     while (right > left && nums[right] == nums[right-1]) {right--;}// 第三个数去重
-                    left++; right--; // 找到答案时，双指针同时收缩
+                    left++; right--; // 找到答案时，双指针同时收缩 (注意位置)
                 }
             }
         }
